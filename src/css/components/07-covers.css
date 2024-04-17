@@ -1,2 +1,105 @@
-section {
+.covers {
+    background-color: rgb(28, 29, 32);
+    padding-top: 164px;
+    padding-bottom: 164px;
+}
+
+.is-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.covers-container {
+    position: relative;
+    overflow: hidden;
+
+    height: 508px;
+    background: linear-gradient(rgba(217, 217, 217, 0.04), rgba(217, 217, 217, 0.04)),
+        radial-gradient(closest-side, rgba(237, 59, 68, 0.6), rgba(237, 59, 68, 0.253), transparent 100%),
+        radial-gradient(closest-side, rgba(237, 59, 68, 0.6), rgba(237, 59, 68, 0.253), transparent 100%),
+        radial-gradient(closest-side, rgba(237, 59, 68, 0.6), rgba(237, 59, 68, 0.253), transparent 100%);
+
+    background-size: 100% 100%, 550px 500px, 600px 600px, 500px 450px;
+    background-repeat: no-repeat;
+    background-position: top 100% right 100%,
+        top 20px left -80px,
+        top 600px left 1000px,
+        top -100px left 400px;
+}
+
+@media screen and (min-width: 768px) {
+    .covers-container {
+        height: 960px;
+    }
+}
+
+.covers-list {
+    position: absolute;
+    right: -800px;
+    left: 100px;
+
+}
+
+@media screen and (min-width: 1440px) {
+    .covers-list {
+        left: 400px;
+        right: -1800px;
+    }
+}
+
+
+.covers-item:nth-child(1) {
+    display: flex;
+    justify-content: center;
+}
+
+.covers-item {
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    transform: rotate(17deg);
+}
+
+@media screen and (min-width: 768px) {
+    .covers-item {
+        height: 45vh;
+    }
+}
+
+.covers-img {
+    width: 280px;
+
+    flex-shrink: 0;
+    margin-right: 40px;
+    animation-name: marqueeLine;
+    animation-duration: 7s;
+    animation-timing-function: cubic-bezier(0, 0.6, 1, 0.3);
+    animation-iteration-count: infinite;
+}
+
+@media screen and (min-width: 768px) {
+    .covers-img {
+        width: 540px;
+        margin-right: 70px;
+    }
+}
+
+
+@keyframes marqueeLine {
+    from {
+        transform: translateX(-20%);
+    }
+
+    to {
+        transform: translateX(-180%);
+    }
 }
