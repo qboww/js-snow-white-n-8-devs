@@ -1,11 +1,11 @@
 {
-  "name": "js-project-portfolio",
+  "name": "js-snow-white-n-8-devs",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/js-project-portfolio/",
+    "build": "vite build --base=/js-snow-white-n-8-devs/",
     "preview": "vite preview"
   },
   "devDependencies": {
