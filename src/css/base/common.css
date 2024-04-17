@@ -1,0 +1,20 @@
+@import url('./reset.css');
+@import url('./common.css');
+
+@import url('@fontsource/inter-tight/500.css');
+@import url('@fontsource/inter-tight/600.css');
+@import url('modern-normalize/modern-normalize.css');
+
+:root {
+  --font-family: 'Inter Tight', sans-serif;
+
+  --background: #1c1d20;
+  --cards: #242527;
+  --arrow: #3b3b3b;
+  --button-text: #ed3b44;
+  --main-text: #fafafa;
+}
+
+body {
+  font-family: 'Inter Tight', sans-serif;
+}

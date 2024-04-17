@@ -1,0 +1,13 @@
+@import url('./base/common.css');
+
+@import url('./components/01-header.css');
+@import url('./components/02-hero.css');
+@import url('./components/03-about-me.css');
+@import url('./components/04-benefits.css');
+@import url('./components/05-projects.css');
+@import url('./components/06-faq.css');
+@import url('./components/07-covers.css');
+@import url('./components/08-reviews.css');
+@import url('./components/09-work-together.css');
+@import url('./components/10-header-modal.css');
+@import url('./components/11-footer-modal.css');
