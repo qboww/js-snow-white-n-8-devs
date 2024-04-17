@@ -63,7 +63,7 @@
 }
 
 .covers-item {
-    height: 20vh;
+    height: 200px;
     display: flex;
     align-items: center;
     transform: rotate(17deg);
@@ -71,7 +71,7 @@
 
 @media screen and (min-width: 768px) {
     .covers-item {
-        height: 45vh;
+        height: 400px;
     }
 }
 
