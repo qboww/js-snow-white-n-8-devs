@@ -12,12 +12,16 @@
             height="44px">
     </picture>
     <form class="footer-form js-footer-form">
-        <input type="email" class="footer-email-input js-footer-email-input" name="email"
+        <input type="email" class="footer-input footer-email-input js-footer-email-input" name="email"
             placeholder="clients@gmail.com" pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$" required>
-        <input type="text" class="footer-comments-input js-footer-comments-input" name="comments" placeholder="comments"
-            required>
+        <div class="footer-label success-label js-success-label visually-hidden">Succes!</div>
+        <input type="text" class="footer-input footer-comments-input js-footer-comments-input" name="comments"
+            placeholder="comments" required>
+        <div class="footer-label error-label js-error-label visually-hidden">Invalid email, try again!</div>
         <button class="footer-send-button js-footer-send-button" type="submit">Send</button>
     </form>
-    <a href="mailto:lloydjefferson@gmail.com" class="footer-email-link">lloydjefferson@gmail.com</a>
-    <a href="tel:+3801111111111" class="footer-tel-link">+380 11 1111 11 11</a>
+    <div class="footer-contacts-container">
+        <a href="mailto:lloydjefferson@gmail.com" class="footer-link">lloydjefferson@gmail.com</a>
+        <a href="tel:+3801111111111" class="footer-link">+380 11 1111 11 11</a>
+    </div>
 </div>
