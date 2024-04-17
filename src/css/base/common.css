@@ -1,5 +1,6 @@
 @import url('./reset.css');
 @import url('./common.css');
+@import url('./container.css');
 
 @import url('@fontsource/inter-tight/500.css');
 @import url('@fontsource/inter-tight/600.css');
