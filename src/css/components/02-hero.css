@@ -26,20 +26,6 @@
 .hero-link-item {
   display: flex;
   justify-content: center;
-  /* border: 1px solid var(--button-border-color);
-  border-radius: 60%;
-  width: 37px;
-  height: 37px;
-  font-size: 14px;
-  letter-spacing: -0.02em;
-  line-height: 1;
-  padding: 10px 12px; */
-
-  /* border: 1px solid rgba(250, 250, 250, 0.2);
-  border-radius: 60px;
-  padding: 10px;
-  width: 37px;
-  height: 37px; */
 }
 .hero-link-a {
   font-family: var(--font-family);
@@ -53,7 +39,6 @@
   padding: 10px 11px;
   width: 37px;
   height: 37px;
-  /* display: block; */
 }
 
 .mailto {
