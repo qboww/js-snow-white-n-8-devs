@@ -7,13 +7,21 @@
 @import url('modern-normalize/modern-normalize.css');
 
 :root {
-  --font-family: 'Inter Tight', sans-serif;
-
-  --background: #1c1d20;
-  --cards: #242527;
-  --arrow: #3b3b3b;
-  --button-text: #ed3b44;
-  --main-text: #fafafa;
+  --white-text-color: #fafafa;
+  --arrow-color: #3b3b3b;
+  --accent-color: #ed3b44;
+  --background-color: #1c1d20;
+  --cards-background-color: #242527;
+  --middle-gradient-color: #69292d;
+  --button-border-color: #fafafa33;
+  --grey-title-color: #fafafa66;
+  --grey-text-color: #fafafa99;
+  --text-shadow: #fafafa40;
+  --icon-accent: #450306;
+  --modal-border-color: #fafafa1a;
+  --button-hover-color: #e0373f;
+  --succes-message-color: #3cbc81;
+  --not-succes-message-color: #e74a3b;
 }
 
 body {
