@@ -1,6 +1,6 @@
 export function initializeMenuBehavior() {
   const dropDownButton = document.querySelector('.btn-drop-down');
-  const menuAnchors = document.querySelector('.menu-anchors');
+  const menuAnchors = document.querySelector('.list-menu-anchors');
 
   dropDownButton.addEventListener('click', function () {
     menuAnchors.classList.toggle('visually-hidden');
