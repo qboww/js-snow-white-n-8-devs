@@ -1,3 +1,5 @@
+import { initalizeCover } from './js/covers';
+initalizeCover();
 // #region REVIEWS //
 import Swiper from 'swiper/bundle';
 import 'swiper/css/bundle';
