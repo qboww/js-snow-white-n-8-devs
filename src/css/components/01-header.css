@@ -109,12 +109,17 @@
     transition: opacity 1s ease;
   }
 
+  .menu-anchors.visually-hidden {
+    opacity: 0;
+  }
+
   .list-menu-anchors {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 5px;
     text-align: center;
+
   }
 
   .list-item {
