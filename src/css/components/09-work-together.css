@@ -1,28 +1,23 @@
 :root {
-    --font-family: 'Inter Tight', sans-serif;
-
-    --background: #1c1d20;
-    --cards: #242527;
-    --arrow: #3b3b3b;
-    --button-text: #ed3b44;
-    --main-text: #fafafa;
-}
-
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
+    --white-text-color: #fafafa;
+    --arrow-color: #3b3b3b;
+    --accent-color: #ed3b44;
+    --background-color: #1c1d20;
+    --cards-background-color: #242527;
+    --middle-gradient-color: #69292d;
+    --button-border-color: #fafafa33;
+    --grey-title-color: #fafafa66;
+    --grey-text-color: #fafafa99;
+    --text-shadow: #fafafa40;
+    --icon-accent: #450306;
+    --modal-border-color: #fafafa1a;
+    --button-hover-color: #e0373f;
+    --succes-message-color: #3cbc81;
+    --not-succes-message-color: #e74a3b;
 }
 
 footer {
-    background-color: var(--background);
+    background-color: var(--background-color);
     padding: 32px 0;
     position: relative;
     overflow: hidden;
@@ -46,7 +41,6 @@ footer .container {
 
 .footer-bg-image {
     background-image: url(../img/work_together/bg@1x.png);
-    /* background-size: contain; */
     width: 728px;
     height: 679px;
     position: absolute;
@@ -58,6 +52,7 @@ footer .container {
 @media only screen and (min-resolution:192dpi) {
     .footer-bg-image {
         background-image: url(../img/work_together/bg@2x.png);
+        background-size: contain;
     }
 }
 
@@ -93,7 +88,7 @@ footer .container {
     line-height: 1;
     letter-spacing: -0.03em;
     text-transform: uppercase;
-    color: var(--main-text);
+    color: var(--white-text-color);
 
     margin-bottom: 64px;
 }
@@ -126,7 +121,7 @@ footer .container {
 }
 
 .footer-title-accent {
-    color: var(--button-text)
+    color: var(--accent-color)
 }
 
 .footer-title-image {
@@ -193,7 +188,7 @@ footer .container {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: -0.02em;
-    color: var(--main-text);
+    color: var(--white-text-color);
     background-color: transparent;
 
     width: 100%;
@@ -201,24 +196,24 @@ footer .container {
     padding-bottom: 20px;
     border: none;
     outline: none;
-    border-bottom: 1px solid rgba(250, 250, 250, 0.2);
+    border-bottom: 1px solid var(--button-border-color);
 }
 
 .footer-input:focus {
-    color: var(--main-text);
-    border-color: var(--main-text);
+    color: var(--white-text-color);
+    border-color: var(--white-text-color);
 }
 
 .footer-input::placeholder {
-    color: rgba(250, 250, 250, 0.6);
+    color: var(--grey-text-color);
 }
 
 .input-success {
-    border-color: #3cbc81;
+    border-color: var(--succes-message-color)
 }
 
 .input-error {
-    border-color: #e74a3b;
+    border-color: var(--not-succes-message-color)
 }
 
 .footer-label {
@@ -231,19 +226,19 @@ footer .container {
 }
 
 .success-label {
-    color: #3cbc81;
+    color: var(--succes-message-color);
 }
 
 .error-label {
-    color: #e74a3b;
+    color: var(--not-succes-message-color);
 }
 
 .footer-send-button {
     font-weight: 500;
     font-size: 16px;
     letter-spacing: -0.02em;
-    color: var(--main-text);
-    background-color: var(--button-text);
+    color: var(--white-text-color);
+    background-color: var(--accent-color);
     cursor: pointer;
 
     width: 100px;
@@ -257,7 +252,7 @@ footer .container {
 }
 
 .footer-send-button:active {
-    background-color: #e0373f;
+    background-color: var(--button-hover-color);
 }
 
 @media only screen and (min-width: 768px) {
@@ -275,7 +270,7 @@ footer .container {
 
     .footer-send-button:hover,
     .footer-send-button:focus {
-        background-color: #e0373f;
+        background-color: var(--button-hover-color);
         outline: none;
     }
 }
@@ -295,17 +290,17 @@ footer .container {
     font-weight: 500;
     font-size: 14px;
     letter-spacing: -0.02em;
-    color: var(--main-text);
+    color: var(--white-text-color);
     text-decoration: none;
 
-    outline: 1px solid rgba(250, 250, 250, 0.2);
+    outline: 1px solid var(--button-border-color);
     border-radius: 60px;
     padding: 10px 12px;
     z-index: 1;
 }
 
 .footer-link:active {
-    outline-color: var(--main-text);
+    outline-color: var(--white-text-color);
 }
 
 @media only screen and (min-width: 768px) {
@@ -319,6 +314,6 @@ footer .container {
 
     .footer-link:hover,
     .footer-link:focus {
-        outline-color: var(--main-text);
+        outline-color: var(--white-text-color);
     }
 }

@@ -1,11 +1,19 @@
 :root {
-    --font-family: 'Inter Tight', sans-serif;
-
-    --background: #1c1d20;
-    --cards: #242527;
-    --arrow: #3b3b3b;
-    --button-text: #ed3b44;
-    --main-text: #fafafa;
+    --white-text-color: #fafafa;
+    --arrow-color: #3b3b3b;
+    --accent-color: #ed3b44;
+    --background-color: #1c1d20;
+    --cards-background-color: #242527;
+    --middle-gradient-color: #69292d;
+    --button-border-color: #fafafa33;
+    --grey-title-color: #fafafa66;
+    --grey-text-color: #fafafa99;
+    --text-shadow: #fafafa40;
+    --icon-accent: #450306;
+    --modal-border-color: #fafafa1a;
+    --button-hover-color: #e0373f;
+    --succes-message-color: #3cbc81;
+    --not-succes-message-color: #e74a3b;
 }
 
 .footer-modal-backdrop {
@@ -19,8 +27,8 @@
 }
 
 .footer-modal-overlay {
-    background-color: #1c1d20;
-    border: 1px solid rgba(250, 250, 250, 0.1);
+    background-color: var(--background-color);
+    border: 1px solid var(--modal-border-color);
     border-radius: 20px;
     padding: 64px 32px;
     width: 343px;
@@ -29,6 +37,14 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+@media only screen and (min-width: 768px) {
+    .footer-modal-overlay {
+        padding: 64px;
+        width: 492px;
+        height: 246px;
+    }
 }
 
 .footer-modal-close-button {
@@ -45,8 +61,15 @@
     right: 20px;
 }
 
+@media only screen and (min-width: 768px) {
+    .footer-modal-close-button {
+        width: 24px;
+        height: 24px;
+    }
+}
+
 .footer-modal-close-button-icon {
-    fill: var(--main-text);
+    fill: var(--white-text-color);
 }
 
 .footer-modal-title {
@@ -55,9 +78,16 @@
     line-height: 1.5;
     letter-spacing: -0.02em;
     text-align: center;
-    color: var(--main-text);
+    color: var(--white-text-color);
+    width: 279px;
 
     margin-bottom: 16px;
+}
+
+@media only screen and (min-width: 768px) {
+    .footer-modal-title {
+        width: 364px;
+    }
 }
 
 .footer-modal-description {
@@ -66,5 +96,5 @@
     line-height: 1.5;
     letter-spacing: -0.02em;
     text-align: center;
-    color: rgba(250, 250, 250, 0.6);
+    color: var(--grey-text-color);
 }
