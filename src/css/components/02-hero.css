@@ -13,8 +13,12 @@
   linear-gradient(to right, #ED3B44, #69292D, #1C1D20 50%);
   background-size: 17%, 100% 100%; */
 
-  background-image:
-    linear-gradient(to right, rgba(237, 59, 68, 0.8), rgba(105, 41, 45, 0.8), rgb(28 29 32 / 86%) 50%),
+  background-image: linear-gradient(
+      to right,
+      rgba(237, 59, 68, 0.8),
+      rgba(105, 41, 45, 0.8),
+      rgb(28 29 32 / 86%) 50%
+    ),
     linear-gradient(90deg, rgb(53 50 50) 0%, rgb(0 0 0) 17%, rgb(0 0 0 / 0%) 100%),
     linear-gradient(90deg, rgb(0 0 0) 0%, rgb(0 0 0 / 0%) 17%, rgb(0 0 0) 100%),
     linear-gradient(90deg, rgb(0 0 0) 0%, rgb(0 0 0 / 0%) 17%, rgb(0 0 0) 100%),
@@ -22,11 +26,16 @@
     linear-gradient(90deg, rgb(0 0 0) 0%, rgb(0 0 0 / 17%) 17%, rgb(0 0 0 / 14%) 100%),
     linear-gradient(90deg, rgb(0 0 0) 0%, rgb(0 0 0 / 0%) 17%, rgb(0 0 0 / 0%) 100%);
 
-
-  background-size: 100% 100%, 57px, 57px, 57px, 57px, 57px, 57px;
+  background-size:
+    100% 100%,
+    57px,
+    57px,
+    57px,
+    57px,
+    57px,
+    57px;
   background-position: 0px, 56px, 112px, 167px, 224px, 280px;
   background-repeat: no-repeat;
-
 }
 
 .hero-title {
@@ -80,23 +89,26 @@
   }
 } */
 @media only screen and (min-width: 768px) {
+  .section-hero {
+    padding-bottom: 32px;
+  }
   .hero {
     min-width: 768px;
     padding-top: 300px;
     /* padding-bottom: 112px; */
     /* background-image: url(../../img/hero/bg-tab@1x.png); */
 
-
-
     /* background-image: linear-gradient(90deg, rgb(0 0 0 / 36%) 0%, rgb(0 0 0 / 33%) 17%, rgb(0 0 0 / 58%) 100%), 
     linear-gradient(to right, #ED3B44, #69292D, #1C1D20 50%);
   
     background-size: 11.20%, 100% 100%; */
 
-
-
-    background-image:
-      linear-gradient(to right, rgba(237, 59, 68, 0.8), rgba(105, 41, 45, 0.8), rgb(28 29 32 / 86%) 50%),
+    background-image: linear-gradient(
+        to right,
+        rgba(237, 59, 68, 0.8),
+        rgba(105, 41, 45, 0.8),
+        rgb(28 29 32 / 86%) 50%
+      ),
       linear-gradient(90deg, rgb(0 0 0 / 0%) 0%, rgb(0 0 0 / 66%) 17%, rgb(0 0 0 / 0%) 100%),
       linear-gradient(90deg, rgb(0 0 0) 0%, rgb(0 0 0) 17%, rgb(0 0 0 / 36%) 100%),
       linear-gradient(90deg, rgb(0 0 0) 0%, rgb(0 0 0 / 0%) 17%, rgb(0 0 0) 100%),
@@ -107,8 +119,17 @@
       linear-gradient(90deg, rgb(0 0 0) 0%, rgb(0 0 0 / 78%) 17%, rgb(0 0 0 / 13%) 100%),
       linear-gradient(90deg, rgb(0 0 0) 0%, rgb(0 0 0 / 0%) 17%, rgb(0 0 0) 100%);
 
-
-    background-size: 100% 100%, 63px, 63px, 63px, 63px, 63px, 63px, 63px, 63px, 63px;
+    background-size:
+      100% 100%,
+      63px,
+      63px,
+      63px,
+      63px,
+      63px,
+      63px,
+      63px,
+      63px,
+      63px;
     background-position: 0px, 63px, 126px, 189px, 252px, 315px, 378px, 441px, 504px;
   }
 
@@ -145,14 +166,24 @@
     /* padding-bottom: 188px;  */
     /* background-image: url(../../img/hero/bg-desk@1x.png); */
 
-    background-image: linear-gradient(90deg, rgb(0 0 0 / 36%) 0%, rgb(0 0 0 / 33%) 17%, rgb(0 0 0 / 58%) 100%),
-      linear-gradient(to right, #ED3B44, #69292D, #1C1D20 50%);
+    background-image: linear-gradient(
+        90deg,
+        rgb(0 0 0 / 36%) 0%,
+        rgb(0 0 0 / 33%) 17%,
+        rgb(0 0 0 / 58%) 100%
+      ),
+      linear-gradient(to right, #ed3b44, #69292d, #1c1d20 50%);
 
-    background-size: 5%, 100% 100%;
+    background-size:
+      5%,
+      100% 100%;
 
-
-    background-image:
-      linear-gradient(to right, rgba(237, 59, 68, 0.8), rgba(105, 41, 45, 0.8), rgb(28 29 32 / 86%) 50%),
+    background-image: linear-gradient(
+        to right,
+        rgba(237, 59, 68, 0.8),
+        rgba(105, 41, 45, 0.8),
+        rgb(28 29 32 / 86%) 50%
+      ),
       linear-gradient(90deg, rgb(0 0 0) 0%, rgb(0 0 0) 17%, rgb(0 0 0 / 0%) 100%),
       linear-gradient(90deg, rgb(0 0 0) 0%, rgb(0 0 0) 17%, rgb(0 0 0 / 36%) 100%),
       linear-gradient(90deg, rgb(0 0 0) 0%, rgb(0 0 0 / 0%) 17%, rgb(0 0 0) 100%),
@@ -165,8 +196,19 @@
       linear-gradient(90deg, rgb(0 0 0 / 0%) 0%, rgb(0 0 0 / 47%) 17%, rgb(0 0 0 / 52%) 100%),
       linear-gradient(90deg, rgb(0 0 0 / 97%) 0%, rgb(0 0 0 / 0%) 17%, rgb(0 0 0 / 0%) 100%);
 
-
-    background-size: 100% 100%, 66px, 66px, 66px, 66px, 66px, 66px, 66px, 66px, 66px, 66px, 66px;
+    background-size:
+      100% 100%,
+      66px,
+      66px,
+      66px,
+      66px,
+      66px,
+      66px,
+      66px,
+      66px,
+      66px,
+      66px,
+      66px;
     background-position: 0px, 66px, 132px, 198px, 264px, 330px, 396px, 462px, 528px, 594px, 660px;
   }
 
