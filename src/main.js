@@ -1,5 +1,5 @@
 //#region HEADER
-import { initializeMenuBehavior } from './js/drop-down-menu';
+import { initializeMenuBehavior } from './js/header-logic';
 
 initializeMenuBehavior();
 //#endregion HEADER
