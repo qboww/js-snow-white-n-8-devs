@@ -1,27 +1,34 @@
-<div class="container">
-    <h2 class="footer-title">
-        <div class="footer-title-upper-part">Let&rsquo;s <span class="footer-title-accent">work</span></div>
-        <div class="footer-title-lower-part">together</div>
-    </h2>
-    <picture>
-        <source media="(max-width: 767px)"
-            srcset="./img/work_together/footer_photo.png 1x, ./img/work_together/footer_photo@2x.png 2x">
-        <source media="(min-width: 768px)"
-            srcset="./img/work_together/footer-foto-desktop.png 1x, ./img/work_together/footer-foto-desktop@2x.png 2x">
-        <img src="./img/work_together/footer_photo.png" alt="Lloyd Jefferson" class="footer-title-image" width="44px"
-            height="44px">
-    </picture>
-    <form class="footer-form js-footer-form">
-        <input type="email" class="footer-input footer-email-input js-footer-email-input" name="email"
-            placeholder="clients@gmail.com" pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$" required>
-        <div class="footer-label success-label js-success-label visually-hidden">Succes!</div>
-        <input type="text" class="footer-input footer-comments-input js-footer-comments-input" name="comments"
-            placeholder="comments" required>
-        <div class="footer-label error-label js-error-label visually-hidden">Invalid email, try again!</div>
-        <button class="footer-send-button js-footer-send-button" type="submit">Send</button>
-    </form>
-    <div class="footer-contacts-container">
-        <a href="mailto:lloydjefferson@gmail.com" class="footer-link">lloydjefferson@gmail.com</a>
-        <a href="tel:+3801111111111" class="footer-link">+380 11 1111 11 11</a>
+<section class="work-together" id="order">
+    <div class="container">
+        <h2 class="footer-title">
+            <div class="footer-title-upper-part">Let&rsquo;s <span class="footer-title-accent">work</span></div>
+            <div class="footer-title-lower-part">together</div>
+        </h2>
+        <picture>
+            <source media="(max-width: 767px)"
+                srcset="./img/work_together/imagelloyd-jefferson-mobile@1x.png 1x, ./img/work_together/imagelloyd-jefferson-mobile@2x.png 2x">
+            <source media="(min-width: 768px)"
+                srcset="./img/work_together/imagelloyd-jefferson-desktop-tablet@1x.png 1x, ./img/work_together/imagelloyd-jefferson-desktop-tablet@2x.png 2x">
+            <img src="./img/work_together/imagelloyd-jefferson-mobile@1x.png" alt="Lloyd Jefferson"
+                class="footer-title-image" width="44" height="44">
+        </picture>
+        <form class="footer-form">
+            <div class="footer-input-container">
+                <input type="email" class="footer-input footer-email-input" name="email" placeholder="clients@gmail.com"
+                    required pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$">
+                <div class="footer-label success-label visually-hidden">Succes!</div>
+            </div>
+            <div class="footer-input-container">
+                <input type="text" class="footer-input footer-comments-input" name="comments" placeholder="comments"
+                    required>
+                <div class="footer-label error-label visually-hidden">Invalid email, try again!</div>
+            </div>
+            <button class="footer-send-button" type="submit">Send</button>
+        </form>
+        <address class="footer-address">
+            <a href="mailto:lloydjefferson@gmail.com" class="footer-link">lloydjefferson@gmail.com</a>
+            <a href="tel:+3801111111111" class="footer-link">+380 11 1111 11 11</a>
+        </address>
     </div>
-</div>
+    <div class="footer-bg-image"></div>
+</section>

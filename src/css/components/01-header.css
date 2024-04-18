@@ -11,7 +11,6 @@
   display: flex;
   justify-content: space-between;
   padding-top: 32px;
-  margin: 0 auto;
 }
 
 .button-menu {
@@ -43,7 +42,7 @@
   display: none;
 }
 
-.menu-anchors {
+.menu-container {
   display: none;
 }
 
@@ -52,17 +51,10 @@
     display: none;
   }
 
-  .drop-down-container {
-    display: flex;
-    justify-content: center;
-    width: 67px;
-    height: 39px;
-  }
-
   .order-btn {
     display: flex;
     align-items: center;
-    background-color: #ed3b44;
+    background-color: var(--accent-color);
     border-radius: 60px;
     padding: 18px 24px;
     width: 163px;
@@ -70,13 +62,24 @@
     border: none;
     font-weight: 500;
     letter-spacing: -0.02em;
-    color: #fafafa;
+    color: var(--white-text-color);
     transition: background-color 250ms linear;
   }
 
   .order-btn:hover,
   .order-btn:focus {
-    background-color: #e0373f;
+    background-color: var(--button-hover-color);
+  }
+
+  .drop-down-container {
+    padding-top: 10px;
+    padding-bottom: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    width: 67px;
+    height: 39px;
   }
 
   .btn-drop-down {
@@ -87,21 +90,31 @@
     letter-spacing: -0.02em;
     text-decoration: underline;
     text-underline-offset: 3px;
-    color: var(--main-text);
+    color: var(--white-text-color);
+    cursor: pointer;
+    padding: 0px;
+    transition: color 250ms linear;
   }
 
-  .menu-anchors {
-    display: block;
-    position: absolute;
-    top: 79px;
-    left: 6px;
+  .btn-drop-down:hover {
+    color: var(--button-hover-color);
+  }
+
+  .menu-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .list-menu-anchors {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
     transition: opacity 1s ease;
   }
 
-  .list-item {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 5px;
+  .list-menu-anchors.visually-hidden {
+    opacity: 0;
   }
 
   .anchor-link {
@@ -109,11 +122,11 @@
     line-height: 19px;
     letter-spacing: -0.02em;
     transition: color 250ms linear;
-    color: #fafafa;
+    color: var(--white-text-color);
   }
 
   .anchor-link:hover,
   .anchor-link:focus {
-    color: #e0373f;
+    color: var(--button-hover-color);
   }
 }
