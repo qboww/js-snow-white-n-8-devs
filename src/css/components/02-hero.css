@@ -7,12 +7,28 @@
   padding-top: 281px;
   padding-bottom: 32px;
 
-  background-image: url(../../img/hero/bg-mob@1x.png);
+  /* background-image: url(../../img/hero/bg-mob@1x.png); */
+
+  /* background-image: linear-gradient(90deg, rgb(0 0 0 / 36%) 0%, rgb(0 0 0 / 33%) 17%, rgb(0 0 0 / 58%) 100%), 
+  linear-gradient(to right, #ED3B44, #69292D, #1C1D20 50%);
+  background-size: 17%, 100% 100%; */
+
+  background-image:
+    linear-gradient(to right, rgba(237, 59, 68, 0.8), rgba(105, 41, 45, 0.8), rgb(28 29 32 / 86%) 50%),
+    linear-gradient(90deg, rgb(53 50 50) 0%, rgb(0 0 0) 17%, rgb(0 0 0 / 0%) 100%),
+    linear-gradient(90deg, rgb(0 0 0) 0%, rgb(0 0 0 / 0%) 17%, rgb(0 0 0) 100%),
+    linear-gradient(90deg, rgb(0 0 0) 0%, rgb(0 0 0 / 0%) 17%, rgb(0 0 0) 100%),
+    linear-gradient(90deg, rgb(0 0 0) 0%, rgb(0 0 0 / 0%) 17%, rgb(0 0 0 / 84%) 100%),
+    linear-gradient(90deg, rgb(0 0 0) 0%, rgb(0 0 0 / 17%) 17%, rgb(0 0 0 / 14%) 100%),
+    linear-gradient(90deg, rgb(0 0 0) 0%, rgb(0 0 0 / 0%) 17%, rgb(0 0 0 / 0%) 100%);
+
+
+  background-size: 100% 100%, 57px, 57px, 57px, 57px, 57px, 57px;
+  background-position: 0px, 56px, 112px, 167px, 224px, 280px;
   background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  margin: 0 auto;
+
 }
+
 .hero-title {
   font-weight: 500;
   font-size: 50px;
@@ -22,10 +38,12 @@
   color: var(--white-text-color);
   margin-bottom: 212px;
 }
+
 .hero-links {
   display: flex;
   gap: 4px;
 }
+
 .hero-social-link {
   display: flex;
   gap: 4px;
@@ -56,18 +74,44 @@
   border-color: var(--white-text-color);
 }
 
-@media only screen and (max-width: 767.98px) and (min-resolution: 192dpi) {
+/* @media only screen and (max-width: 767.98px) and (min-resolution: 192dpi) {
   .hero {
     background-image: url(../../img/hero/bg-mob@2x.png);
   }
-}
+} */
 @media only screen and (min-width: 768px) {
   .hero {
     min-width: 768px;
     padding-top: 300px;
     /* padding-bottom: 112px; */
-    background-image: url(../../img/hero/bg-tab@1x.png);
+    /* background-image: url(../../img/hero/bg-tab@1x.png); */
+
+
+
+    /* background-image: linear-gradient(90deg, rgb(0 0 0 / 36%) 0%, rgb(0 0 0 / 33%) 17%, rgb(0 0 0 / 58%) 100%), 
+    linear-gradient(to right, #ED3B44, #69292D, #1C1D20 50%);
+  
+    background-size: 11.20%, 100% 100%; */
+
+
+
+    background-image:
+      linear-gradient(to right, rgba(237, 59, 68, 0.8), rgba(105, 41, 45, 0.8), rgb(28 29 32 / 86%) 50%),
+      linear-gradient(90deg, rgb(0 0 0 / 0%) 0%, rgb(0 0 0 / 66%) 17%, rgb(0 0 0 / 0%) 100%),
+      linear-gradient(90deg, rgb(0 0 0) 0%, rgb(0 0 0) 17%, rgb(0 0 0 / 36%) 100%),
+      linear-gradient(90deg, rgb(0 0 0) 0%, rgb(0 0 0 / 0%) 17%, rgb(0 0 0) 100%),
+      linear-gradient(90deg, rgb(0 0 0) 0%, rgb(0 0 0 / 0%) 17%, rgb(0 0 0) 100%),
+      linear-gradient(90deg, rgb(0 0 0) 0%, rgb(0 0 0 / 0%) 17%, rgb(0 0 0) 100%),
+      linear-gradient(90deg, rgb(0 0 0) 0%, rgb(0 0 0 / 0%) 17%, rgb(0 0 0) 100%),
+      linear-gradient(90deg, rgb(0 0 0) 0%, rgb(0 0 0 / 0%) 17%, rgb(0 0 0) 100%),
+      linear-gradient(90deg, rgb(0 0 0) 0%, rgb(0 0 0 / 78%) 17%, rgb(0 0 0 / 13%) 100%),
+      linear-gradient(90deg, rgb(0 0 0) 0%, rgb(0 0 0 / 0%) 17%, rgb(0 0 0) 100%);
+
+
+    background-size: 100% 100%, 63px, 63px, 63px, 63px, 63px, 63px, 63px, 63px, 63px;
+    background-position: 0px, 63px, 126px, 189px, 252px, 315px, 378px, 441px, 504px;
   }
+
   .hero-title {
     font-size: 90px;
     width: 632px;
@@ -83,23 +127,49 @@
     width: 55px;
     height: 55px;
   }
+
   .mailto {
     width: 223px;
   }
 }
 
-@media only screen and (min-width: 768px) and (min-resolution: 192dpi) {
+/* @media only screen and (min-width: 768px) and (min-resolution: 192dpi) {
   .hero {
     background-image: url(../../img/hero/bg-tab@2x.png);
   }
-}
+} */
 @media only screen and (min-width: 1440px) {
   .hero {
     max-width: 1440px;
     padding-top: 315px;
     /* padding-bottom: 188px;  */
-    background-image: url(../../img/hero/bg-desk@1x.png);
+    /* background-image: url(../../img/hero/bg-desk@1x.png); */
+
+    background-image: linear-gradient(90deg, rgb(0 0 0 / 36%) 0%, rgb(0 0 0 / 33%) 17%, rgb(0 0 0 / 58%) 100%),
+      linear-gradient(to right, #ED3B44, #69292D, #1C1D20 50%);
+
+    background-size: 5%, 100% 100%;
+
+
+    background-image:
+      linear-gradient(to right, rgba(237, 59, 68, 0.8), rgba(105, 41, 45, 0.8), rgb(28 29 32 / 86%) 50%),
+      linear-gradient(90deg, rgb(0 0 0) 0%, rgb(0 0 0) 17%, rgb(0 0 0 / 0%) 100%),
+      linear-gradient(90deg, rgb(0 0 0) 0%, rgb(0 0 0) 17%, rgb(0 0 0 / 36%) 100%),
+      linear-gradient(90deg, rgb(0 0 0) 0%, rgb(0 0 0 / 0%) 17%, rgb(0 0 0) 100%),
+      linear-gradient(90deg, rgb(0 0 0) 0%, rgb(0 0 0 / 0%) 17%, rgb(0 0 0) 100%),
+      linear-gradient(90deg, rgb(0 0 0) 0%, rgb(0 0 0 / 0%) 17%, rgb(0 0 0) 100%),
+      linear-gradient(90deg, rgb(0 0 0) 0%, rgb(0 0 0 / 0%) 17%, rgb(0 0 0) 100%),
+      linear-gradient(90deg, rgb(0 0 0) 0%, rgb(0 0 0 / 0%) 17%, rgb(0 0 0) 100%),
+      linear-gradient(90deg, rgb(0 0 0) 0%, rgb(0 0 0 / 0%) 17%, rgb(0 0 0) 100%),
+      linear-gradient(90deg, rgb(0 0 0) 0%, rgb(0 0 0 / 0%) 17%, rgb(0 0 0) 100%),
+      linear-gradient(90deg, rgb(0 0 0 / 0%) 0%, rgb(0 0 0 / 47%) 17%, rgb(0 0 0 / 52%) 100%),
+      linear-gradient(90deg, rgb(0 0 0 / 97%) 0%, rgb(0 0 0 / 0%) 17%, rgb(0 0 0 / 0%) 100%);
+
+
+    background-size: 100% 100%, 66px, 66px, 66px, 66px, 66px, 66px, 66px, 66px, 66px, 66px, 66px;
+    background-position: 0px, 66px, 132px, 198px, 264px, 330px, 396px, 462px, 528px, 594px, 660px;
   }
+
   .hero-title {
     width: 1084px;
     margin-left: auto;
@@ -107,8 +177,9 @@
     margin-bottom: 228px;
   }
 }
-@media only screen and (min-width: 1440px) and (min-resolution: 192dpi) {
+
+/* @media only screen and (min-width: 1440px) and (min-resolution: 192dpi) {
   .hero {
     background-image: url(../../img/hero/bg-desk@2x.png);
   }
-}
+} */
