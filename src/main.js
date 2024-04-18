@@ -1,4 +1,10 @@
-// #region REVIEWS //
+//#region HEADER
+import { initializeMenuBehavior } from './js/drop-down-menu';
+
+initializeMenuBehavior();
+//#endregion HEADER
+
+//#region REVIEWS
 import Swiper from 'swiper/bundle';
 import 'swiper/css/bundle';
 import { renderReviews } from './js/render-reviews';
@@ -95,4 +101,4 @@ fetch(URL)
       position: 'bottomLeft',
     });
   });
-// #endregion REVIEWS //
+//#endregion REVIEWS
