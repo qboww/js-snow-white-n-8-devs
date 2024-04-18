@@ -35,14 +35,15 @@ footer .container {
 
 @media only screen and (min-width: 1440px) {
     footer .container {
-        width: 1040px;
+        width: 1048px;
+        padding: 0;
     }
 }
 
 .footer-bg-image {
     background-image: url(../img/work_together/bg@1x.png);
-    width: 728px;
-    height: 679px;
+    width: 400px;
+    height: 100%;
     position: absolute;
     top: 0;
     left: 290px;
@@ -125,6 +126,8 @@ footer .container {
 }
 
 .footer-title-image {
+    width: 44px;
+    height: 44px;
     position: absolute;
     top: 0;
     left: 16px;
@@ -135,6 +138,12 @@ footer .container {
         width: 70px;
         height: 70px;
         left: 32px;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .footer-title-image {
+        left: 0;
     }
 }
 
