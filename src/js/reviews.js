@@ -1,18 +1,18 @@
 // #region REVIEWS //
 import Swiper from 'swiper/bundle';
 import 'swiper/css/bundle';
-import { renderReviews } from './js/render-reviews';
+import { renderReviews } from './render-reviews';
 
 const URL = 'https://portfolio-js.b.goit.study/api/reviews';
 const list = document.querySelector('#review-swiper-list');
 
-const previousButton = document.querySelector('.review-btn-prev');
+const previousButton = document.querySelector('.btn-prev-review-wrapper');
 const previousDivButton = document.querySelector('.btn-prev-review');
-const previousSvgArrow = document.querySelector('.review-arrow-prev');
+const previousSvgArrow = document.querySelector('.reviews-arrow-left');
 
 const nextButton = document.querySelector('.review-btn-next');
 const nextDivButton = document.querySelector('.btn-next-review');
-const nextSvgArrow = document.querySelector('.review-arrow-next');
+const nextSvgArrow = document.querySelector('.reviews-arrow-right');
 
 const updateButtonState = (button, divButton, svgArrow, isEnd) => {
   if (isEnd) {
@@ -33,22 +33,13 @@ const updateButtonsStateReview = swiper => {
   updateButtonState(nextButton, nextDivButton, nextSvgArrow, swiper.isEnd);
 };
 
-fetch(URL)
-  .then(response => {
+const fetchDataAndInitializeSwiper = async () => {
+  try {
+    const response = await fetch(URL);
     if (!response.ok) {
-      const showNews = document.querySelector('.show-news');
-
-      showNews.textContent = 'No reviews found';
-      showNews.style.textAlign = 'center';
-      showNews.style.fontSize = '24px';
-      showNews.style.color = 'rgba(250, 250, 250, 0.4)';
-
       throw new Error('Network response was not ok.');
     }
-
-    return response.json();
-  })
-  .then(data => {
+    const data = await response.json();
     const markup = renderReviews(data);
     if (!markup) {
       iziToast.error({
@@ -57,7 +48,6 @@ fetch(URL)
         position: 'bottomLeft',
       });
     }
-
     list.insertAdjacentHTML('beforeend', markup);
 
     const swiper3 = new Swiper('#swiper3', {
@@ -65,34 +55,32 @@ fetch(URL)
       on: {
         slideChange: updateButtonsStateReview,
       },
-
       breakpoints: {
         768: {
           slidesPerView: 2,
           slidesPerGroup: 1,
           spaceBetween: 16,
         },
-
         1440: {
           slidesPerView: 4,
           slidesPerGroup: 1,
           spaceBetween: 18,
         },
       },
-
       navigation: {
-        nextEl: '.my-swiper-button-next',
-        prevEl: '.my-swiper-button-prev',
+        nextEl: '.btn-next-review',
+        prevEl: '.btn-prev-review',
       },
     });
 
     updateButtonsStateReview(swiper3);
-  })
-  .catch(() => {
+  } catch (error) {
     iziToast.error({
       title: 'Error',
       message: 'Error while fetching reviews from server',
       position: 'bottomLeft',
     });
-  });
-// #endregion REVIEWS //
+  }
+};
+
+export { fetchDataAndInitializeSwiper };

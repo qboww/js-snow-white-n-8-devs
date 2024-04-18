@@ -16,7 +16,7 @@
   display: flex;
 }
 
-.my-swiper-buttons {
+.slider-buttons {
   margin-top: 32px;
   gap: 20px;
 
@@ -86,10 +86,6 @@
 
 /* #region scrollbar */
 
-/* .my-swiper-button-prev {
-  cursor: pointer; 
-  border: 1px solid rgba(250, 250, 250, 0.5);
-} */
 
 .review::-webkit-scrollbar {
   width: 8px;
@@ -142,8 +138,8 @@
   background-color: #555;
 }
 
-.my-swiper-button-prev[disabled],
-.my-swiper-button-next[disabled] {
+.btn-prev-review[disabled],
+.btn-next-review[disabled] {
   border: 1px solid rgba(250, 250, 250, 0.2);
   color: var(--arrow-color);
   /* stroke: var(  --arrow-color); */
@@ -158,8 +154,8 @@
   background-color: var(--background-color);
 }
 
-#swiper3 .my-swiper-button-prev,
-#swiper3 .my-swiper-button-next {
+#swiper3 .btn-prev-review,
+#swiper3 .btn-next-review {
   display: flex;
   width: 52px;
   height: 52px;
@@ -178,8 +174,8 @@
 
 @media screen and (min-width: 768px) {
   .reviews-section {
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin-top: 48px;
+    margin-bottom: 48px;
     padding-left: 32px;
     padding-right: 32px;
   }
@@ -208,8 +204,8 @@
     height: 32px;
   }
 
-  #swiper3 .my-swiper-button-prev,
-  #swiper3 .my-swiper-button-next {
+  #swiper3 .btn-prev-review,
+  #swiper3 .btn-next-review {
     width: 68px;
     height: 68px;
   }
