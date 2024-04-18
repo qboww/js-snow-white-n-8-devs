@@ -15,3 +15,7 @@ async function initializeSwiper() {
 
 initializeSwiper();
 //#endregion REVIEWS
+
+// #region about-me
+import {} from './js/about-me.js';
+// #endregion about-me
