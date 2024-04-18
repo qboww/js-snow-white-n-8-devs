@@ -1,6 +1,14 @@
 import { initalizeCover } from './js/covers';
 initalizeCover();
-// #region REVIEWS //
+
+//#region HEADER
+import { initializeMenuBehavior } from './js/header-logic';
+
+initializeMenuBehavior();
+//#endregion HEADER
+
+//#region REVIEWS
+
 import Swiper from 'swiper/bundle';
 import 'swiper/css/bundle';
 import { renderReviews } from './js/render-reviews';
@@ -97,4 +105,4 @@ fetch(URL)
       position: 'bottomLeft',
     });
   });
-// #endregion REVIEWS //
+//#endregion REVIEWS
