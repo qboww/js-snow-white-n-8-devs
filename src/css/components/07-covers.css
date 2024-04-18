@@ -1,21 +1,6 @@
 .covers {
-    background-color: rgb(28, 29, 32);
-    padding-top: 164px;
-    padding-bottom: 164px;
-}
-
-.is-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
+    padding-top: 82px;
+    padding-bottom: 82px;
 }
 
 .covers-container {
@@ -35,12 +20,12 @@
         top 600px left 1000px,
         top -100px left 400px;
 }
-
 @media screen and (min-width: 768px) {
     .covers-container {
         height: 960px;
     }
 }
+
 
 .covers-list {
     position: absolute;
@@ -48,7 +33,6 @@
     left: 100px;
 
 }
-
 @media screen and (min-width: 1440px) {
     .covers-list {
         left: 400px;
@@ -61,6 +45,13 @@
     display: flex;
     justify-content: center;
 }
+@media screen and (min-width: 768px) and (max-width: 1440px) {
+    .covers-item:nth-child(1) {
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
 
 .covers-item {
     height: 200px;
@@ -68,16 +59,14 @@
     align-items: center;
     transform: rotate(17deg);
 }
-
 @media screen and (min-width: 768px) {
     .covers-item {
         height: 400px;
     }
 }
 
-.covers-img {
-    width: 280px;
 
+.covers-picture{
     flex-shrink: 0;
     margin-right: 40px;
     animation-name: marqueeLine;
@@ -85,11 +74,19 @@
     animation-timing-function: cubic-bezier(0, 0.6, 1, 0.3);
     animation-iteration-count: infinite;
 }
+@media screen and (min-width: 768px) {
+    .covers-picture {
+        margin-right: 70px;
+    }
+}
 
+
+.covers-img {
+    width: 280px;
+}
 @media screen and (min-width: 768px) {
     .covers-img {
         width: 540px;
-        margin-right: 70px;
     }
 }
 
