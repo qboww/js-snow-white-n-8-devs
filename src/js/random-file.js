@@ -1,3 +1,0 @@
-// Do not use this file, it was create only for js folder push
-
-// No logics or code needed! I'll be deleted soon...

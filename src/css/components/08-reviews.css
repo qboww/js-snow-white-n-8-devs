@@ -1,2 +1,240 @@
-section {
+/* #region mobile first */
+
+.reviews-section {
+  /* padding: 65px 16px; */
+  /* margin: 48px 0; */
 }
+
+.reviews-container {
+  width: 100%;
+  max-width: 375px;
+  margin: 0 auto;
+  background-color: var(--background);
+}
+
+.review-buttons {
+  display: flex;
+}
+
+.my-swiper-buttons {
+  margin-top: 32px;
+  gap: 20px;
+
+  display: flex;
+  justify-content: center;
+}
+
+.thumbnail {
+  background: var(--white-text-color);
+  border-radius: 10px;
+  margin-bottom: 32px;
+}
+
+.reviews-title {
+  text-align: left;
+  font: 600 16px/1.5 -0.02em;
+  color: var(--grey-title-color);
+  text-transform: uppercase;
+  margin-bottom: 32px;
+}
+
+.reviews-list {
+  margin-bottom: 32px;
+}
+
+.reviews-list-item {
+  width: 343px;
+  padding: 32px 24px;
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  border-radius: 20px;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.author {
+  margin-bottom: 8px;
+  font: 600 20px/1.5 -0.02em;
+  color: var(--white-text-color);
+}
+
+.opinion {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  max-width: 295px;
+}
+
+.review {
+  max-width: 295px;
+  height: 120px;
+  text-align: left;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  color: var(--white-text-color);
+  opacity: 0.6;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+/* #endregion mobile first */
+
+/* #region scrollbar */
+
+/* .my-swiper-button-prev {
+  cursor: pointer; 
+  border: 1px solid rgba(250, 250, 250, 0.5);
+} */
+
+.review::-webkit-scrollbar {
+  width: 8px;
+}
+
+.review::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.review::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 4px;
+}
+
+.review::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+.review::-moz-scrollbar {
+  width: 8px;
+}
+
+.review::-moz-scrollbar-track {
+  background-color: transparent;
+}
+
+.review::-moz-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 4px;
+}
+
+.review::-moz-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+.review::-ms-scrollbar {
+  width: 8px;
+}
+
+.review::-ms-scrollbar-track {
+  background-color: transparent;
+}
+
+.review::-ms-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 4px;
+}
+
+.review::-ms-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+.my-swiper-button-prev[disabled],
+.my-swiper-button-next[disabled] {
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  color: var(--arrow-color);
+  /* stroke: var(  --arrow-color); */
+}
+
+.btn-style {
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  border-radius: 60px;
+  padding: 18px;
+  width: 68px;
+  height: 68px;
+  background-color: var(--background-color);
+}
+
+#swiper3 .my-swiper-button-prev,
+#swiper3 .my-swiper-button-next {
+  display: flex;
+  width: 52px;
+  height: 52px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 60px;
+  border: 1px solid rgba(250, 250, 250, 0.5);
+  fill: transparent;
+  background-color: transparent;
+  stroke: var(--white-text-color);
+}
+
+/* #endregion scrollbar */
+
+/* #region tablet */
+
+@media screen and (min-width: 768px) {
+  .reviews-section {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .reviews-container {
+    max-width: 768px;
+  }
+
+  .reviews-list {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+  }
+
+  .reviews-list-item {
+    width: 344px;
+  }
+
+  .review {
+    width: 296px;
+  }
+
+  .reviews-arrow-left,
+  .reviews-arrow-right {
+    width: 32px;
+    height: 32px;
+  }
+
+  #swiper3 .my-swiper-button-prev,
+  #swiper3 .my-swiper-button-next {
+    width: 68px;
+    height: 68px;
+  }
+}
+
+/* #endregion tablet */
+
+/* #region desktop */
+
+@media screen and (min-width: 1440px) {
+  .reviews-section {
+    margin: 82px 0;
+  }
+
+  .reviews-container {
+    max-width: 1440px;
+  }
+
+  .reviews-list-item {
+    width: 332px;
+  }
+
+  .review {
+    width: 284px;
+  }
+}
+
+/*  #endregion desktop */
