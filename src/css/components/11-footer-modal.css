@@ -39,6 +39,14 @@
     transform: translate(-50%, -50%);
 }
 
+@media only screen and (min-width: 768px) {
+    .footer-modal-overlay {
+        padding: 64px;
+        width: 492px;
+        height: 246px;
+    }
+}
+
 .footer-modal-close-button {
     background-color: transparent;
     border: none;
@@ -53,6 +61,13 @@
     right: 20px;
 }
 
+@media only screen and (min-width: 768px) {
+    .footer-modal-close-button {
+        width: 24px;
+        height: 24px;
+    }
+}
+
 .footer-modal-close-button-icon {
     fill: var(--white-text-color);
 }
@@ -64,8 +79,15 @@
     letter-spacing: -0.02em;
     text-align: center;
     color: var(--white-text-color);
+    width: 279px;
 
     margin-bottom: 16px;
+}
+
+@media only screen and (min-width: 768px) {
+    .footer-modal-title {
+        width: 364px;
+    }
 }
 
 .footer-modal-description {
