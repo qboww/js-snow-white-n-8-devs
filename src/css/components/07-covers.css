@@ -20,6 +20,7 @@
         top 600px left 1000px,
         top -100px left 400px;
 }
+
 @media screen and (min-width: 768px) {
     .covers-container {
         height: 960px;
@@ -33,6 +34,7 @@
     left: 100px;
 
 }
+
 @media screen and (min-width: 1440px) {
     .covers-list {
         left: 400px;
@@ -45,6 +47,7 @@
     display: flex;
     justify-content: center;
 }
+
 @media screen and (min-width: 768px) and (max-width: 1440px) {
     .covers-item:nth-child(1) {
         display: flex;
@@ -59,6 +62,7 @@
     align-items: center;
     transform: rotate(17deg);
 }
+
 @media screen and (min-width: 768px) {
     .covers-item {
         height: 400px;
@@ -66,14 +70,11 @@
 }
 
 
-.covers-picture{
+.covers-picture {
     flex-shrink: 0;
     margin-right: 40px;
-    animation-name: marqueeLine;
-    animation-duration: 7s;
-    animation-timing-function: cubic-bezier(0, 0.6, 1, 0.3);
-    animation-iteration-count: infinite;
 }
+
 @media screen and (min-width: 768px) {
     .covers-picture {
         margin-right: 70px;
@@ -84,6 +85,7 @@
 .covers-img {
     width: 280px;
 }
+
 @media screen and (min-width: 768px) {
     .covers-img {
         width: 540px;
@@ -99,4 +101,13 @@
     to {
         transform: translateX(-180%);
     }
+}
+
+
+
+.js-animation {
+    animation-name: marqueeLine;
+    animation-duration: 7s;
+    animation-timing-function: cubic-bezier(0, 0.6, 1, 0.3);
+    animation-iteration-count: infinite;
 }
