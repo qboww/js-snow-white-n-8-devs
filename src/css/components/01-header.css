@@ -54,7 +54,7 @@
   .order-btn {
     display: flex;
     align-items: center;
-    background-color: #ed3b44;
+    background-color: var(--accent-color);
     border-radius: 60px;
     padding: 18px 24px;
     width: 163px;
@@ -62,13 +62,13 @@
     border: none;
     font-weight: 500;
     letter-spacing: -0.02em;
-    color: #fafafa;
+    color: var(--white-text-color);
     transition: background-color 250ms linear;
   }
 
   .order-btn:hover,
   .order-btn:focus {
-    background-color: #e0373f;
+    background-color: var(--button-hover-color);
   }
 
   .drop-down-container {
@@ -90,14 +90,14 @@
     letter-spacing: -0.02em;
     text-decoration: underline;
     text-underline-offset: 3px;
-    color: var(--main-text);
+    color: var(--white-text-color);
     cursor: pointer;
     padding: 0px;
     transition: color 250ms linear;
   }
 
   .btn-drop-down:hover {
-    color: #e0373f;
+    color: var(--button-hover-color);
   }
 
   .menu-container {
@@ -113,7 +113,7 @@
     transition: opacity 1s ease;
   }
 
- .list-menu-anchors.visually-hidden {
+  .list-menu-anchors.visually-hidden {
     opacity: 0;
   }
 
@@ -122,11 +122,11 @@
     line-height: 19px;
     letter-spacing: -0.02em;
     transition: color 250ms linear;
-    color: #fafafa;
+    color: var(--white-text-color);
   }
 
   .anchor-link:hover,
   .anchor-link:focus {
-    color: #e0373f;
+    color: var(--button-hover-color);
   }
 }
