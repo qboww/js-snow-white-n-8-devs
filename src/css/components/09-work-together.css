@@ -1,3 +1,5 @@
+@import 'izitoast/dist/css/iziToast.min.css';
+
 :root {
     --white-text-color: #fafafa;
     --arrow-color: #3b3b3b;
@@ -208,6 +210,7 @@ footer .container {
     letter-spacing: -0.02em;
     color: var(--white-text-color);
     background-color: transparent;
+    text-decoration: none;
 
     width: 100%;
     height: 100%;
@@ -217,22 +220,30 @@ footer .container {
     border-bottom: 1px solid var(--button-border-color);
 }
 
-.footer-input:focus {
-    color: var(--white-text-color);
-    border-color: var(--white-text-color);
-}
-
 .footer-input::placeholder {
     color: var(--grey-text-color);
 }
 
-.input-success {
+.footer-input:focus {
+    border-color: var(--white-text-color);
+}
+
+.footer-input:focus.input-error {
+    border-color: var(--not-succes-message-color)
+}
+
+.footer-input:focus.input-success {
     border-color: var(--succes-message-color)
 }
 
 .input-error {
     border-color: var(--not-succes-message-color)
 }
+
+.input-success {
+    border-color: var(--succes-message-color)
+}
+
 
 .footer-label {
     font-weight: 500;
