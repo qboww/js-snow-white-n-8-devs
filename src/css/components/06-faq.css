@@ -1,1 +1,110 @@
+.section-faq {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
 
+.faq-title-section {
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  color: var(--grey-title-color);
+  margin-bottom: 32px;
+}
+
+.faq-item {
+  border-top: 1px solid var(--button-border-color);
+  padding: 20px 0;
+}
+.faq-item:last-child {
+  border-bottom: 1px solid var(--button-border-color);
+  padding: 20px 0;
+}
+.faq-container {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: flex-start; */
+}
+.faq-title {
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  padding-bottom: 16px;
+  color: var(--white-text-color);
+}
+.faq-text {
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  color: var(--grey-text-color);
+
+  overflow: hidden;
+  transition-property: height, visibility;
+  transition-timing-function: ease;
+}
+.faq-btn {
+  display: flex;
+  text-align: center;
+  border: 1px solid var(--button-border-color);
+  border-radius: 100px;
+  padding: 7px;
+  width: 34px;
+  height: 34px;
+  background-color: inherit;
+  cursor: pointer;
+}
+.faq-btn svg {
+  transform: rotate(0deg);
+}
+.faq-btn.active svg {
+  transform: rotate(180deg);
+}
+.faq-icon {
+  width: 20px;
+  height: 20px;
+  stroke: var(--white-text-color);
+}
+@media only screen and (min-width: 1440px) {
+  .faq-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .faq-item {
+    flex-basis: 50%;
+  }
+  .faq-item:nth-child(1) {
+    order: 1;
+    padding-right: 32px;
+    border-right: 1px solid var(--button-border-color);
+  }
+  .faq-item:nth-child(2) {
+    order: 3;
+    padding-right: 32px;
+    border-right: 1px solid var(--button-border-color);
+  }
+  .faq-item:nth-child(3) {
+    order: 5;
+    padding-right: 32px;
+    border-right: 1px solid var(--button-border-color);
+    border-bottom: 1px solid var(--button-border-color);
+  }
+  .faq-item:nth-child(4) {
+    order: 2;
+    padding-left: 32px;
+  }
+  .faq-item:nth-child(5) {
+    order: 4;
+    padding-left: 32px;
+  }
+  .faq-item:nth-child(6) {
+    order: 6;
+    padding-left: 32px;
+    /* border: 1px solid var(--button-border-color); */
+  }
+}
