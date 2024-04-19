@@ -53,7 +53,7 @@ footer .container {
 @media only screen and (min-resolution:192dpi) {
     .footer-bg-image {
         background-image: url(../../img/work_together/bg@2x.png);
-        background-size: contain;
+        background-size: 400px 100%;
     }
 }
 
@@ -74,6 +74,15 @@ footer .container {
     .footer-bg-image {
         background-image: url(../../img/work_together/bg@1x.png);
         left: 1040px;
+        right: 0;
+    }
+}
+
+@media only screen and (min-width: 1920px) {
+    .footer-bg-image {
+        background-image: url(../../img/work_together/bg@1x.png);
+        left: auto;
+        right: 0;
     }
 }
 
