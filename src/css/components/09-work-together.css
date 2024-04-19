@@ -138,11 +138,7 @@ footer .container {
 }
 
 .footer-title-accent {
-<<<<<<<<< Temporary merge branch 1
-    color: var(--color-primary);
-=========
-  color: var(--accent-color);
->>>>>>>>> Temporary merge branch 2
+  color: var(--color-primary);
 }
 
 .footer-title-image {
@@ -271,21 +267,12 @@ footer .container {
 }
 
 .footer-send-button {
-<<<<<<<<< Temporary merge branch 1
-    font-weight: 500;
-    font-size: 16px;
-    letter-spacing: -0.02em;
-    color: var(--white-text-color);
-    background-color: var(--color-primary);
-    cursor: pointer;
-=========
   font-weight: 500;
   font-size: 16px;
   letter-spacing: -0.02em;
   color: var(--white-text-color);
-  background-color: var(--accent-color);
+  background-color: var(--color-primary);
   cursor: pointer;
->>>>>>>>> Temporary merge branch 2
 
   width: 100px;
   height: 100px;
@@ -298,11 +285,7 @@ footer .container {
 }
 
 .footer-send-button:active {
-<<<<<<<<< Temporary merge branch 1
-    background-color: var(--hover-color);
-=========
-  background-color: var(--button-hover-color);
->>>>>>>>> Temporary merge branch 2
+  background-color: var(--hover-color);
 }
 
 @media only screen and (min-width: 768px) {
@@ -318,19 +301,11 @@ footer .container {
     margin-left: 54px;
   }
 
-<<<<<<<<< Temporary merge branch 1
-    .footer-send-button:hover,
-    .footer-send-button:focus {
-        background-color: var(--hover-color);
-        outline: none;
-    }
-=========
   .footer-send-button:hover,
   .footer-send-button:focus {
-    background-color: var(--button-hover-color);
+    background-color: var(--hover-color);
     outline: none;
   }
->>>>>>>>> Temporary merge branch 2
 }
 
 .footer-address {
@@ -351,17 +326,10 @@ footer .container {
   color: var(--white-text-color);
   text-decoration: none;
 
-<<<<<<<<< Temporary merge branch 1
-    outline: 1px solid var(--hover-color);
-    border-radius: 60px;
-    padding: 10px 12px;
-    z-index: 1;
-=========
-  outline: 1px solid var(--button-border-color);
+  outline: 1px solid var(--hover-color);
   border-radius: 60px;
   padding: 10px 12px;
   z-index: 1;
->>>>>>>>> Temporary merge branch 2
 }
 
 .footer-link:active {
