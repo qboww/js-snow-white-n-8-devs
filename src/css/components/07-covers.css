@@ -95,11 +95,11 @@
 
 @keyframes marqueeLine {
     from {
-        transform: translateX(-20%);
+        transform: translateX(-60%);
     }
 
     to {
-        transform: translateX(-180%);
+        transform: translateX(-150%);
     }
 }
 
@@ -108,6 +108,7 @@
 .js-animation {
     animation-name: marqueeLine;
     animation-duration: 7s;
-    animation-timing-function: cubic-bezier(0, 0.6, 1, 0.3);
+    animation-timing-function: linear;
     animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
