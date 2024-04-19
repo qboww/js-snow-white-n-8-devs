@@ -9,7 +9,12 @@
 
 .projects-heading {
   margin-bottom: 32px;
-  color: var(--white-text-color);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: rgba(250, 250, 250, 0.4);
 }
 
 .projects-list {
@@ -53,8 +58,7 @@
   font-weight: 500;
   font-size: 16px;
   letter-spacing: -0.02em;
-  color: var(--background);
-  color: var(--background-color);
+  color: var(--font-color);
   border: 1px solid rgba(28, 29, 32, 0.2);
   border-radius: 60px;
 }
@@ -71,7 +75,7 @@
   color: var(--main-text);
   border-radius: 60px;
   color: var(--white-text-color);
-  background-color: var(--accent-color);
+  background-color: var(--color-primary);
 }
 
 .projects-buttons {
@@ -89,6 +93,11 @@
   width: 52px;
   height: 52px;
   background-color: transparent;
+}
+
+.projects-button:active {
+  transform: translateY(2px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .projects-previous-button {
@@ -119,6 +128,12 @@
 
   .card-description-list {
     margin-bottom: 164px;
+  }
+
+  .card-button {
+    padding: 18px 50px;
+    width: 177px;
+    height: 55px;
   }
 
   .card-text {
@@ -164,6 +179,10 @@
   .card-image-block {
     padding: 120px 37px;
     border-radius: 0 24px 24px 0;
+  }
+
+  .projects-button:hover {
+    cursor: pointer;
   }
 }
 
