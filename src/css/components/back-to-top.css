@@ -42,3 +42,11 @@
     height: 32px;
   }
 }
+
+.progress-bar {
+  height: 5px;
+  background: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
