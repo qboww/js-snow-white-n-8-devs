@@ -162,7 +162,7 @@
 } */
 @media only screen and (min-width: 1440px) {
   .hero {
-    max-width: 1440px;
+    max-width: 100%;
     padding-top: 315px;
     /* padding-bottom: 188px;  */
     /* background-image: url(../../img/hero/bg-desk@1x.png); */
