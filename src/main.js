@@ -19,7 +19,6 @@ async function initializeSwiper() {
 initializeSwiper();
 //#endregion REVIEWS
 
-<<<<<<< Updated upstream
 import * as workTogether from './js/work-together';
 
 //#region MOBILE
@@ -34,9 +33,7 @@ backToTop();
 
 initializeMobile();
 //#endregion backToTop
-=======
 // #region about-me
 import { aboutMeFunction } from './js/about-me.js';
 aboutMeFunction();
 // #endregion about-me
->>>>>>> Stashed changes
