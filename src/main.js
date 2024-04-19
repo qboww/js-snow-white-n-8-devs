@@ -15,3 +15,5 @@ async function initializeSwiper() {
 
 initializeSwiper();
 //#endregion REVIEWS
+
+import * as workTogether from './js/work-together';
