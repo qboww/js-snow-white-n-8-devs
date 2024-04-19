@@ -1,6 +1,9 @@
 import { initalizeCover } from './js/covers';
 initalizeCover();
 
+import { changeTheSubject } from './js/header-change-of-subject';
+changeTheSubject();
+
 //#region HEADER
 import { initializeMenuBehavior } from './js/header-logic';
 initializeMenuBehavior();
@@ -16,45 +19,17 @@ async function initializeSwiper() {
 initializeSwiper();
 //#endregion REVIEWS
 
-// #region about-me
-// import {} from './js/about-me.js';
+import * as workTogether from './js/work-together';
 
-// #endregion about-me
+//#region MOBILE
+import { initializeMobile } from './js/mobile-logic';
 
-import Accordion from 'accordion-js';
-import 'accordion-js/dist/accordion.min.css';
+initializeMobile();
+//#endregion MOBILE
 
-import Swiper from 'swiper/bundle';
-import 'swiper/css/bundle';
+//#region backToTop
+import { backToTop } from './js/back-to-top.js';
+backToTop();
 
-const accordionAboutMe = new Accordion('.about-me-secondlist', {
-  showMultiple: true,
-});
-accordionAboutMe.open(0);
-
-new Swiper('.about-me-thirdpart', {
-  centeredSlides: false,
-  grabCursor: true,
-  loop: true,
-  keyboard: {
-    enabled: true,
-  },
-  mousewheel: true,
-  touch: true,
-  navigation: {
-    nextEl: '.about-me-btn-right',
-  },
-  slidesPerView: 2,
-  spaceBetween: 0,
-  breakpoints: {
-    320: {
-      slidesPerView: 2,
-    },
-    768: {
-      slidesPerView: 3,
-    },
-    1440: {
-      slidesPerView: 6,
-    },
-  },
-});
+initializeMobile();
+//#endregion backToTop

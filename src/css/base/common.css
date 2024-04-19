@@ -9,24 +9,68 @@
 :root {
   --white-text-color: #fafafa;
   --arrow-color: #3b3b3b;
-  --accent-color: #ed3b44;
-  --background-color: #1c1d20;
+
+  --font-color: #1c1d20;
   --cards-background-color: #242527;
-  --middle-gradient-color: #69292d;
+  --color-secondary: #69292d;
+  --color-primary: #ED3B44;
   --button-border-color: #fafafa33;
   --grey-title-color: #fafafa66;
   --grey-text-color: #fafafa99;
   --text-shadow: #fafafa40;
   --icon-accent: #450306;
   --modal-border-color: #fafafa1a;
-  --button-hover-color: #e0373f;
+  --hover-color: #e0373f;
   --succes-message-color: #3cbc81;
   --not-succes-message-color: #e74a3b;
 }
 
+/* Стилі для кожної теми */
+.red-theme {
+  --color-primary: #ED3B44;
+  --color-secondary: #69292D;
+  --hover-color: #e03740e1;
+  --font-color: #1C1D20;
+}
+
+.lime-theme {
+  --color-primary: #C6E327;
+  --color-secondary: #596808;
+  --hover-color: #c7e327dc;
+  --font-color: #1C1D20;
+}
+
+.blue-theme {
+  --color-primary: #0041E8;
+  --color-secondary: #001958;
+  --hover-color: #0042e8be;
+  --font-color: #1C1D20;
+}
+
+.orange-theme {
+  --color-primary: #E6533C;
+  --color-secondary: #9F3626;
+  --hover-color: #e6533cd0;
+  --font-color: #1C1D20;
+}
+
+.green-theme {
+  --color-primary: #2B4441;
+  --color-secondary: #1E3633;
+  --hover-color: #2b4441cc;
+  --font-color: #1C1D20;
+}
+
+.ocher-theme {
+  --color-primary: #FF7F08;
+  --color-secondary: #AC5300;
+  --hover-color: #ff7f08cc;
+  --font-color: #1C1D20;
+}
+
 body {
   font-family: 'Inter Tight', sans-serif;
-  background-color: var(--background-color);
+  background-color: var(--font-color);
 }
 
 .visually-hidden {
