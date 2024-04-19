@@ -11,6 +11,7 @@
   width: 52px;
   height: 52px;
   border: none;
+  z-index: 2;
 }
 
 .hidden {
