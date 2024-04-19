@@ -59,6 +59,8 @@
 }
 
 .hero-title {
+  width: 343px;
+  margin: 0 auto;
   font-weight: 500;
   font-size: 50px;
   line-height: 100%;
@@ -189,6 +191,7 @@
     font-size: 90px;
     width: 632px;
     margin-bottom: 187px;
+    margin: 0 auto;
   }
 
   .hero-links {
