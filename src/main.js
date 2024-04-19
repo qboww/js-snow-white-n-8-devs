@@ -21,3 +21,10 @@ import { initializeMobile } from './js/mobile-logic';
 
 initializeMobile();
 //#endregion MOBILE
+
+//#region backToTop
+import { backToTop } from './js/back-to-top.js';
+backToTop();
+
+initializeMobile();
+//#endregion backToTop
