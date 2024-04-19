@@ -1,5 +1,7 @@
 export function changeTheSubject() {
-  document.querySelector('.header-select').addEventListener('change', changeTheme);
+  let selectEl = document.querySelector('.header-select');
+
+  selectEl.addEventListener('change', changeTheme);
 
   function setTheme(themeName) {
     localStorage.setItem('theme', themeName);
@@ -10,11 +12,13 @@ export function changeTheSubject() {
   function changeTheme(event) {
     const selectedTheme = event.currentTarget.value;
 
-    setTheme(`${selectedTheme}-theme`);
+    setTheme(${selectedTheme}-theme);
   }
 
   (function () {
     const storedTheme = localStorage.getItem('theme');
+
+   selectEl.value = ${storedTheme.replace(new RegExp('-theme'), '')};
 
     if (storedTheme) {
       setTheme(storedTheme);
