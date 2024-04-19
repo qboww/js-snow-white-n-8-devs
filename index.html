@@ -7,9 +7,9 @@
     <title>Portfolio</title>
     
     <script type="module" crossorigin src="/js-snow-white-n-8-devs/commonHelpers.js"></script>
-    <link rel="modulepreload" crossorigin href="/js-snow-white-n-8-devs/assets/vendor-4ea312d0.js">
+    <link rel="modulepreload" crossorigin href="/js-snow-white-n-8-devs/assets/vendor-824b6900.js">
     <link rel="stylesheet" href="/js-snow-white-n-8-devs/assets/vendor-b51df72b.css">
-    <link rel="stylesheet" href="/js-snow-white-n-8-devs/assets/index-678cc941.css">
+    <link rel="stylesheet" href="/js-snow-white-n-8-devs/assets/index-ef7c332e.css">
   </head>
 
   <body>
@@ -688,13 +688,13 @@
         <form class="footer-form">
             <div class="footer-input-container">
                 <input type="email" class="footer-input footer-email-input" name="email" placeholder="clients@gmail.com"
-                    required pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$">
+                    spellcheck="false">
                 <div class="footer-label success-label visually-hidden">Succes!</div>
+                <div class="footer-label error-label visually-hidden">Invalid email, try again!</div>
             </div>
             <div class="footer-input-container">
                 <input type="text" class="footer-input footer-comments-input" name="comments" placeholder="comments"
-                    required>
-                <div class="footer-label error-label visually-hidden">Invalid email, try again!</div>
+                    spellcheck="false">
             </div>
             <button class="footer-send-button" type="submit">Send</button>
         </form>
