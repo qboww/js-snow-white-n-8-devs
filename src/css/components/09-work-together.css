@@ -41,7 +41,7 @@ footer .container {
 }
 
 .footer-bg-image {
-    background-image: url(./img/work_together/bg@1x.png);
+    background-image: url(../../img/work_together/bg@1x.png);
     width: 400px;
     height: 100%;
     position: absolute;
@@ -52,34 +52,34 @@ footer .container {
 
 @media only screen and (min-resolution:192dpi) {
     .footer-bg-image {
-        background-image: url(./img/work_together/bg@2x.png);
+        background-image: url(../../img/work_together/bg@2x.png);
         background-size: contain;
     }
 }
 
 @media only screen and (min-width: 768px) {
     .footer-bg-image {
-        background-image: url(./img/work_together/bg@1x.png);
+        background-image: url(../../img/work_together/bg@1x.png);
         left: 570px;
     }
 }
 
 @media only screen and (min-width: 768px) and (min-resolution:192dpi) {
     .footer-bg-image {
-        background-image: url(./img/work_together/bg@2x.png);
+        background-image: url(../../img/work_together/bg@2x.png);
     }
 }
 
 @media only screen and (min-width: 1440px) {
     .footer-bg-image {
-        background-image: url(./img/work_together/bg@1x.png);
+        background-image: url(../../img/work_together/bg@1x.png);
         left: 1040px;
     }
 }
 
 @media only screen and (min-width: 1440px) and (min-resolution:192dpi) {
     .footer-bg-image {
-        background-image: url(./img/work_together/bg@2x.png);
+        background-image: url(../../img/work_together/bg@2x.png);
     }
 }
 
