@@ -33,11 +33,11 @@
   animation: shake 2s infinite linear;
 }
 .benefits-item:hover {
-  border: solid 1px var(--accent-color);
+  border: solid 1px var(--color-primary);
 }
 @keyframes shake {
   0% {
-    background-color: var(--icon-accent);
+    background-color: var(--hover-color);
     transform: translate(5px, 5px);
   }
   10% {
@@ -90,12 +90,12 @@
 }
 
 .link-order:hover {
-  background-color: var(--accent-color);
+  background-color: var(--color-primary);
 }
 .square-icon {
   height: 48px;
   width: 48px;
-  background-color: var(--accent-color);
+  background-color: var(--color-primary);
   border-radius: 10px;
   display: flex;
   align-items: center;
