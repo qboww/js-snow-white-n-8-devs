@@ -17,3 +17,16 @@ initializeSwiper();
 //#endregion REVIEWS
 
 import * as workTogether from './js/work-together';
+
+//#region MOBILE
+import { initializeMobile } from './js/mobile-logic';
+
+initializeMobile();
+//#endregion MOBILE
+
+//#region backToTop
+import { backToTop } from './js/back-to-top.js';
+backToTop();
+
+initializeMobile();
+//#endregion backToTop
