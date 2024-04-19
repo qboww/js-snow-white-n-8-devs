@@ -16,6 +16,8 @@ async function initializeSwiper() {
 initializeSwiper();
 //#endregion REVIEWS
 
+import * as workTogether from './js/work-together';
+
 //#region MOBILE
 import { initializeMobile } from './js/mobile-logic';
 
