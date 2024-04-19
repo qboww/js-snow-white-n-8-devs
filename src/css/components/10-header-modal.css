@@ -17,7 +17,7 @@
 }
 
 .image-mob-menu {
-  background-image: url(../img/header/mob-background1x.png);
+  background-image: url(../../img/header/mob-background1x.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -25,7 +25,7 @@
 
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .image-mob-menu {
-    background-image: url(../img/header/mob-background2x.png);
+    background-image: url(../../img/header/mob-background2x.png);
   }
 }
 
