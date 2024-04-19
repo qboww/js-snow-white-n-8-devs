@@ -2,7 +2,7 @@
   position: fixed;
   right: 0.5rem;
   bottom: 2rem;
-  background-color: var(--accent-color);
+  background-color: var(--color-primary);
   cursor: pointer;
   opacity: 100%;
   transition: opacity 0.5s;
@@ -11,7 +11,7 @@
   width: 52px;
   height: 52px;
   border: none;
-  z-index: 2;
+  z-index: 888;
 }
 
 .hidden {
@@ -21,15 +21,17 @@
 .back-to-top-icon {
   width: 24px;
   height: 24px;
-
-  /* width: 1em;
-  height: 1rem; */
   color: var(--white-text-color);
 }
 
 .back-to-top:hover {
   opacity: 60%;
-  background-color: var(--button-hover-color);
+  background-color: var(--hover-color);
+}
+
+.back-to-top:active {
+  transform: translateY(2px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 @media only screen and (min-width: 768px) {
