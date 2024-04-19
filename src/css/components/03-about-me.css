@@ -302,13 +302,8 @@ section .ac .ac-trigger::after {
   }
 }
 
-<<<<<<< Updated upstream
-.is-active {
-  background-color: var(--color-primary);
-=======
 section .about-me-skillslist .is-activve {
   background-color: var(--accent-color);
->>>>>>> Stashed changes
   border-radius: 100%;
 
   display: flex;
