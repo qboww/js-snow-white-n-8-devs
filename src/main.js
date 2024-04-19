@@ -15,3 +15,9 @@ async function initializeSwiper() {
 
 initializeSwiper();
 //#endregion REVIEWS
+
+//#region MOBILE
+import { initializeMobile } from './js/mobile-logic';
+
+initializeMobile();
+//#endregion MOBILE
