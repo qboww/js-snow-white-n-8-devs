@@ -95,7 +95,7 @@
 }
 
 .about-me-functional {
-  color: var(--accent-color);
+  color: var(--color-primary);
 }
 .about-me-websites {
   color: var(--grey-title-color);
@@ -287,7 +287,7 @@
 }
 
 .is-active {
-  background-color: var(--accent-color);
+  background-color: var(--color-primary);
   border-radius: 100%;
   width: 130px;
   height: 130px;

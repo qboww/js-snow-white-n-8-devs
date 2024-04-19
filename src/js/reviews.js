@@ -6,33 +6,6 @@ import { renderReviews } from './render-reviews';
 const URL = 'https://portfolio-js.b.goit.study/api/reviews';
 const list = document.querySelector('#review-swiper-list');
 
-const previousButton = document.querySelector('.btn-prev-review-wrapper');
-const previousDivButton = document.querySelector('.btn-prev-review');
-const previousSvgArrow = document.querySelector('.reviews-arrow-left');
-
-const nextButton = document.querySelector('.review-btn-next');
-const nextDivButton = document.querySelector('.btn-next-review');
-const nextSvgArrow = document.querySelector('.reviews-arrow-right');
-
-const updateButtonState = (button, divButton, svgArrow, isEnd) => {
-  if (isEnd) {
-    button.disabled = true;
-    divButton.style.cursor = 'not-allowed';
-    divButton.style.border = '1px solid #3B3B3B';
-    svgArrow.style.stroke = '#3B3B3B';
-  } else {
-    button.disabled = false;
-    divButton.style.cursor = 'pointer';
-    divButton.style.border = '1px solid #FAFAFA';
-    svgArrow.style.stroke = '#FAFAFA';
-  }
-};
-
-const updateButtonsStateReview = swiper => {
-  updateButtonState(previousButton, previousDivButton, previousSvgArrow, swiper.isBeginning);
-  updateButtonState(nextButton, nextDivButton, nextSvgArrow, swiper.isEnd);
-};
-
 const fetchDataAndInitializeSwiper = async () => {
   try {
     const response = await fetch(URL);
@@ -52,9 +25,7 @@ const fetchDataAndInitializeSwiper = async () => {
 
     const swiper3 = new Swiper('#swiper3', {
       direction: 'horizontal',
-      on: {
-        slideChange: updateButtonsStateReview,
-      },
+
       breakpoints: {
         768: {
           slidesPerView: 2,
@@ -72,8 +43,6 @@ const fetchDataAndInitializeSwiper = async () => {
         prevEl: '.btn-prev-review',
       },
     });
-
-    updateButtonsStateReview(swiper3);
   } catch (error) {
     iziToast.error({
       title: 'Error',
