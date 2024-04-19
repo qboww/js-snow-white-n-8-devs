@@ -1,43 +1,52 @@
 <header class="header-section">
-    <div class="header-container container ">
-        <div class="logo-container">
-            <picture>
-                <source media="(min-width:375px)" srcset="
-              ./img/header/image1x.jpg 1x,
-              ./img/header/image2x.jpg 2x
-              " />
-                <img src="./img/header/image1x.jpg" alt="logo" width="80" height="80" class="logo-img" />
-            </picture>
+  <div class="header-container container">
+    <div class="logo-container">
+      <picture>
+        <source
+          media="(min-width:375px)"
+          srcset="./img/header/image1x.jpg 1x, ./img/header/image2x.jpg 2x"
+        />
+        <img src="./img/header/image1x.jpg" alt="logo" width="80" height="80" class="logo-img" />
+      </picture>
 
-            <img src="./img/logo.svg" alt="owner-name" class="logo-text">
-        </div>
-
-        <div class="menu-container container">
-            <div class="drop-down-container">
-                <button class="btn-drop-down" type="button">Menu</button>
-            </div>
-
-            <ul class="list-menu-anchors visually-hidden">
-                <li class="list-anchor-item">
-                    <a class="anchor-link" href="#about-me">About me</a>
-                </li>
-                <li class="list-anchor-item">
-                    <a class="anchor-link" href="#benefits">Benefits</a>
-                </li>
-                <li class="list-anchor-item">
-                    <a class="anchor-link" href="#projects">Projects</a>
-                </li>
-                <li class="list-anchor-item">
-                    <a class="anchor-link" href="#faq">FAQ</a>
-                </li>
-            </ul>
-        </div>
-
-        <button type="button" class="button-menu">
-            <svg width="28" height="28">
-                <use href="./img/icon.svg#icon-menu"></use>
-            </svg>
-        </button>
-        <a class="order-btn" href="#order">Order the project</a>
+      <img src="./img/logo.svg" alt="owner-name" class="logo-text" />
     </div>
+
+    <div class="menu-container container">
+      <div class="drop-down-container">
+        <button class="btn-drop-down" type="button">Menu</button>
+      </div>
+
+      <ul class="list-menu-anchors visually-hidden">
+        <li class="list-anchor-item">
+          <a class="anchor-link" href="#about-me">About me</a>
+        </li>
+        <li class="list-anchor-item">
+          <a class="anchor-link" href="#benefits">Benefits</a>
+        </li>
+        <li class="list-anchor-item">
+          <a class="anchor-link" href="#projects">Projects</a>
+        </li>
+        <li class="list-anchor-item">
+          <a class="anchor-link" href="#faq">FAQ</a>
+        </li>
+      </ul>
+    </div>
+
+    <select class="header-select">
+      <option value="red">red</option>
+      <option value="lime">lime</option>
+      <option value="blue">blue</option>
+      <option value="orange">orange</option>
+      <option value="green">dark green</option>
+      <option value="ocher">ocher</option>
+    </select>
+
+    <button type="button" class="button-menu">
+      <svg width="28" height="28">
+        <use href="./img/icon.svg#icon-menu"></use>
+      </svg>
+    </button>
+    <a class="order-btn" href="#order">Order the project</a>
+  </div>
 </header>

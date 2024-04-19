@@ -138,7 +138,7 @@ footer .container {
 }
 
 .footer-title-accent {
-  color: var(--accent-color);
+  color: var(--color-primary);
 }
 
 .footer-title-image {
@@ -267,12 +267,13 @@ footer .container {
 }
 
 .footer-send-button {
-  font-weight: 500;
-  font-size: 16px;
-  letter-spacing: -0.02em;
-  color: var(--white-text-color);
-  background-color: var(--accent-color);
-  cursor: pointer;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: -0.02em;
+    color: var(--white-text-color);
+    background-color: var(--color-primary);
+    cursor: pointer;
+
 
   width: 100px;
   height: 100px;
@@ -285,7 +286,7 @@ footer .container {
 }
 
 .footer-send-button:active {
-  background-color: var(--button-hover-color);
+    background-color: var(--hover-color);
 }
 
 @media only screen and (min-width: 768px) {
@@ -301,11 +302,11 @@ footer .container {
     margin-left: 54px;
   }
 
-  .footer-send-button:hover,
-  .footer-send-button:focus {
-    background-color: var(--button-hover-color);
-    outline: none;
-  }
+    .footer-send-button:hover,
+    .footer-send-button:focus {
+        background-color: var(--hover-color);
+        outline: none;
+    }
 }
 
 .footer-address {
@@ -326,10 +327,10 @@ footer .container {
   color: var(--white-text-color);
   text-decoration: none;
 
-  outline: 1px solid var(--button-border-color);
-  border-radius: 60px;
-  padding: 10px 12px;
-  z-index: 1;
+    outline: 1px solid var(--hover-color);
+    border-radius: 60px;
+    padding: 10px 12px;
+    z-index: 1;
 }
 
 .footer-link:active {
