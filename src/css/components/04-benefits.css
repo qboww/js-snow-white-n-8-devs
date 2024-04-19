@@ -86,6 +86,7 @@
   color: var(--white-text-color);
   background-color: transparent;
   text-align: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link-order:hover {
