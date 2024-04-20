@@ -8,27 +8,62 @@ const elms = {
   errorLabel: document.querySelector('.error-label'),
   comments: document.querySelector('.footer-comments-input'),
   btn: document.querySelector('.footer-send-button'),
+  modalBackdrop: document.querySelector('.footer-modal-backdrop'),
+  modalOverlay: document.querySelector('.footer-modal-overlay'),
 };
 
 const labels = {
+  addError() {
+    elms.successLabel.classList.add('visually-hidden');
+    elms.errorLabel.classList.remove('visually-hidden');
+    elms.email.classList.add('input-error');
+    elms.email.classList.remove('input-success');
+    elms.errorLabel.classList.add('is-open');
+    elms.successLabel.classList.remove('is-open');
+  },
+
   addSuccess() {
     elms.errorLabel.classList.add('visually-hidden');
     elms.successLabel.classList.remove('visually-hidden');
     elms.email.classList.remove('input-error');
     elms.email.classList.add('input-success');
+    elms.successLabel.classList.add('is-open');
+    elms.errorLabel.classList.remove('is-open');
   },
 
-  addError() {
-    elms.errorLabel.classList.remove('visually-hidden');
-    elms.successLabel.classList.add('visually-hidden');
-    elms.email.classList.add('input-error');
-    elms.email.classList.remove('input-success');
-  },
   removeBoth() {
-    elms.successLabel.classList.add('visually-hidden');
-    elms.errorLabel.classList.add('visually-hidden');
     elms.email.classList.remove('input-success');
     elms.email.classList.remove('input-error');
+    elms.successLabel.classList.add('is-open');
+    elms.errorLabel.classList.remove('is-open');
+
+    setTimeout(() => {
+      elms.successLabel.classList.add('visually-hidden');
+      elms.errorLabel.classList.add('visually-hidden');
+    }, 250);
+  },
+};
+
+const modals = {
+  isClosed() {
+    elms.modalOverlay.classList.remove('is-open');
+    elms.modalBackdrop.classList.remove('is-open');
+
+    setTimeout(() => {
+      elms.modalBackdrop.classList.add('visually-hidden');
+      elms.modalOverlay.classList.add('visually-hidden');
+    }, 500);
+
+    elms.modalOverlay.children.close_button.removeEventListener('click', modals.isClosed);
+  },
+
+  isOpen() {
+    elms.modalBackdrop.classList.remove('visually-hidden');
+    elms.modalOverlay.classList.remove('visually-hidden');
+    elms.modalBackdrop.classList.add('is-open');
+    elms.modalOverlay.classList.add('is-open');
+
+    elms.modalOverlay.children.close_button.addEventListener('click', modals.isClosed);
   },
 };
 
@@ -79,9 +114,11 @@ const onFormSubmit = async event => {
   try {
     event.preventDefault();
 
+    const formElm = event.currentTarget;
+
     if (
-      event.currentTarget.elements.email.value.trim() === '' ||
-      event.currentTarget.elements.comments.value.trim() === ''
+      formElm.elements.email.value.trim() === '' ||
+      formElm.elements.comments.value.trim() === ''
     ) {
       messages.showError();
 
@@ -89,11 +126,20 @@ const onFormSubmit = async event => {
     }
 
     const userData = {
-      email: event.currentTarget.elements.email.value.trim(),
-      comment: event.currentTarget.elements.comments.value.trim(),
+      email: formElm.elements.email.value.trim(),
+      comment: formElm.elements.comments.value.trim(),
     };
 
     const response = await postUserData(userData);
+
+    elms.modalOverlay.children.title.textContent = response.data.title;
+    elms.modalOverlay.children.message.textContent = response.data.message;
+
+    modals.isOpen();
+
+    labels.removeBoth();
+
+    formElm.reset();
   } catch (error) {
     console.log(error);
 
