@@ -34,6 +34,32 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
+.progress-bar {
+  height: 5px;
+  background: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+@media only screen and (min-width: 320px) {
+  .back-to-top {
+    width: 40.8px;
+    height: 40.8px;
+    padding: 10.8px;
+  }
+
+  .back-to-top-icon {
+    width: 19.2px;
+    height: 19.2px;
+  }
+
+  .progress-bar {
+    height: 3px;
+  }
+}
+
 @media only screen and (min-width: 768px) {
   .back-to-top {
     width: 68px;
@@ -44,13 +70,4 @@
     width: 32px;
     height: 32px;
   }
-}
-
-.progress-bar {
-  height: 5px;
-  background: white;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1;
 }
