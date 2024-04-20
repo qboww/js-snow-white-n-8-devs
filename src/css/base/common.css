@@ -8,18 +8,15 @@
 :root {
   --white-text-color: #fafafa;
   --arrow-color: #3b3b3b;
-
   --font-color: #1c1d20;
   --cards-background-color: #242527;
   --color-secondary: #69292d;
-  --color-primary: #ed3b44;
   --button-border-color: #fafafa33;
   --grey-title-color: #fafafa66;
   --grey-text-color: #fafafa99;
   --text-shadow: #fafafa40;
   --icon-accent: #450306;
   --modal-border-color: #fafafa1a;
-  --hover-color: #e0373f;
   --succes-message-color: #3cbc81;
   --not-succes-message-color: #e74a3b;
 }
@@ -88,10 +85,6 @@
 body {
   font-family: 'Inter Tight', sans-serif;
   background-color: var(--font-color);
-}
-
-body:not(.theme-loaded) {
-  display: none;
 }
 
 .visually-hidden {

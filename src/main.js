@@ -1,3 +1,6 @@
+import { changeTheSubject } from './js/header-change-of-subject';
+changeTheSubject();
+
 //#region MOBILE
 import { initializeMobile } from './js/mobile-logic';
 initializeMobile();
@@ -5,9 +8,6 @@ initializeMobile();
 
 import { initalizeCover } from './js/covers';
 initalizeCover();
-
-import { changeTheSubject } from './js/header-change-of-subject';
-changeTheSubject();
 
 //#region HEADER
 import { initializeMenuBehavior } from './js/header-logic';
