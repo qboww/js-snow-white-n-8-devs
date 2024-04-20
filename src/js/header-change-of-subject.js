@@ -11,16 +11,34 @@ export function changeTheSubject() {
   function changeTheme(event) {
     const selectedTheme = event.currentTarget.value;
     setTheme(`${selectedTheme}-theme`);
+
+    Array.from(selectEl.options).forEach(option => {
+      if (option.value === selectedTheme) {
+        option.selected = true;
+      } else {
+        option.selected = false;
+      }
+    });
   }
 
-  (function () {
+  function applyStoredTheme() {
     const storedTheme = localStorage.getItem('theme');
-    selectEl.value = `${storedTheme.replace(new RegExp('-theme'), '')}`;
-
     if (storedTheme) {
       setTheme(storedTheme);
+
+      Array.from(selectEl.options).forEach(option => {
+        if (option.value === storedTheme.replace('-theme', '')) {
+          option.selected = true;
+        } else {
+          option.selected = false;
+        }
+      });
     } else {
       setTheme('red-theme');
     }
-  })();
+  }
+
+  applyStoredTheme();
+
+  document.body.classList.add('theme-loaded');
 }

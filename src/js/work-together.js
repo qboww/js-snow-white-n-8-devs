@@ -1,4 +1,5 @@
 import iziToast from 'izitoast';
+import axios from 'axios';
 
 const elms = {
   form: document.querySelector('.footer-form'),
@@ -7,34 +8,79 @@ const elms = {
   errorLabel: document.querySelector('.error-label'),
   comments: document.querySelector('.footer-comments-input'),
   btn: document.querySelector('.footer-send-button'),
+  modalBackdrop: document.querySelector('.footer-modal-backdrop'),
+  modalOverlay: document.querySelector('.footer-modal-overlay'),
 };
 
 const labels = {
+  addError() {
+    elms.successLabel.classList.add('visually-hidden');
+    elms.errorLabel.classList.remove('visually-hidden');
+    elms.email.classList.add('input-error');
+    elms.email.classList.remove('input-success');
+    elms.errorLabel.classList.add('is-open');
+    elms.successLabel.classList.remove('is-open');
+  },
+
   addSuccess() {
     elms.errorLabel.classList.add('visually-hidden');
     elms.successLabel.classList.remove('visually-hidden');
     elms.email.classList.remove('input-error');
     elms.email.classList.add('input-success');
+    elms.successLabel.classList.add('is-open');
+    elms.errorLabel.classList.remove('is-open');
   },
 
-  addError() {
-    elms.errorLabel.classList.remove('visually-hidden');
-    elms.successLabel.classList.add('visually-hidden');
-    elms.email.classList.add('input-error');
-    elms.email.classList.remove('input-success');
-  },
   removeBoth() {
-    elms.successLabel.classList.add('visually-hidden');
-    elms.errorLabel.classList.add('visually-hidden');
     elms.email.classList.remove('input-success');
     elms.email.classList.remove('input-error');
+    elms.successLabel.classList.add('is-open');
+    elms.errorLabel.classList.remove('is-open');
+
+    setTimeout(() => {
+      elms.successLabel.classList.add('visually-hidden');
+      elms.errorLabel.classList.add('visually-hidden');
+    }, 250);
+  },
+};
+
+const modals = {
+  isClosed() {
+    elms.modalOverlay.classList.remove('is-open');
+    elms.modalBackdrop.classList.remove('is-open');
+
+    setTimeout(() => {
+      elms.modalBackdrop.classList.add('visually-hidden');
+      elms.modalOverlay.classList.add('visually-hidden');
+    }, 500);
+
+    elms.modalOverlay.children.close_button.removeEventListener('click', modals.isClosed);
+  },
+
+  isOpen() {
+    elms.modalBackdrop.classList.remove('visually-hidden');
+    elms.modalOverlay.classList.remove('visually-hidden');
+    elms.modalBackdrop.classList.add('is-open');
+    elms.modalOverlay.classList.add('is-open');
+
+    elms.modalOverlay.children.close_button.addEventListener('click', modals.isClosed);
   },
 };
 
 const messages = {
-  error() {
+  showError() {
     iziToast.error({
       message: 'Please fill out both fields before sending!',
+      messageColor: '#fafafa',
+      backgroundColor: '#e74a3b',
+      theme: 'dark',
+      closeOnClick: true,
+      timeout: 3000,
+    });
+  },
+  showBadRequest() {
+    iziToast.error({
+      message: 'Something went wrong. Please try again!',
       messageColor: '#fafafa',
       backgroundColor: '#e74a3b',
       theme: 'dark',
@@ -50,34 +96,66 @@ const isValidEmail = email => {
   return pattern.test(email.trim());
 };
 
+const postUserData = userData => {
+  const BASE_URL = 'https://portfolio-js.b.goit.study/api';
+  const ENDPOINT = '/requests';
+  const body = userData;
+
+  return axios.post(`${BASE_URL}${ENDPOINT}`, body);
+};
+
 const onButtonClick = () => {
   if (!isValidEmail(elms.form.elements.email.value)) {
     labels.addError();
   }
 };
 
-const onFormSubmit = event => {
-  event.preventDefault();
+const onFormSubmit = async event => {
+  try {
+    event.preventDefault();
 
-  if (
-    event.currentTarget.elements.email.value.trim() === '' ||
-    event.currentTarget.elements.comments.value.trim() === ''
-  ) {
-    messages.error();
+    const formElm = event.currentTarget;
 
-    return;
+    if (
+      formElm.elements.email.value.trim() === '' ||
+      formElm.elements.comments.value.trim() === ''
+    ) {
+      messages.showError();
+
+      return;
+    }
+
+    const userData = {
+      email: formElm.elements.email.value.trim(),
+      comment: formElm.elements.comments.value.trim(),
+    };
+
+    const response = await postUserData(userData);
+
+    elms.modalOverlay.children.title.textContent = response.data.title;
+    elms.modalOverlay.children.message.textContent = response.data.message;
+
+    modals.isOpen();
+
+    labels.removeBoth();
+
+    formElm.reset();
+  } catch (error) {
+    console.log(error);
+
+    messages.showBadRequest();
   }
 };
 
 const onEmailInput = event => {
-  if (event.target.value.length > 38 && innerWidth <= 375) {
-    event.target.value = event.target.value.slice(0, 36) + '...';
-  }
-  if (event.target.value.length > 27 && innerWidth > 375 && innerWidth < 1440) {
+  if (event.target.value.length > 27 && innerWidth <= 375) {
     event.target.value = event.target.value.slice(0, 25) + '...';
   }
-  if (event.target.value.length > 43 && innerWidth >= 1440) {
-    event.target.value = event.target.value.slice(0, 41) + '...';
+  if (event.target.value.length > 19 && innerWidth > 375 && innerWidth < 1440) {
+    event.target.value = event.target.value.slice(0, 17) + '...';
+  }
+  if (event.target.value.length > 31 && innerWidth >= 1440) {
+    event.target.value = event.target.value.slice(0, 29) + '...';
   }
   if (
     !elms.errorLabel.classList.contains('visually-hidden') ||
@@ -96,14 +174,14 @@ const onEmailInput = event => {
 };
 
 const onCommentsInput = event => {
-  if (event.target.value.length > 38 && innerWidth <= 375) {
-    event.target.value = event.target.value.slice(0, 36) + '...';
-  }
-  if (event.target.value.length > 27 && innerWidth > 375 && innerWidth < 1440) {
+  if (event.target.value.length > 27 && innerWidth <= 375) {
     event.target.value = event.target.value.slice(0, 25) + '...';
   }
-  if (event.target.value.length > 43 && innerWidth >= 1440) {
-    event.target.value = event.target.value.slice(0, 41) + '...';
+  if (event.target.value.length > 19 && innerWidth > 375 && innerWidth < 1440) {
+    event.target.value = event.target.value.slice(0, 17) + '...';
+  }
+  if (event.target.value.length > 31 && innerWidth >= 1440) {
+    event.target.value = event.target.value.slice(0, 29) + '...';
   }
 };
 

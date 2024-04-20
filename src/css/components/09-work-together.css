@@ -49,7 +49,7 @@ footer .container {
   height: 100%;
   position: absolute;
   top: 0;
-  right: 0px;
+  left: 77%;
   z-index: 1;
 }
 
@@ -60,18 +60,14 @@ footer .container {
   }
 }
 
+
 @media only screen and (min-width: 768px) {
   .footer-bg-image {
     background-image: url(../../img/work_together/bg@1x.png);
-    right: -198px;
+    left: 74%;
   }
 }
-@media only screen and (max-width: 767px) {
-  .footer-bg-image {
-    background-image: url(../../img/work_together/bg@1x.png);
-    right: -355px;
-  }
-}
+
 
 @media only screen and (min-width: 768px) and (min-resolution: 192dpi) {
   .footer-bg-image {
@@ -82,21 +78,22 @@ footer .container {
 @media only screen and (min-width: 1440px) {
   .footer-bg-image {
     background-image: url(../../img/work_together/bg@1x.png);
-    right: 0;
+    left: 72%;
   }
 }
 
-@media only screen and (min-width: 1920px) {
-  .footer-bg-image {
-    background-image: url(../../img/work_together/bg@1x.png);
-
-    right: 0;
-  }
-}
 
 @media only screen and (min-width: 1440px) and (min-resolution: 192dpi) {
   .footer-bg-image {
     background-image: url(../../img/work_together/bg@2x.png);
+  }
+}
+
+@media only screen and (min-width: 1441px) {
+  .footer-bg-image {
+    background-image: url(../../img/work_together/bg@1x.png);
+    right: 0;
+    left: auto;
   }
 }
 
@@ -219,10 +216,12 @@ footer .container {
 
   width: 100%;
   height: 100%;
+  padding: 0;
   padding-bottom: 20px;
   border: none;
   outline: none;
   border-bottom: 1px solid var(--button-border-color);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-input::placeholder {
@@ -255,7 +254,13 @@ footer .container {
   line-height: 1.29;
   letter-spacing: -0.02em;
 
+  opacity: 0;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   margin-top: 4px;
+}
+
+.is-open {
+  opacity: 1;
 }
 
 .success-label {
@@ -280,6 +285,7 @@ footer .container {
   border-radius: 100%;
   border: none;
   z-index: 1;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   margin-top: 16px;
 }
@@ -326,10 +332,11 @@ footer .container {
   color: var(--white-text-color);
   text-decoration: none;
 
-  outline: 1px solid var(--hover-color);
+  outline: 1px solid var(--button-border-color);
   border-radius: 60px;
   padding: 10px 12px;
   z-index: 1;
+  transition: outline-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-link:active {
@@ -344,6 +351,7 @@ footer .container {
 }
 
 @media only screen and (min-width: 1440px) {
+
   .footer-link:hover,
   .footer-link:focus {
     outline-color: var(--white-text-color);

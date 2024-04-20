@@ -119,7 +119,6 @@
   .hero {
     min-width: 768px;
     padding-top: 300px;
-    /* padding-bottom: 112px; */
     /* background-image: url(../../img/hero/bg-tab@1x.png); */
 
     /* background-image: linear-gradient(90deg, rgb(0 0 0 / 36%) 0%, rgb(0 0 0 / 33%) 17%, rgb(0 0 0 / 58%) 100%), 
@@ -191,7 +190,6 @@
     font-size: 90px;
     width: 632px;
     margin-bottom: 187px;
-    margin: 0 auto;
   }
 
   .hero-links {
@@ -218,7 +216,7 @@
   .hero {
     max-width: 100%;
     padding-top: 315px;
-    /* padding-bottom: 188px;  */
+    /* padding-bottom: 188px; */
     /* background-image: url(../../img/hero/bg-desk@1x.png); */
 
     /* background-image: linear-gradient(90deg,
@@ -231,7 +229,33 @@
       5%,
       100% 100%; */
 
-    background-image: linear-gradient(
+    background-image: 
+
+      linear-gradient(
+        90deg,
+        rgb(0 0 0 / 20%) 0%,
+        rgb(0 0 0 / 20%) 16.67%,
+        rgb(152 152 152 / 20%) 100%
+      ),
+      linear-gradient(
+        90deg,
+        rgb(0 0 0 / 20%) 0%,
+        rgb(0 0 0 / 20%) 16.67%,
+        rgb(152 152 152 / 20%) 100%
+      ),
+      linear-gradient(
+        90deg,
+        rgb(0 0 0 / 20%) 0%,
+        rgb(0 0 0 / 20%) 16.67%,
+        rgb(152 152 152 / 20%) 100%
+      ),
+      linear-gradient(
+        90deg,
+        rgb(0 0 0 / 20%) 0%,
+        rgb(0 0 0 / 20%) 16.67%,
+        rgb(152 152 152 / 20%) 100%
+      ),
+      linear-gradient(
         90deg,
         rgb(0 0 0 / 20%) 0%,
         rgb(0 0 0 / 20%) 16.67%,
@@ -243,13 +267,18 @@
         rgb(0 0 0 / 20%) 16.67%,
         rgb(140 140 140 / 20%) 100%
       ),
+      
       linear-gradient(
         90deg,
         rgb(0 0 0 / 20%) 0%,
         rgb(0 0 0 / 20%) 16.67%,
         rgb(105 105 105 / 20%) 100%
       ),
-      linear-gradient(90deg, rgb(0 0 0 / 20%) 0%, rgb(0 0 0 / 20%) 16.67%, rgb(99 99 99 / 20%) 100%),
+      linear-gradient(
+        90deg, rgb(0 0 0 / 20%) 0%, 
+        rgb(0 0 0 / 20%) 16.67%, 
+        rgb(99 99 99 / 20%) 100%
+      ),
       linear-gradient(
         90deg,
         rgb(0 0 0 / 20%) 0%,
@@ -286,8 +315,16 @@
         rgb(0 0 0 / 20%) 16.67%,
         rgb(140 136 136 / 20%) 100%
       ),
-      linear-gradient(90deg, rgb(0 0 0 / 20%) 0%, rgb(0 0 0 / 20%) 16.67%, rgb(92 91 91 / 10%) 100%),
-      linear-gradient(to right, var(--color-primary), var(--color-secondary), var(--font-color) 50%);
+      linear-gradient(
+        90deg, rgb(0 0 0 / 20%) 0%, 
+        rgb(0 0 0 / 20%) 16.67%, 
+        rgb(92 91 91 / 10%) 100%
+      ),
+      linear-gradient(
+        to right, 
+        var(--color-primary), 
+        var(--color-secondary), 
+        var(--font-color) 50%);
 
     background-size:
       60px,
@@ -301,8 +338,12 @@
       60px,
       60px,
       60px,
+      60px,
+      60px,
+      60px,
+      60px,
       100% 100%;
-    background-position: 0px, 66px, 132px, 198px, 264px, 330px, 396px, 462px, 528px, 594px, 660px;
+    background-position: 0px, 66px, 132px, 198px, 264px, 330px, 396px, 462px, 528px, 594px, 660px, 720px, 780px, 840px, 900px;
   }
 
   .hero-title {
