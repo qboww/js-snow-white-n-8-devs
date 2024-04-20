@@ -14,7 +14,7 @@ export function aboutMeFunction() {
   accordionAboutMe.open(0);
 
   new Swiper('.about-me-swiper-container', {
-    centeredSlides: true,
+    centeredSlides: false,
     grabCursor: true,
     loop: true,
     keyboard: {

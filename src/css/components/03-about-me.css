@@ -353,7 +353,7 @@ section .about-me-section .about-me-skillslist {
 }
 .about-me-section .about-me-btn-right:active {
   transform: translateY(2px);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); */
 }
 
 @media (min-width: 768px) {
