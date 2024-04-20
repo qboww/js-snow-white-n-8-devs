@@ -30,3 +30,14 @@ import * as workTogether from './js/work-together';
 import { backToTop } from './js/back-to-top.js';
 backToTop();
 //#endregion backToTop
+
+// Add cursor effects
+import { magicMouse } from 'magicmouse.js';
+magicMouse({
+  outerStyle: 'circle',
+  hoverEffect: 'circle-move',
+  hoverItemMove: false,
+  defaultCursor: false,
+  outerWidth: 41,
+  outerHeight: 41,
+});

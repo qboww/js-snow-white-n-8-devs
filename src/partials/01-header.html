@@ -2,10 +2,7 @@
   <div class="header-container container">
     <div class="logo-container">
       <picture>
-        <source
-          media="(min-width:375px)"
-          srcset="./img/header/image1x.jpg 1x, ./img/header/image2x.jpg 2x"
-        />
+        <source media="(min-width:375px)" srcset="./img/header/image1x.jpg 1x, ./img/header/image2x.jpg 2x" />
         <img src="./img/header/image1x.jpg" alt="logo" width="80" height="80" class="logo-img" />
       </picture>
 
@@ -13,7 +10,7 @@
     </div>
 
     <div class="menu-container container">
-      <div class="drop-down-container">
+      <div class="drop-down-container magic-hover magic-hover__square">
         <button class="btn-drop-down" type="button">Menu</button>
       </div>
 
@@ -33,7 +30,7 @@
       </ul>
     </div>
 
-    <select class="header-select">
+    <select class="header-select magic-hover magic-hover__square">
       <option value="red">red</option>
       <option value="lime">lime</option>
       <option value="blue">blue</option>
@@ -47,6 +44,6 @@
         <use href="./img/icon.svg#icon-menu"></use>
       </svg>
     </button>
-    <a class="order-btn" href="#order">Order the project</a>
+    <a class="order-btn magic-hover magic-hover__square" href="#order">Order the project</a>
   </div>
 </header>
