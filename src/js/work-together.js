@@ -70,14 +70,14 @@ const onFormSubmit = event => {
 };
 
 const onEmailInput = event => {
-  if (event.target.value.length > 38 && innerWidth <= 375) {
-    event.target.value = event.target.value.slice(0, 36) + '...';
-  }
-  if (event.target.value.length > 27 && innerWidth > 375 && innerWidth < 1440) {
+  if (event.target.value.length > 27 && innerWidth <= 375) {
     event.target.value = event.target.value.slice(0, 25) + '...';
   }
-  if (event.target.value.length > 43 && innerWidth >= 1440) {
-    event.target.value = event.target.value.slice(0, 41) + '...';
+  if (event.target.value.length > 19 && innerWidth > 375 && innerWidth < 1440) {
+    event.target.value = event.target.value.slice(0, 17) + '...';
+  }
+  if (event.target.value.length > 31 && innerWidth >= 1440) {
+    event.target.value = event.target.value.slice(0, 29) + '...';
   }
   if (
     !elms.errorLabel.classList.contains('visually-hidden') ||
@@ -96,14 +96,14 @@ const onEmailInput = event => {
 };
 
 const onCommentsInput = event => {
-  if (event.target.value.length > 38 && innerWidth <= 375) {
-    event.target.value = event.target.value.slice(0, 36) + '...';
-  }
-  if (event.target.value.length > 27 && innerWidth > 375 && innerWidth < 1440) {
+  if (event.target.value.length > 27 && innerWidth <= 375) {
     event.target.value = event.target.value.slice(0, 25) + '...';
   }
-  if (event.target.value.length > 43 && innerWidth >= 1440) {
-    event.target.value = event.target.value.slice(0, 41) + '...';
+  if (event.target.value.length > 19 && innerWidth > 375 && innerWidth < 1440) {
+    event.target.value = event.target.value.slice(0, 17) + '...';
+  }
+  if (event.target.value.length > 31 && innerWidth >= 1440) {
+    event.target.value = event.target.value.slice(0, 29) + '...';
   }
 };
 
