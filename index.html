@@ -9,7 +9,7 @@
     <script type="module" crossorigin src="/js-snow-white-n-8-devs/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/js-snow-white-n-8-devs/assets/vendor-6adec560.js">
     <link rel="stylesheet" href="/js-snow-white-n-8-devs/assets/vendor-b51df72b.css">
-    <link rel="stylesheet" href="/js-snow-white-n-8-devs/assets/index-cbd5a68a.css">
+    <link rel="stylesheet" href="/js-snow-white-n-8-devs/assets/index-87fbee46.css">
   </head>
 
   <body>
@@ -804,13 +804,13 @@
         <form class="footer-form">
             <div class="footer-input-container">
                 <input type="text" class="footer-input footer-email-input" name="email" placeholder="clients@gmail.com"
-                    spellcheck="false">
+                    spellcheck="false" autocomplete="off">
                 <div class="footer-label success-label visually-hidden">Succes!</div>
                 <div class="footer-label error-label visually-hidden">Invalid email, try again!</div>
             </div>
             <div class="footer-input-container">
                 <input type="text" class="footer-input footer-comments-input" name="comments" placeholder="comments"
-                    spellcheck="false">
+                    spellcheck="false" autocomplete="off">
             </div>
             <button class="footer-send-button" type="submit">Send</button>
         </form>
@@ -852,15 +852,14 @@
 
 </section>
     <div class="footer-modal-backdrop visually-hidden">
-    <div class="footer-modal-overlay">
-        <button class="footer-modal-close-button" type="button">
+    <div class="footer-modal-overlay visually-hidden">
+        <button class="footer-modal-close-button" type="button" name="close_button">
             <svg class="footer-modal-close-button-icon" height="22" width="22">
                 <use href="/js-snow-white-n-8-devs/assets/icon-78274806.svg#icon-close"></use>
             </svg>
         </button>
-        <h3 class="footer-modal-title">Thank you for your interest in cooperation!</h3>
-        <p class="footer-modal-description">The manager will contact you shortly to discuss further details and
-            opportunities for cooperation. Please stay in touch.</p>
+        <h3 class="footer-modal-title" name="title"></h3>
+        <p class="footer-modal-description" name="message"></p>
     </div>
 </div>
 
