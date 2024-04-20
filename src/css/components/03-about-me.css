@@ -23,6 +23,7 @@
 } */
 
 .about-me-firstpart {
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -44,7 +45,7 @@
 .about-me-divtext {
   padding: 32px 32px 272px 32px;
   border-radius: 24px;
-  width: 343px;
+  width: 100%;
   height: 500px;
   background-color: var(--cards-background-color);
 }
@@ -80,7 +81,7 @@
   color: var(--color-primary);
 }
 .about-me-websites {
-  color: var(--grey-title-color);
+  color: var(--grey-text-color);
 }
 .about-me-thumb {
   border-radius: 24px;
@@ -109,20 +110,21 @@
   object-fit: cover;
 }
 .about-me-secondpart {
+  max-width: 100%;
   padding-top: 16px;
-  padding-bottom: 16px;
+  padding-bottom: 32px;
 }
 
 @media (min-width: 768px) {
   .about-me-secondpart {
     padding-top: 32px;
-    padding-bottom: 32px;
+    padding-bottom: 64px;
   }
 }
 @media (min-width: 1440px) {
   .about-me-secondpart {
     padding-top: 48px;
-    padding-bottom: 48px;
+    padding-bottom: 96px;
   }
 }
 .about-me-secondlist {
@@ -141,9 +143,13 @@
   width: 100%;
   height: 36px;
   justify-content: space-between;
-  margin-bottom: 32px;
+  margin: 0px;
 }
-
+@media (min-width: 1440px) {
+  .about-me-header-n-btn {
+    margin-bottom: 32px;
+  }
+}
 .about-me-header-third {
   font-family: 'Inter Tight', sans-serif;
   font-weight: 600;
@@ -181,6 +187,19 @@ section .ac .ac-trigger::after {
     height: 40px;
   }
 }
+@media (max-width: 767px) {
+  .about-panel {
+    padding-top: 12px;
+    padding-bottom: 20px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1439px) {
+  .about-panel {
+    padding-top: 8px;
+    padding-bottom: 32px;
+  }
+}
 .about-me-secondpart-text {
   font-family: 'Inter Tight', sans-serif;
   font-weight: 500;
@@ -201,6 +220,16 @@ section .ac .ac-trigger::after {
   }
 }
 
+.about-text-about-me {
+  margin-bottom: 32px;
+}
+.about-text-role {
+  margin-bottom: 10px;
+}
+
+.about-text-education {
+  margin-bottom: 10px;
+}
 .about-me-secondlist-item .ac-trigger[aria-expanded='false'] .about-me-arrow-up {
   background-color: var(--background-color);
   transform: rotate(180deg);
@@ -217,34 +246,34 @@ section .ac .ac-trigger::after {
   border-right: none;
   border-left: none;
   border-bottom: solid 1px rgba(250, 250, 250, 0.4);
+  margin: 0px;
 }
 
 .about-me-section .about-me-thirdpart {
-  box-sizing: content-box;
-  padding-top: 16px;
+  padding: 0px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 343px;
+  max-width: 100%;
   height: 130px;
   overflow: visible;
   display: flex;
-  justify-content: space-between;
+  gap: 55px;
 }
 
 @media (min-width: 768px) {
   .about-me-section .about-me-thirdpart {
-    padding-top: 32px;
     width: 704px;
     height: 200px;
+    gap: 64px;
   }
 }
 @media (min-width: 1440px) {
   .about-me-section .about-me-thirdpart {
-    padding-top: 48px;
     width: 1312px;
     height: 200px;
+    gap: 72px;
   }
 }
 .about-me-section .about-me-swiper-container {
@@ -334,7 +363,6 @@ section .about-me-section .about-me-skillslist {
 }
 .about-me-section .about-me-btn-right:active {
   transform: translateY(2px);
-  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); */
 }
 
 @media (min-width: 768px) {
