@@ -254,7 +254,7 @@ section .ac .ac-trigger::after {
   justify-content: space-between;
 }
 
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
   .about-me-section .about-me-thirdpart {
     padding-top: 32px;
     width: 704px;
@@ -294,14 +294,12 @@ section .about-me-section .about-me-skillslist {
   height: 130px;
   overflow: hidden;
   gap: 0px;
-  transform: translate3d(-200px, 0px, 0px) !important;
 }
 @media (min-width: 768px) {
   .about-me-section .about-me-skillslist {
     width: 600px;
     height: 200px;
     overflow: hidden;
-    transform: translate3d(-200px, 0px, 0px) !important;
   }
 }
 @media (min-width: 1440px) {
@@ -309,10 +307,8 @@ section .about-me-section .about-me-skillslist {
     width: 1200px;
     height: 200px;
     overflow: hidden;
-    transform: translate3d(-200px, 0px, 0px) !important;
   }
 }
-
 .about-me-section .about-me-skillslist-item {
   border-radius: 50%;
   background-color: var(--background-color);
