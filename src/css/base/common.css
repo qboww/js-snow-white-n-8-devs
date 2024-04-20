@@ -28,12 +28,12 @@
 /* Стилі для кожної теми */
 .red-theme {
   --color-primary: #ed3b44;
-  --color-secondary: rgb(105, 41, 45);
+  --color-secondary: #69292d;
   --hover-color: #e03740e1;
   --font-color: #1c1d20;
-  --rgb1-color: 105;
-  --rgb2-color: 41;
-  --rgb3-color: 45;
+  --rgb1-color: 237;
+  --rgb2-color: 59;
+  --rgb3-color: 68;
 }
 
 .lime-theme {
