@@ -1,22 +1,3 @@
-:root {
-  --white-text-color: #fafafa;
-  --arrow-color: #3b3b3b;
-  --accent-color: #ed3b44;
-  --background-color: #1c1d20;
-  --cards-background-color: #242527;
-  --middle-gradient-color: #69292d;
-  --button-border-color: #fafafa33;
-  --grey-title-color: #fafafa66;
-  --grey-text-color: #fafafa99;
-  --text-shadow: #fafafa40;
-  --icon-accent: #450306;
-  --modal-border-color: #fafafa1a;
-  --button-hover-color: #e0373f;
-  --succes-message-color: #3cbc81;
-  --not-succes-message-color: #e74a3b;
-  --color-primary: #ed3b44;
-}
-
 .about-me-section {
   padding-top: 32px;
   padding-bottom: 32px;
