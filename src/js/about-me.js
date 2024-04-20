@@ -13,7 +13,7 @@ export function aboutMeFunction() {
   });
   accordionAboutMe.open(0);
 
-  new Swiper('.about-me-thirdpart', {
+  new Swiper('.about-me-swiper-container', {
     centeredSlides: true,
     grabCursor: true,
     loop: true,
