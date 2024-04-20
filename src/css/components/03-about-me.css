@@ -1,21 +1,3 @@
-:root {
-  --white-text-color: #fafafa;
-  --arrow-color: #3b3b3b;
-  --accent-color: #ed3b44;
-  --background-color: #1c1d20;
-  --cards-background-color: #242527;
-  --middle-gradient-color: #69292d;
-  --button-border-color: #fafafa33;
-  --grey-title-color: #fafafa66;
-  --grey-text-color: #fafafa99;
-  --text-shadow: #fafafa40;
-  --icon-accent: #450306;
-  --modal-border-color: #fafafa1a;
-  --button-hover-color: #e0373f;
-  --succes-message-color: #3cbc81;
-  --not-succes-message-color: #e74a3b;
-}
-
 .about-me-section {
   padding-top: 32px;
   padding-bottom: 32px;
@@ -123,7 +105,7 @@
     width: 680px;
   }
 }
-.about-me-img {
+.about-me-thumb .about-me-img {
   object-fit: cover;
 }
 .about-me-secondpart {
@@ -172,18 +154,26 @@
   color: var(--grey-title-color);
 }
 
-.about-me-btn-aboutme {
+section .about-me-header-n-btn .about-me-btn-aboutme {
   border: 1px solid var(--grey-text-color);
   border-radius: 100px;
   display: flex;
   justify-content: center;
-  align-content: center;
+  align-items: center;
   padding: 9px;
   width: 36px;
   height: 36px;
   background-color: inherit;
 }
 
+section .about-me-header-n-btn .about-me-btn-aboutme:active {
+  transform: translateY(2px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+section .ac .ac-trigger::after {
+  display: none;
+}
 @media (min-width: 768px) {
   .about-me-btn-aboutme {
     padding: 10px;
@@ -211,17 +201,26 @@
   }
 }
 
-.about-me-arrow-up {
+.about-me-secondlist-item .ac-trigger[aria-expanded='false'] .about-me-arrow-up {
+  background-color: var(--background-color);
+  transform: rotate(180deg);
+}
+.about-me-secondlist-item .ac-trigger[aria-expanded='true'] .about-me-arrow-down {
+  transform: rotate(180deg);
   background-color: var(--background-color);
 }
-.about-me-arrow-down {
-  background-color: var(--background-color);
-}
-.about-me-secondlist-item {
+
+.about-me-secondlist .about-me-secondlist-item {
+  color: inherit;
+  background-color: inherit;
+  border-top: none;
+  border-right: none;
+  border-left: none;
   border-bottom: solid 1px rgba(250, 250, 250, 0.4);
 }
 
-.about-me-thirdpart {
+.about-me-section .about-me-thirdpart {
+  box-sizing: content-box;
   padding-top: 16px;
   display: flex;
   flex-direction: row;
@@ -229,81 +228,81 @@
   align-items: center;
   width: 343px;
   height: 130px;
+  overflow: visible;
+  display: flex;
+  justify-content: space-between;
 }
 
 @media (min-width: 768px) {
-  .about-me-thirdpart {
+  .about-me-section .about-me-thirdpart {
     padding-top: 32px;
     width: 704px;
     height: 200px;
   }
 }
 @media (min-width: 1440px) {
-  .about-me-thirdpart {
+  .about-me-section .about-me-thirdpart {
     padding-top: 48px;
     width: 1312px;
     height: 200px;
   }
 }
+.about-me-section .about-me-swiper-container {
+  width: 260px;
+  height: 130px;
+  margin: 0;
+}
+@media (min-width: 768px) {
+  .about-me-section .about-me-swiper-container {
+    width: 600px;
+    height: 200px;
+  }
+}
 
-.about-me-skillslist {
+@media (min-width: 1440px) {
+  .about-me-section .about-me-swiper-container {
+    width: 1200px;
+    height: 200px;
+  }
+}
+
+section .about-me-section .about-me-skillslist {
   display: flex;
   flex-direction: row;
   width: 260px;
   height: 130px;
-  overflow: hidden;
-  gap: 0px;
 }
 @media (min-width: 768px) {
-  .about-me-skillslist {
+  .about-me-section .about-me-skillslist {
     width: 600px;
     height: 200px;
-    overflow: hidden;
   }
 }
 @media (min-width: 1440px) {
-  .about-me-skillslist {
+  .about-me-section .about-me-skillslist {
     width: 1200px;
     height: 200px;
-    overflow: hidden;
   }
 }
-
-.about-me-skillslist-item {
-  border-radius: 100%;
+.about-me-section .about-me-skillslist-item {
+  border-radius: 50%;
   background-color: var(--background-color);
   width: 130px;
   height: 130px;
+  margin-right: 0 !important;
   display: flex;
   justify-content: center;
   align-items: center;
   border: 1px solid rgba(250, 250, 250, 0.2);
 }
 @media (min-width: 768px) {
-  .about-me-skillslist-item {
+  .about-me-section .about-me-skillslist-item {
     width: 200px;
     height: 200px;
   }
 }
 
-.is-active {
-  background-color: var(--color-primary);
-  border-radius: 100%;
-  width: 130px;
-  height: 130px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid rgba(250, 250, 250, 0.2);
-}
-@media (min-width: 768px) {
-  .is-active {
-    width: 200px;
-    height: 200px;
-  }
-}
-
-.about-me-skillslist-text {
+.about-me-section .about-me-skillslist-text {
   font-family: 'Inter Tight', sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -312,46 +311,51 @@
   color: var(--white-text-color);
 }
 
-@media (max-width: 767px) {
-  .about-me-skillslist li:nth-child(n + 3) {
-    display: none;
-  }
-}
-@media (min-width: 768px) and (max-width: 1439px) {
-  .about-me-skillslist li:nth-child(n + 4) {
-    display: none;
-  }
-}
 @media (min-width: 768px) {
-  .about-me-skillslist-text {
+  .about-me-section .about-me-skillslist-text {
     font-size: 20px;
   }
 }
-
-.about-me-btn-right {
+.about-me-skillslist .swiper-slide-active {
+  background-color: var(--color-primary);
+  border: none;
+}
+.about-me-section .about-me-btn-right {
   background-color: inherit;
   border: none;
-  padding: 10px;
+
   width: 28px;
-  height: 40px;
+  height: 28px;
+  display: flex;
+  margin: 0;
+  position: static;
+  justify-content: center;
+  align-items: center;
 }
-@media (min-width: 768px) {
-  .about-me-btn-right {
-    background-color: inherit;
-    border: none;
-    padding: 10px;
-    width: 28px;
-    height: 28px;
-  }
+.about-me-section .about-me-btn-right:active {
+  transform: translateY(2px);
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); */
 }
 
-.about-me-arrow-right {
+@media (min-width: 768px) {
+  .about-me-section .about-me-btn-right {
+    background-color: inherit;
+    border: none;
+    padding: 0px;
+    width: 40px;
+    height: 40px;
+  }
+}
+.about-me-btn-right.swiper-button-next::after {
+  content: '';
+}
+.about-me-section .about-me-arrow-right {
   stroke: var(--arrow-color);
   height: 28px;
   width: 28px;
 }
 @media (min-width: 768px) {
-  .about-me-arrow-right {
+  .about-me-section .about-me-arrow-right {
     height: 40px;
     width: 40px;
   }

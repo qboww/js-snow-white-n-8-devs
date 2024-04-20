@@ -30,3 +30,7 @@ import * as workTogether from './js/work-together';
 import { backToTop } from './js/back-to-top.js';
 backToTop();
 //#endregion backToTop
+// #region about-me
+import { aboutMeFunction } from './js/about-me.js';
+aboutMeFunction();
+// #endregion about-me
