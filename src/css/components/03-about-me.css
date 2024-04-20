@@ -14,6 +14,7 @@
   --button-hover-color: #e0373f;
   --succes-message-color: #3cbc81;
   --not-succes-message-color: #e74a3b;
+  --color-primary: #ed3b44;
 }
 
 .about-me-section {
@@ -219,19 +220,15 @@ section .ac .ac-trigger::after {
   }
 }
 
-.about-me-arrow-up {
-  background-color: var(--background-color);
-  transform: rotate(180);
-}
 .about-me-secondlist-item .ac-trigger[aria-expanded='false'] .about-me-arrow-up {
+  background-color: var(--background-color);
   transform: rotate(180deg);
 }
 .about-me-secondlist-item .ac-trigger[aria-expanded='true'] .about-me-arrow-down {
   transform: rotate(180deg);
-}
-.about-me-arrow-down {
   background-color: var(--background-color);
 }
+
 .about-me-secondlist .about-me-secondlist-item {
   color: inherit;
   background-color: inherit;
@@ -242,6 +239,7 @@ section .ac .ac-trigger::after {
 }
 
 .about-me-section .about-me-thirdpart {
+  box-sizing: content-box;
   padding-top: 16px;
   display: flex;
   flex-direction: row;
@@ -254,7 +252,7 @@ section .ac .ac-trigger::after {
   justify-content: space-between;
 }
 
-/* @media (min-width: 768px) {
+@media (min-width: 768px) {
   .about-me-section .about-me-thirdpart {
     padding-top: 32px;
     width: 704px;
@@ -292,28 +290,24 @@ section .about-me-section .about-me-skillslist {
   flex-direction: row;
   width: 260px;
   height: 130px;
-  overflow: hidden;
-  gap: 0px;
 }
 @media (min-width: 768px) {
   .about-me-section .about-me-skillslist {
     width: 600px;
     height: 200px;
-    overflow: hidden;
   }
 }
 @media (min-width: 1440px) {
   .about-me-section .about-me-skillslist {
     width: 1200px;
     height: 200px;
-    overflow: hidden;
   }
 }
 .about-me-section .about-me-skillslist-item {
   border-radius: 50%;
   background-color: var(--background-color);
-  width: 200px !important;
-  height: 200px !important;
+  width: 130px;
+  height: 130px;
   margin-right: 0 !important;
   display: flex;
   justify-content: center;
@@ -335,24 +329,14 @@ section .about-me-section .about-me-skillslist {
   letter-spacing: -0.02em;
   color: var(--white-text-color);
 }
-/* 
-@media (max-width: 767px) {
-  .about-me-skillslist li:nth-child(n + 3) {
-    display: none;
-  }
-}
-@media (min-width: 768px) and (max-width: 1439px) {
-  .about-me-skillslist li:nth-child(n + 4) {
-    display: none;
-  }
-} */
+
 @media (min-width: 768px) {
   .about-me-section .about-me-skillslist-text {
     font-size: 20px;
   }
 }
 .about-me-skillslist .swiper-slide-active {
-  background-color: var(--accent-color);
+  background-color: var(--color-primary);
   border: none;
 }
 .about-me-section .about-me-btn-right {
@@ -369,7 +353,7 @@ section .about-me-section .about-me-skillslist {
 }
 .about-me-section .about-me-btn-right:active {
   transform: translateY(2px);
-  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 @media (min-width: 768px) {
