@@ -13,7 +13,7 @@
   --font-color: #1c1d20;
   --cards-background-color: #242527;
   --color-secondary: #69292d;
-  --color-primary: #ED3B44;
+  --color-primary: #ed3b44;
   --button-border-color: #fafafa33;
   --grey-title-color: #fafafa66;
   --grey-text-color: #fafafa99;
@@ -27,45 +27,63 @@
 
 /* Стилі для кожної теми */
 .red-theme {
-  --color-primary: #ED3B44;
-  --color-secondary: #69292D;
+  --color-primary: #ed3b44;
+  --color-secondary: rgb(105, 41, 45);
   --hover-color: #e03740e1;
-  --font-color: #1C1D20;
+  --font-color: #1c1d20;
+  --rgb1-color: 105;
+  --rgb2-color: 41;
+  --rgb3-color: 45;
 }
 
 .lime-theme {
-  --color-primary: #C6E327;
+  --color-primary: #c6e327;
   --color-secondary: #596808;
   --hover-color: #c7e327dc;
-  --font-color: #1C1D20;
+  --font-color: #1c1d20;
+  --rgb1-color: 198;
+  --rgb2-color: 227;
+  --rgb3-color: 39;
 }
 
 .blue-theme {
-  --color-primary: #0041E8;
+  --color-primary: #0041e8;
   --color-secondary: #001958;
   --hover-color: #0042e8be;
-  --font-color: #1C1D20;
+  --font-color: #1c1d20;
+  --rgb1-color: 0;
+  --rgb2-color: 65;
+  --rgb3-color: 232;
 }
 
 .orange-theme {
-  --color-primary: #E6533C;
-  --color-secondary: #9F3626;
+  --color-primary: #e6533c;
+  --color-secondary: #9f3626;
   --hover-color: #e6533cd0;
-  --font-color: #1C1D20;
+  --font-color: #1c1d20;
+  --rgb1-color: 230;
+  --rgb2-color: 83;
+  --rgb3-color: 60;
 }
 
 .green-theme {
-  --color-primary: #2B4441;
-  --color-secondary: #1E3633;
+  --color-primary: #2b4441;
+  --color-secondary: #1e3633;
   --hover-color: #2b4441cc;
-  --font-color: #1C1D20;
+  --font-color: #1c1d20;
+  --rgb1-color: 43;
+  --rgb2-color: 68;
+  --rgb3-color: 65;
 }
 
 .ocher-theme {
-  --color-primary: #FF7F08;
-  --color-secondary: #AC5300;
+  --color-primary: #ff7f08;
+  --color-secondary: #ac5300;
   --hover-color: #ff7f08cc;
-  --font-color: #1C1D20;
+  --font-color: #1c1d20;
+  --rgb1-color: 255;
+  --rgb2-color: 127;
+  --rgb3-color: 8;
 }
 
 body {
