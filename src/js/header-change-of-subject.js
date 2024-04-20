@@ -14,18 +14,18 @@ export function changeTheSubject() {
 
     setTheme(`${selectedTheme}-theme`);
   }
-   document.addEventListener("DOMContentLoaded", add); 
-    function add () {
+  document.addEventListener('DOMContentLoaded', getLocalStorageTheme);
+  function getLocalStorageTheme() {
     const storedTheme = localStorage.getItem('theme');
 
-   if(storedTheme !== null){
-    selectEl.value = `${storedTheme.replace(new RegExp('-theme'), '')}`;
-   }
+    if (storedTheme !== null) {
+      selectEl.value = `${storedTheme.replace(new RegExp('-theme'), '')}`;
+    }
 
     if (storedTheme) {
       setTheme(storedTheme);
     } else {
       setTheme('red-theme');
     }
-  };
+  }
 }
