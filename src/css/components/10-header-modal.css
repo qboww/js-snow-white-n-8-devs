@@ -1,9 +1,9 @@
 .menu-box {
   width: 100%;
-  height: 100svh;
+  height: 100%;
   top: 0;
   position: fixed;
-  z-index: 1;
+  z-index: 889;
   padding: 32px 16px;
   display: flex;
   flex-direction: column;
@@ -12,8 +12,8 @@
   transition: opacity 0.5s ease;
 }
 
-.menu-box.visually-hidden {
-  opacity: 0;
+body.modal-open {
+  overflow-y: hidden;
 }
 
 .image-mob-menu {
