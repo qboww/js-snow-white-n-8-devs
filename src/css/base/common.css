@@ -91,6 +91,10 @@ body {
   background-color: var(--font-color);
 }
 
+body:not(.theme-loaded) {
+  display: none;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
