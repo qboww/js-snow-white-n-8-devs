@@ -1,4 +1,5 @@
 import iziToast from 'izitoast';
+import axios from 'axios';
 
 const elms = {
   form: document.querySelector('.footer-form'),
@@ -32,9 +33,19 @@ const labels = {
 };
 
 const messages = {
-  error() {
+  showError() {
     iziToast.error({
       message: 'Please fill out both fields before sending!',
+      messageColor: '#fafafa',
+      backgroundColor: '#e74a3b',
+      theme: 'dark',
+      closeOnClick: true,
+      timeout: 3000,
+    });
+  },
+  showBadRequest() {
+    iziToast.error({
+      message: 'Something went wrong. Please try again!',
       messageColor: '#fafafa',
       backgroundColor: '#e74a3b',
       theme: 'dark',
@@ -50,22 +61,43 @@ const isValidEmail = email => {
   return pattern.test(email.trim());
 };
 
+const postUserData = userData => {
+  const BASE_URL = 'https://portfolio-js.b.goit.study/api';
+  const ENDPOINT = '/requests';
+  const body = userData;
+
+  return axios.post(`${BASE_URL}${ENDPOINT}`, body);
+};
+
 const onButtonClick = () => {
   if (!isValidEmail(elms.form.elements.email.value)) {
     labels.addError();
   }
 };
 
-const onFormSubmit = event => {
-  event.preventDefault();
+const onFormSubmit = async event => {
+  try {
+    event.preventDefault();
 
-  if (
-    event.currentTarget.elements.email.value.trim() === '' ||
-    event.currentTarget.elements.comments.value.trim() === ''
-  ) {
-    messages.error();
+    if (
+      event.currentTarget.elements.email.value.trim() === '' ||
+      event.currentTarget.elements.comments.value.trim() === ''
+    ) {
+      messages.showError();
 
-    return;
+      return;
+    }
+
+    const userData = {
+      email: event.currentTarget.elements.email.value.trim(),
+      comment: event.currentTarget.elements.comments.value.trim(),
+    };
+
+    const response = await postUserData(userData);
+  } catch (error) {
+    console.log(error);
+
+    messages.showBadRequest();
   }
 };
 
