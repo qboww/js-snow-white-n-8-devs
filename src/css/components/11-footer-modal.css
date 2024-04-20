@@ -67,6 +67,7 @@
     padding: 0;
     top: 20px;
     right: 20px;
+    cursor: pointer;
 }
 
 @media only screen and (min-width: 768px) {
