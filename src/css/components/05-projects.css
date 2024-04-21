@@ -89,6 +89,7 @@
   display: flex;
   justify-content: center;
   gap: 12px;
+  margin-bottom: 2px;
 }
 
 .projects-button {
@@ -100,6 +101,8 @@
   width: 52px;
   height: 52px;
   background-color: transparent;
+  stroke: var(--white-text-color);
+  border: 1px solid rgba(250, 250, 250, 0.5);
 }
 
 .projects-button:active {
@@ -107,20 +110,22 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-.projects-previous-button {
+.projects-previous-button[disabled],
+.projects-next-button[disabled] {
   border: 1px solid rgba(250, 250, 250, 0.2);
+  color: var(--arrow-color);
+  border: 1px solid var(--arrow-color);
 }
 
-.projects-next-button {
-  border: 1px solid rgba(250, 250, 250, 0.5);
+.projects-previous-button[disabled] .projects-previous-image,
+.projects-next-button[disabled] .projects-next-image {
+  stroke: var(--arrow-color);
 }
 
 .projects-button-image {
+  width: 24px;
+  height: 24px;
   stroke: rgb(250, 250, 250);
-}
-
-.projects-previous-image {
-  stroke: rgb(59, 59, 59);
 }
 
 /* TABLET */
@@ -162,6 +167,11 @@
     height: 68px;
     padding: 18px;
   }
+
+  .projects-button-image {
+    width: 32px;
+    height: 32px;
+  }
 }
 
 /* DESKTOP */
@@ -170,7 +180,7 @@
     padding: 82px 0;
   }
 
-  .projects-card {
+  .projects-list .projects-card {
     display: flex;
   }
 
