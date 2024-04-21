@@ -149,7 +149,9 @@
 .about-me-header-n-btn {
   margin-bottom: 32px;
 }
-
+li.is-active .about-me-header-n-btn {
+  margin-bottom: 0px;
+}
 .about-me-header-third {
   font-family: 'Inter Tight', sans-serif;
   font-weight: 600;

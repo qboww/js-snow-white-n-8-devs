@@ -39,14 +39,4 @@ export function aboutMeFunction() {
       },
     },
   });
-
-  const aboutMeItems = document.querySelectorAll('.about-me-secondlist-item');
-  console.log(aboutMeItems);
-  aboutMeItems.forEach(element => {
-    if (element.classList.contains('is-active')) {
-      const aboutDiv = element.firstElementChild;
-      console.log(aboutDiv);
-      aboutDiv.style.marginBottom = '0px';
-    }
-  });
 }
