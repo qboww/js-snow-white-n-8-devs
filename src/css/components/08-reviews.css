@@ -5,6 +5,8 @@
   max-width: 375px;
   margin: 0 auto;
   background-color: var(--background);
+
+  padding: 0 16px;
 }
 
 .reviews-section {
