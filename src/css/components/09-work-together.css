@@ -49,7 +49,7 @@ footer .container {
 }
 
 .footer-bg-image {
-  background-image: url(../../img/work_together/bg@1x.png);
+  background-image: url(../../img/work_together/bg@1x.webp);
   width: 400px;
   height: 100%;
   position: absolute;
@@ -60,7 +60,7 @@ footer .container {
 
 @media only screen and (min-resolution: 192dpi) {
   .footer-bg-image {
-    background-image: url(../../img/work_together/bg@2x.png);
+    background-image: url(../../img/work_together/bg@2x.webp);
     background-size: 400px 100%;
   }
 }
@@ -68,7 +68,7 @@ footer .container {
 
 @media only screen and (min-width: 768px) {
   .footer-bg-image {
-    background-image: url(../../img/work_together/bg@1x.png);
+    background-image: url(../../img/work_together/bg@1x.webp);
     left: 74%;
   }
 }
@@ -76,13 +76,13 @@ footer .container {
 
 @media only screen and (min-width: 768px) and (min-resolution: 192dpi) {
   .footer-bg-image {
-    background-image: url(../../img/work_together/bg@2x.png);
+    background-image: url(../../img/work_together/bg@2x.webp);
   }
 }
 
 @media only screen and (min-width: 1440px) {
   .footer-bg-image {
-    background-image: url(../../img/work_together/bg@1x.png);
+    background-image: url(../../img/work_together/bg@1x.webp);
     left: 72%;
   }
 }
@@ -90,13 +90,13 @@ footer .container {
 
 @media only screen and (min-width: 1440px) and (min-resolution: 192dpi) {
   .footer-bg-image {
-    background-image: url(../../img/work_together/bg@2x.png);
+    background-image: url(../../img/work_together/bg@2x.webp);
   }
 }
 
 @media only screen and (min-width: 1441px) {
   .footer-bg-image {
-    background-image: url(../../img/work_together/bg@1x.png);
+    background-image: url(../../img/work_together/bg@1x.webp);
     right: 0;
     left: auto;
   }
@@ -126,6 +126,7 @@ footer .container {
 }
 
 .footer-title-upper-part {
+  display: block;
   margin-left: 52px;
 
   margin-bottom: 8px;
