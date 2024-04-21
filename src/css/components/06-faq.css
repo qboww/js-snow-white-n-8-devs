@@ -14,12 +14,13 @@
 }
 
 .faq-item {
-  border-top: 1px solid var(--button-border-color);
-  padding: 20px 0;
+  background-color: inherit !important;
+  border-top: 1px solid var(--button-border-color) !important;
+  padding: 20px 0 !important;
 }
 .faq-item:last-child {
-  border-bottom: 1px solid var(--button-border-color);
-  padding: 20px 0;
+  border-bottom: 1px solid var(--button-border-color) !important;
+  padding: 20px 0 !important;
 }
 .faq-container {
   display: flex;
@@ -27,42 +28,44 @@
   /* align-items: flex-start; */
 }
 .faq-title {
-  font-family: 'Inter Tight', sans-serif;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 1.5;
-  letter-spacing: -0.02em;
-  padding-bottom: 16px;
-  color: var(--white-text-color);
+  font-family: 'Inter Tight', sans-serif !important;
+  font-weight: 600 !important;
+  font-size: 20px !important;
+  line-height: 1.5 !important;
+  letter-spacing: -0.02em !important;
+  padding-bottom: 16px !important;
+  color: var(--white-text-color) !important;
 }
 .faq-text {
-  font-family: 'Inter Tight', sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: -0.02em;
-  color: var(--grey-text-color);
+  font-family: 'Inter Tight', sans-serif !important;
+  font-weight: 500 !important;
+  font-size: 16px !important;
+  line-height: 1.5 !important;
+  letter-spacing: -0.02em !important;
+  color: var(--grey-text-color) !important;
 
-  overflow: hidden;
-  transition-property: height, visibility;
-  transition-timing-function: ease;
+  overflow: hidden !important;
+  transition-property: height, visibility !important;
+  transition-timing-function: ease !important;
 }
 .faq-btn {
-  display: flex;
-  text-align: center;
-  border: 1px solid var(--button-border-color);
-  border-radius: 100px;
-  padding: 7px;
-  width: 34px;
-  height: 34px;
-  background-color: inherit;
-  cursor: pointer;
+  display: flex !important;
+  text-align: center !important;
+  border: 1px solid var(--button-border-color) !important;
+  border-radius: 100px !important;
+  padding: 7px !important;
+  width: 34px !important;
+  height: 34px !important;
+  background-color: inherit !important;
+  cursor: pointer !important;
 }
-.faq-btn svg {
-  transform: rotate(0deg);
-}
-.faq-btn.active svg {
+
+.ac-trigger[aria-expanded='true'] .faq-icon {
   transform: rotate(180deg);
+  background-color: var(--background-color);
+}
+section .ac {
+  border: none;
 }
 .faq-icon {
   width: 20px;
@@ -71,40 +74,41 @@
 }
 @media only screen and (min-width: 1440px) {
   .faq-list {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
   }
   .faq-item {
-    flex-basis: 50%;
+    background-color: inherit !important;
+    flex-basis: 50% !important;
   }
   .faq-item:nth-child(1) {
-    order: 1;
-    padding-right: 32px;
-    border-right: 1px solid var(--button-border-color);
+    order: 1 !important;
+    padding-right: 32px !important;
+    border-right: 1px solid var(--button-border-color) !important;
   }
   .faq-item:nth-child(2) {
-    order: 3;
-    padding-right: 32px;
-    border-right: 1px solid var(--button-border-color);
+    order: 3 !important;
+    padding-right: 32px !important;
+    border-right: 1px solid var(--button-border-color) !important;
   }
   .faq-item:nth-child(3) {
-    order: 5;
-    padding-right: 32px;
-    border-right: 1px solid var(--button-border-color);
-    border-bottom: 1px solid var(--button-border-color);
+    order: 5 !important;
+    padding-right: 32px !important;
+    border-right: 1px solid var(--button-border-color) !important;
+    border-bottom: 1px solid var(--button-border-color) !important;
   }
   .faq-item:nth-child(4) {
-    order: 2;
-    padding-left: 32px;
+    order: 2 !important;
+    padding-left: 32px !important;
   }
   .faq-item:nth-child(5) {
-    order: 4;
-    padding-left: 32px;
+    order: 4 !important;
+    padding-left: 32px !important;
   }
   .faq-item:nth-child(6) {
-    order: 6;
-    padding-left: 32px;
+    order: 6 !important;
+    padding-left: 32px !important;
     /* border: 1px solid var(--button-border-color); */
   }
 }
