@@ -248,6 +248,10 @@ footer .container {
   border-color: var(--succes-message-color);
 }
 
+.footer-label.is-open {
+  opacity: 1;
+}
+
 .footer-label {
   font-weight: 500;
   font-size: 14px;
@@ -257,10 +261,6 @@ footer .container {
   opacity: 0;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   margin-top: 4px;
-}
-
-.is-open {
-  opacity: 1;
 }
 
 .success-label {
