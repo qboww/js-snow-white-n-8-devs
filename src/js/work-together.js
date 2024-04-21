@@ -90,6 +90,29 @@ const messages = {
   },
 };
 
+const userSubmitData = {
+  email: null,
+  comments: null,
+};
+
+if (localStorage.hasOwnProperty('userSubmitData')) {
+  const storedData = JSON.parse(localStorage.getItem('userSubmitData'));
+
+  elms.form.elements.email.value = storedData.email;
+  elms.form.elements.comments.value = storedData.comments;
+
+  userSubmitData.email = storedData.email;
+  userSubmitData.comments = storedData.comments;
+}
+
+const addDataToLocalStorage = () => {
+  localStorage.setItem('userSubmitData', JSON.stringify(userSubmitData));
+};
+
+const removeDataFromLocalStorage = () => {
+  localStorage.removeItem('userSubmitData');
+};
+
 const isValidEmail = email => {
   const pattern = /^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
 
@@ -140,6 +163,8 @@ const onFormSubmit = async event => {
     labels.removeBoth();
 
     formElm.reset();
+
+    removeDataFromLocalStorage();
   } catch (error) {
     console.log(error);
 
@@ -148,6 +173,9 @@ const onFormSubmit = async event => {
 };
 
 const onEmailInput = event => {
+  userSubmitData.email = event.target.value;
+  addDataToLocalStorage();
+
   if (event.target.value.length > 27 && innerWidth <= 375) {
     event.target.value = event.target.value.slice(0, 25) + '...';
   }
@@ -174,6 +202,9 @@ const onEmailInput = event => {
 };
 
 const onCommentsInput = event => {
+  userSubmitData.comments = event.target.value;
+  addDataToLocalStorage();
+
   if (event.target.value.length > 27 && innerWidth <= 375) {
     event.target.value = event.target.value.slice(0, 25) + '...';
   }
