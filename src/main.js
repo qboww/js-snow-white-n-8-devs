@@ -1,5 +1,3 @@
-import { changeTheSubject } from './js/header-change-of-subject';
-changeTheSubject();
 
 //#region MOBILE
 import { initializeMobile } from './js/mobile-logic';
