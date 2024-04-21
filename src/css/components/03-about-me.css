@@ -387,6 +387,7 @@ section .about-me-section .about-me-skillslist {
     padding: 0px;
     width: 40px;
     height: 40px;
+    border-radius: 50%;
   }
 }
 .about-me-btn-right.swiper-button-next::after {
