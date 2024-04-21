@@ -1,6 +1,6 @@
 @import 'izitoast/dist/css/iziToast.min.css';
 
-/* .work-together{
+footer{
   background: linear-gradient(90deg, var(--font-color) 90%,
    rgb(0 0 0 / 10%) 92%, 
    rgb(0 0 0 / 4%) 92.5%,
@@ -8,20 +8,62 @@
 }
 
  @media screen and (min-width: 768px) {
-  .footer-bg-image {
+  footer {
     background: linear-gradient(90deg, var(--font-color) 70%,
-    rgb(0 0 0 / 10%), 
-    rgb(0 0 0 / 4%) ,
-     rgb(0 0 0 / 6%) ,
-    rgb(0 0 0 / 10%), 
-    rgb(0 0 0 / 4%) ,
-     rgb(0 0 0 / 6%) ,
-    rgb(0 0 0 / 10%), 
-    rgb(0 0 0 / 4%) ,
+    rgb(0 0 0 / 10%)76.4%, 
+    rgb(0 0 0 / 4%)77.4%,
+     rgb(0 0 0 / 6%)85%,
+
+    rgb(0 0 0 / 10%)87%, 
+    rgb(0 0 0 / 4%)85%,
+     rgb(0 0 0 / 6%)90%,
+
+    rgb(0 0 0 / 10%)96%, 
+    rgb(0 0 0 / 4%)90%,
+     rgb(0 0 0 / 6%)90%,
+
+    rgb(0 0 0 / 10%)96%, 
+    rgb(0 0 0 / 4%)90%,
+     rgb(0 0 0 / 6%)90%,
+
+    rgb(0 0 0 / 10%)96%, 
+    rgb(0 0 0 / 4%)90%,
+     rgb(0 0 0 / 6%)90%,
+
+    rgb(0 0 0 / 10%)96%, 
+    rgb(0 0 0 / 4%)90%,
      rgb(0 0 0 / 6%) 100%);
   }
-}  */
+} 
 
+@media only screen and (min-width: 1440px) {
+  footer {
+    background: linear-gradient(90deg, var(--font-color) 72%,
+    rgb(0 0 0 / 10%)72.4%, 
+    rgb(0 0 0 / 4%)72.8%,
+     rgb(0 0 0 / 6%)78%,
+
+    rgb(0 0 0 / 10%)78%, 
+    rgb(0 0 0 / 4%)78.4%,
+     rgb(0 0 0 / 6%)83%,
+
+    rgb(0 0 0 / 10%)83%, 
+    rgb(0 0 0 / 4%)83.4%,
+     rgb(0 0 0 / 6%)87%,
+
+    rgb(0 0 0 / 10%)87%, 
+    rgb(0 0 0 / 4%)87.4%,
+     rgb(0 0 0 / 6%)91%,
+
+    rgb(0 0 0 / 10%)91%, 
+    rgb(0 0 0 / 4%)91.4%,
+     rgb(0 0 0 / 6%)95%,
+
+    rgb(0 0 0 / 10%)95%, 
+    rgb(0 0 0 / 4%)95.4%,
+     rgb(0 0 0 / 6%) 100%);
+  }
+}
 
 footer {
   background-color: var(--background-color);
@@ -48,59 +90,7 @@ footer .container {
   }
 }
 
-.footer-bg-image {
-  background-image: url(../../img/work_together/bg@1x.webp);
-  width: 400px;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 77%;
-  z-index: 1;
-}
 
-@media only screen and (min-resolution: 192dpi) {
-  .footer-bg-image {
-    background-image: url(../../img/work_together/bg@2x.webp);
-    background-size: 400px 100%;
-  }
-}
-
-
-@media only screen and (min-width: 768px) {
-  .footer-bg-image {
-    background-image: url(../../img/work_together/bg@1x.webp);
-    left: 74%;
-  }
-}
-
-
-@media only screen and (min-width: 768px) and (min-resolution: 192dpi) {
-  .footer-bg-image {
-    background-image: url(../../img/work_together/bg@2x.webp);
-  }
-}
-
-@media only screen and (min-width: 1440px) {
-  .footer-bg-image {
-    background-image: url(../../img/work_together/bg@1x.webp);
-    left: 72%;
-  }
-}
-
-
-@media only screen and (min-width: 1440px) and (min-resolution: 192dpi) {
-  .footer-bg-image {
-    background-image: url(../../img/work_together/bg@2x.webp);
-  }
-}
-
-@media only screen and (min-width: 1441px) {
-  .footer-bg-image {
-    background-image: url(../../img/work_together/bg@1x.webp);
-    right: 0;
-    left: auto;
-  }
-}
 
 .footer-title {
   font-weight: 500;
