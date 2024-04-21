@@ -1,4 +1,3 @@
-
 //#region MOBILE
 import { initializeMobile } from './js/mobile-logic';
 initializeMobile();
@@ -42,3 +41,5 @@ projectsFunction();
 import { buttonFaq } from './js/faq.js';
 buttonFaq();
 // #endregion faq
+
+import './js/cursor.js';
