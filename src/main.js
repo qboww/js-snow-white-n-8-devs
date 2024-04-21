@@ -39,3 +39,8 @@ aboutMeFunction();
 import { projectsFunction } from './js/projects.js';
 projectsFunction();
 // #endregion projects
+
+// #region faq
+import { buttonFaq } from './js/faq.js';
+buttonFaq();
+// #endregion faq
