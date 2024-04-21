@@ -151,7 +151,7 @@ select {
 
 .header-select {
   position: absolute;
-  top: 750px;
+  top: 700px;
   right: 20px;
   font-size: 14px;
 
@@ -168,7 +168,7 @@ select {
 
 @media (max-width: 373px) {
   .header-select {
-    top: 795px;
+    top: 715px;
     right: 20px;
   }
 }
