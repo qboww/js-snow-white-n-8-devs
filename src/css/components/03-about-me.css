@@ -145,10 +145,14 @@
   justify-content: space-between;
   margin: 0px;
 }
-@media (min-width: 1440px) {
-  .about-me-header-n-btn {
-    margin-bottom: 32px;
-  }
+
+.about-me-header-n-btn {
+  margin-bottom: 32px;
+  transition: margin 0.5s ease-in-out;
+}
+li.is-active .about-me-header-n-btn {
+  margin-bottom: 0px;
+  transition: margin 0.5s ease-in-out;
 }
 .about-me-header-third {
   font-family: 'Inter Tight', sans-serif;
@@ -162,7 +166,7 @@
 
 section .about-me-header-n-btn .about-me-btn-aboutme {
   border: 1px solid var(--grey-text-color);
-  border-radius: 100px;
+  border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -187,31 +191,33 @@ section .ac .ac-trigger::after {
     height: 40px;
   }
 }
-@media (max-width: 767px) {
+/* @media (max-width: 767px) {
   .about-panel {
-    padding-top: 12px;
-    padding-bottom: 20px;
+    padding-bottom: 12px;
+    padding-top: 20px;
   }
 }
 
 @media (min-width: 768px) and (max-width: 1439px) {
   .about-panel {
-    padding-top: 8px;
-    padding-bottom: 32px;
+    padding-bottom: 12px;
+    padding-top: 20px;
   }
-}
+} */
 .about-me-secondpart-text {
+  padding-top: 12px;
+  padding-bottom: 20px;
   font-family: 'Inter Tight', sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: -0.02em;
   color: var(--white-text-color);
-  padding: 0px;
 }
 @media (min-width: 768px) {
   .about-me-secondpart-text {
-    padding: 0px;
+    padding-top: 12px;
+    padding-bottom: 20px;
   }
 }
 @media (min-width: 1440px) {
@@ -221,14 +227,19 @@ section .ac .ac-trigger::after {
 }
 
 .about-text-about-me {
-  margin-bottom: 32px;
+  padding-bottom: 32px;
+}
+@media (min-width: 768px) and (max-width: 1439px) {
+  .about-text-about-me {
+    padding-bottom: 16px;
+  }
 }
 .about-text-role {
-  margin-bottom: 10px;
+  padding-bottom: 10px;
 }
 
 .about-text-education {
-  margin-bottom: 10px;
+  padding-bottom: 10px;
 }
 .about-me-secondlist-item .ac-trigger[aria-expanded='false'] .about-me-arrow-up {
   background-color: var(--background-color);
@@ -259,9 +270,13 @@ section .ac .ac-trigger::after {
   height: 130px;
   overflow: visible;
   display: flex;
-  gap: 55px;
+  gap: 0px;
 }
-
+@media (min-width: 375px) {
+  .about-me-section .about-me-thirdpart {
+    gap: 55px;
+  }
+}
 @media (min-width: 768px) {
   .about-me-section .about-me-thirdpart {
     width: 704px;
