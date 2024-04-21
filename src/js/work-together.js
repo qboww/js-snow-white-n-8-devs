@@ -34,7 +34,7 @@ const labels = {
   removeBoth() {
     elms.email.classList.remove('input-success');
     elms.email.classList.remove('input-error');
-    elms.successLabel.classList.add('is-open');
+    elms.successLabel.classList.remove('is-open');
     elms.errorLabel.classList.remove('is-open');
 
     setTimeout(() => {
@@ -45,7 +45,7 @@ const labels = {
 };
 
 const modals = {
-  isClosed() {
+  close() {
     elms.modalOverlay.classList.remove('is-open');
     elms.modalBackdrop.classList.remove('is-open');
 
@@ -54,16 +54,20 @@ const modals = {
       elms.modalOverlay.classList.add('visually-hidden');
     }, 500);
 
-    elms.modalOverlay.children.close_button.removeEventListener('click', modals.isClosed);
+    elms.modalOverlay.children.close_button.removeEventListener('click', modals.close);
+    elms.modalBackdrop.removeEventListener('click', onBackdropClick);
+    document.body.removeEventListener('keydown', onBodyPress);
   },
 
-  isOpen() {
+  open() {
     elms.modalBackdrop.classList.remove('visually-hidden');
     elms.modalOverlay.classList.remove('visually-hidden');
     elms.modalBackdrop.classList.add('is-open');
     elms.modalOverlay.classList.add('is-open');
 
-    elms.modalOverlay.children.close_button.addEventListener('click', modals.isClosed);
+    elms.modalOverlay.children.close_button.addEventListener('click', modals.close);
+    elms.modalBackdrop.addEventListener('click', onBackdropClick);
+    document.body.addEventListener('keydown', onBodyPress);
   },
 };
 
@@ -90,6 +94,29 @@ const messages = {
   },
 };
 
+const userSubmitData = {
+  email: null,
+  comments: null,
+};
+
+if (localStorage.hasOwnProperty('userSubmitData')) {
+  const storedData = JSON.parse(localStorage.getItem('userSubmitData'));
+
+  elms.form.elements.email.value = storedData.email;
+  elms.form.elements.comments.value = storedData.comments;
+
+  userSubmitData.email = storedData.email;
+  userSubmitData.comments = storedData.comments;
+}
+
+const addDataToLocalStorage = () => {
+  localStorage.setItem('userSubmitData', JSON.stringify(userSubmitData));
+};
+
+const removeDataFromLocalStorage = () => {
+  localStorage.removeItem('userSubmitData');
+};
+
 const isValidEmail = email => {
   const pattern = /^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
 
@@ -107,6 +134,18 @@ const postUserData = userData => {
 const onButtonClick = () => {
   if (!isValidEmail(elms.form.elements.email.value)) {
     labels.addError();
+  }
+};
+
+const onBackdropClick = event => {
+  if (event.target === event.currentTarget) {
+    modals.close();
+  }
+};
+
+const onBodyPress = event => {
+  if (event.key === 'Escape') {
+    modals.close();
   }
 };
 
@@ -135,11 +174,13 @@ const onFormSubmit = async event => {
     elms.modalOverlay.children.title.textContent = response.data.title;
     elms.modalOverlay.children.message.textContent = response.data.message;
 
-    modals.isOpen();
+    modals.open();
 
     labels.removeBoth();
 
     formElm.reset();
+
+    removeDataFromLocalStorage();
   } catch (error) {
     console.log(error);
 
@@ -148,6 +189,9 @@ const onFormSubmit = async event => {
 };
 
 const onEmailInput = event => {
+  userSubmitData.email = event.target.value;
+  addDataToLocalStorage();
+
   if (event.target.value.length > 27 && innerWidth <= 375) {
     event.target.value = event.target.value.slice(0, 25) + '...';
   }
@@ -174,6 +218,9 @@ const onEmailInput = event => {
 };
 
 const onCommentsInput = event => {
+  userSubmitData.comments = event.target.value;
+  addDataToLocalStorage();
+
   if (event.target.value.length > 27 && innerWidth <= 375) {
     event.target.value = event.target.value.slice(0, 25) + '...';
   }

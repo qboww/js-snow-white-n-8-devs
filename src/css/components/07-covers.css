@@ -1,6 +1,8 @@
 .covers {
   padding-top: 82px;
   padding-bottom: 82px;
+  padding-right: 16px;
+  padding-left: 16px;
 }
 
 .covers-container {
