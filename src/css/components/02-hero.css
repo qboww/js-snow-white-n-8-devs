@@ -13,8 +13,6 @@
   linear-gradient(to right, #ED3B44, #69292D, #1C1D20 50%);
   background-size: 17%, 100% 100%; */
 
-
-
   /* background-image:
     linear-gradient(to right,
       rgba(59, 59, 59, 0.2) 0%,
@@ -63,9 +61,6 @@
 
       var(--font-color) 50%),
     linear-gradient(to right, var(--color-primary) 30%, var(--color-secondary) 45%, var(--font-color) 50%); */
-
-
-
 
   background-image: linear-gradient(
       90deg,
@@ -122,10 +117,12 @@
   text-transform: uppercase;
   color: var(--white-text-color);
   margin-bottom: 212px;
+  padding: 0 16px;
 }
 
 .hero-links {
   display: flex;
+  flex-wrap: wrap;
   gap: 4px;
 }
 
@@ -242,7 +239,7 @@
 
   .hero-title {
     font-size: 90px;
-    width: 632px;
+    width: 664px;
     margin-bottom: 187px;
   }
 
@@ -283,9 +280,7 @@
       5%,
       100% 100%; */
 
-    background-image: 
-
-      linear-gradient(
+    background-image: linear-gradient(
         90deg,
         rgb(0 0 0 / 20%) 0%,
         rgb(0 0 0 / 20%) 16.67%,
@@ -321,18 +316,13 @@
         rgb(0 0 0 / 20%) 16.67%,
         rgb(140 140 140 / 20%) 100%
       ),
-      
       linear-gradient(
         90deg,
         rgb(0 0 0 / 20%) 0%,
         rgb(0 0 0 / 20%) 16.67%,
         rgb(105 105 105 / 20%) 100%
       ),
-      linear-gradient(
-        90deg, rgb(0 0 0 / 20%) 0%, 
-        rgb(0 0 0 / 20%) 16.67%, 
-        rgb(99 99 99 / 20%) 100%
-      ),
+      linear-gradient(90deg, rgb(0 0 0 / 20%) 0%, rgb(0 0 0 / 20%) 16.67%, rgb(99 99 99 / 20%) 100%),
       linear-gradient(
         90deg,
         rgb(0 0 0 / 20%) 0%,
@@ -369,16 +359,8 @@
         rgb(0 0 0 / 20%) 16.67%,
         rgb(140 136 136 / 20%) 100%
       ),
-      linear-gradient(
-        90deg, rgb(0 0 0 / 20%) 0%, 
-        rgb(0 0 0 / 20%) 16.67%, 
-        rgb(92 91 91 / 10%) 100%
-      ),
-      linear-gradient(
-        to right, 
-        var(--color-primary), 
-        var(--color-secondary), 
-        var(--font-color) 50%);
+      linear-gradient(90deg, rgb(0 0 0 / 20%) 0%, rgb(0 0 0 / 20%) 16.67%, rgb(92 91 91 / 10%) 100%),
+      linear-gradient(to right, var(--color-primary), var(--color-secondary), var(--font-color) 50%);
 
     background-size:
       60px,
@@ -397,11 +379,12 @@
       60px,
       60px,
       100% 100%;
-    background-position: 0px, 66px, 132px, 198px, 264px, 330px, 396px, 462px, 528px, 594px, 660px, 720px, 780px, 840px, 900px;
+    background-position: 0px, 66px, 132px, 198px, 264px, 330px, 396px, 462px, 528px, 594px, 660px,
+      720px, 780px, 840px, 900px;
   }
 
   .hero-title {
-    width: 1084px;
+    width: 1116px;
     margin: 0 auto;
     margin-bottom: 228px;
   }
