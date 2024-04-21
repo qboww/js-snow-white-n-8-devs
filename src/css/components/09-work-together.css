@@ -316,6 +316,7 @@ footer .container {
 
 .footer-address {
   display: flex;
+  flex-wrap: wrap;
   gap: 4px;
 }
 
