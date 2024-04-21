@@ -352,7 +352,7 @@ section .about-me-section .about-me-skillslist {
 .about-me-section .about-me-btn-right {
   background-color: inherit;
   border: none;
-  padding: 0px;
+
   width: 28px;
   height: 28px;
   display: flex;

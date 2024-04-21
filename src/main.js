@@ -34,8 +34,3 @@ backToTop();
 import { aboutMeFunction } from './js/about-me.js';
 aboutMeFunction();
 // #endregion about-me
-
-// #region projects
-import { projectsFunction } from './js/projects.js';
-projectsFunction();
-// #endregion projects
