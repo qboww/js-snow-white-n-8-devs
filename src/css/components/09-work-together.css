@@ -1,22 +1,27 @@
 @import 'izitoast/dist/css/iziToast.min.css';
 
-:root {
-  --white-text-color: #fafafa;
-  --arrow-color: #3b3b3b;
-  --accent-color: #ed3b44;
-  --background-color: #1c1d20;
-  --cards-background-color: #242527;
-  --middle-gradient-color: #69292d;
-  --button-border-color: #fafafa33;
-  --grey-title-color: #fafafa66;
-  --grey-text-color: #fafafa99;
-  --text-shadow: #fafafa40;
-  --icon-accent: #450306;
-  --modal-border-color: #fafafa1a;
-  --button-hover-color: #e0373f;
-  --succes-message-color: #3cbc81;
-  --not-succes-message-color: #e74a3b;
+/* .work-together{
+  background: linear-gradient(90deg, var(--font-color) 90%,
+   rgb(0 0 0 / 10%) 92%, 
+   rgb(0 0 0 / 4%) 92.5%,
+    rgb(0 0 0 / 6%) 100%);
 }
+
+ @media screen and (min-width: 768px) {
+  .footer-bg-image {
+    background: linear-gradient(90deg, var(--font-color) 70%,
+    rgb(0 0 0 / 10%), 
+    rgb(0 0 0 / 4%) ,
+     rgb(0 0 0 / 6%) ,
+    rgb(0 0 0 / 10%), 
+    rgb(0 0 0 / 4%) ,
+     rgb(0 0 0 / 6%) ,
+    rgb(0 0 0 / 10%), 
+    rgb(0 0 0 / 4%) ,
+     rgb(0 0 0 / 6%) 100%);
+  }
+}  */
+
 
 footer {
   background-color: var(--background-color);
