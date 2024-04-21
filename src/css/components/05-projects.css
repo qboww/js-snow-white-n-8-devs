@@ -180,8 +180,8 @@
     padding: 82px 0;
   }
 
-  .projects-card {
-    display: flex !important;
+  .projects-list .projects-card {
+    display: flex;
   }
 
   .card-description {
