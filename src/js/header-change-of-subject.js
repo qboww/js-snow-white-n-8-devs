@@ -25,7 +25,7 @@ export function changeTheSubject() {
     if (storedTheme) {
       setTheme(storedTheme);
     } else {
-      setTheme('blue-theme');
+      setTheme('green-theme');
     }
   }
 }
