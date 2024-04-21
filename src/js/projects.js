@@ -16,6 +16,7 @@ const projectsFunction = () => {
     },
 
     grabCursor: true,
+    spaceBetween: 50,
   });
 };
 
