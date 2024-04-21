@@ -121,6 +121,7 @@ footer .container {
 }
 
 .footer-title-upper-part {
+  display: block;
   margin-left: 52px;
 
   margin-bottom: 8px;
