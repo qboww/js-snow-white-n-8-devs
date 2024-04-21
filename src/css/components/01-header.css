@@ -173,6 +173,13 @@ select {
   }
 }
 
+@media  (width: 374px) {
+  .header-select {
+    top: 670px;
+    right: 20px;
+  }
+}
+
 @media (min-width: 768px) {
   .header-select {
     right: 35px;
