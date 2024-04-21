@@ -34,7 +34,7 @@ const labels = {
   removeBoth() {
     elms.email.classList.remove('input-success');
     elms.email.classList.remove('input-error');
-    elms.successLabel.classList.add('is-open');
+    elms.successLabel.classList.remove('is-open');
     elms.errorLabel.classList.remove('is-open');
 
     setTimeout(() => {
@@ -45,7 +45,7 @@ const labels = {
 };
 
 const modals = {
-  isClosed() {
+  close() {
     elms.modalOverlay.classList.remove('is-open');
     elms.modalBackdrop.classList.remove('is-open');
 
@@ -54,16 +54,20 @@ const modals = {
       elms.modalOverlay.classList.add('visually-hidden');
     }, 500);
 
-    elms.modalOverlay.children.close_button.removeEventListener('click', modals.isClosed);
+    elms.modalOverlay.children.close_button.removeEventListener('click', modals.close);
+    elms.modalBackdrop.removeEventListener('click', onBackdropClick);
+    document.body.removeEventListener('keydown', onBodyPress);
   },
 
-  isOpen() {
+  open() {
     elms.modalBackdrop.classList.remove('visually-hidden');
     elms.modalOverlay.classList.remove('visually-hidden');
     elms.modalBackdrop.classList.add('is-open');
     elms.modalOverlay.classList.add('is-open');
 
-    elms.modalOverlay.children.close_button.addEventListener('click', modals.isClosed);
+    elms.modalOverlay.children.close_button.addEventListener('click', modals.close);
+    elms.modalBackdrop.addEventListener('click', onBackdropClick);
+    document.body.addEventListener('keydown', onBodyPress);
   },
 };
 
@@ -133,6 +137,18 @@ const onButtonClick = () => {
   }
 };
 
+const onBackdropClick = event => {
+  if (event.target === event.currentTarget) {
+    modals.close();
+  }
+};
+
+const onBodyPress = event => {
+  if (event.key === 'Escape') {
+    modals.close();
+  }
+};
+
 const onFormSubmit = async event => {
   try {
     event.preventDefault();
@@ -158,7 +174,7 @@ const onFormSubmit = async event => {
     elms.modalOverlay.children.title.textContent = response.data.title;
     elms.modalOverlay.children.message.textContent = response.data.message;
 
-    modals.isOpen();
+    modals.open();
 
     labels.removeBoth();
 
