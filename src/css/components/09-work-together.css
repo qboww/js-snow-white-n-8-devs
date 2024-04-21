@@ -9,9 +9,9 @@ footer{
 
  @media screen and (min-width: 768px) {
   footer {
-    background: linear-gradient(90deg, var(--font-color) 70%,
+    background: linear-gradient(90deg, var(--font-color) 75%,
     rgb(0 0 0 / 10%)76.4%, 
-    rgb(0 0 0 / 4%)77.4%,
+    rgb(0 0 0 / 4%)76.4%,
      rgb(0 0 0 / 6%)85%,
 
     rgb(0 0 0 / 10%)87%, 
