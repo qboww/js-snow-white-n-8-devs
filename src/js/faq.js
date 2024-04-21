@@ -7,5 +7,5 @@ export function buttonFaq() {
     const accordionFaq = new Accordion('.faq-list', {
         showMultiple: true,
     });
-    accordionFaq.open(0);
+    accordionFaq.open();
 }
