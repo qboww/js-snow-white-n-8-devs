@@ -1,7 +1,3 @@
-.menu-box.is-open {
-  opacity: 1;
-}
-
 @media only screen and (max-width: 768px) {
   .menu-box {
     width: 100%;
@@ -15,7 +11,6 @@
     justify-content: space-between;
     text-align: center;
     transition: opacity 0.5s ease;
-    opacity: 0;
   }
 
   .menu-box.visually-hidden {
@@ -27,26 +22,36 @@
   }
 
   .image-mob-menu {
-    background-image: linear-gradient(90deg,
+    background-image: linear-gradient(
+        90deg,
         rgb(0 0 0 / 20%) 0%,
         rgb(0 0 0 / 20%) 16.67%,
-        rgb(183 183 183 / 20%) 100%),
-      linear-gradient(90deg,
+        rgb(183 183 183 / 20%) 100%
+      ),
+      linear-gradient(
+        90deg,
         rgb(0 0 0 / 20%) 0%,
         rgb(0 0 0 / 20%) 16.67%,
-        rgb(169 169 169 / 20%) 100%),
-      linear-gradient(90deg,
+        rgb(169 169 169 / 20%) 100%
+      ),
+      linear-gradient(
+        90deg,
         rgb(0 0 0 / 20%) 0%,
         rgb(0 0 0 / 20%) 16.67%,
-        rgb(147 147 147 / 20%) 100%),
-      linear-gradient(90deg,
+        rgb(147 147 147 / 20%) 100%
+      ),
+      linear-gradient(
+        90deg,
         rgb(0 0 0 / 20%) 0%,
         rgb(0 0 0 / 20%) 16.67%,
-        rgb(189 187 187 / 20%) 100%),
-      linear-gradient(90deg,
+        rgb(189 187 187 / 20%) 100%
+      ),
+      linear-gradient(
+        90deg,
         rgb(0 0 0 / 20%) 0%,
         rgb(0 0 0 / 20%) 16.67%,
-        rgb(140 136 136 / 20%) 100%),
+        rgb(140 136 136 / 20%) 100%
+      ),
       linear-gradient(90deg, rgb(0 0 0 / 20%) 0%, rgb(0 0 0 / 20%) 16.67%, rgb(92 91 91 / 10%) 100%),
       linear-gradient(to right, var(--color-primary), var(--color-secondary), var(--font-color) 50%);
 
@@ -63,11 +68,11 @@
   }
 
   .button-mob-menu {
-    display: flex;
     justify-content: right;
     background-color: transparent;
     border: none;
-    padding: 0;
+    padding: 0px;
+    height: 32px;
     cursor: pointer;
     transition: 250ms linear;
   }
@@ -113,5 +118,22 @@
   .modal-order {
     display: flex;
     justify-content: center;
+  }
+}
+
+.modal-controls {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .header-select-modal {
+    display: flex;
+    position: relative;
+    height: 28px;
+    padding: 0px;
+
   }
 }

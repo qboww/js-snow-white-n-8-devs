@@ -8,10 +8,9 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 
 export function aboutMeFunction() {
-  const accordionAboutMe = new Accordion('.about-me-secondlist', {
-    showMultiple: true,
+  new Accordion('.about-me-secondlist', {
+    openOnInit: [0],
   });
-  accordionAboutMe.open(0);
 
   new Swiper('.about-me-swiper-container', {
     centeredSlides: false,
@@ -25,7 +24,6 @@ export function aboutMeFunction() {
     navigation: {
       nextEl: '.swiper-button-next',
     },
-    slidesPerView: 2,
     spaceBetween: 0,
     breakpoints: {
       320: {

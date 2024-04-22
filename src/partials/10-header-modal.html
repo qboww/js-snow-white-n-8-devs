@@ -1,11 +1,21 @@
 <section>
     <h2 class="visually-hidden">mobile modal</h2>
     <div class="menu-box image-mob-menu visually-hidden">
-        <button type="button" class="button-mob-menu" aria-label="open mobile menu">
-            <svg width="28" height="28">
-                <use href="./img/icon.svg#icon-close"></use>
-            </svg>
-        </button>
+        <div class="modal-controls">
+            <select class="header-select-modal header-select" aria-label="color selector">
+                <option value="green">Cyan</option>
+                <option value="blue">Blue</option>
+                <option value="red">Red</option>
+                <option value="lime">Yellow</option>
+                <option value="ocher">Orange</option>
+            </select>
+
+            <button type="button" class="button-mob-menu" aria-label="open mobile menu">
+                <svg width="32" height="32">
+                    <use href="./img/icon.svg#icon-close"></use>
+                </svg>
+            </button>
+        </div>
 
         <ul>
             <li class="menu-item">
