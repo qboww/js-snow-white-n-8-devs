@@ -75,10 +75,11 @@
 }
 
 .link-order {
+  display: block;
   border: 1px solid var(--button-border-color);
   border-radius: 60px;
   padding: 18px 36px;
-  width: 187px;
+  max-width: 187px;
   height: 55px;
   font-weight: 500;
   font-size: 15px;
