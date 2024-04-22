@@ -6,11 +6,15 @@ export function initializeMobile() {
 
   buttonMenu.addEventListener('click', function () {
     menuBox.classList.toggle('visually-hidden');
+    menuBox.classList.add('is-open');
     toggleBodyScroll();
   });
 
   buttonClose.addEventListener('click', function () {
-    menuBox.classList.toggle('visually-hidden');
+    menuBox.classList.remove('is-open');
+    setTimeout(() => {
+      menuBox.classList.toggle('visually-hidden');
+    }, 500);
     toggleBodyScroll();
   });
 
