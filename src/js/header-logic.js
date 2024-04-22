@@ -3,6 +3,14 @@ export function initializeMenuBehavior() {
   const menuAnchors = document.querySelector('.list-menu-anchors');
 
   dropDownButton.addEventListener('click', function () {
+    if (!menuAnchors.classList.contains('visually-hidden')) {
+      menuAnchors.classList.remove('is-open');
+      setTimeout(() => {
+        menuAnchors.classList.toggle('visually-hidden');
+      }, 500);
+      return;
+    }
+    menuAnchors.classList.add('is-open');
     menuAnchors.classList.toggle('visually-hidden');
   });
 
