@@ -38,4 +38,30 @@ export function aboutMeFunction() {
       },
     },
   });
+
+  const btnAccord = document.querySelectorAll('.about-me-btn-aboutme');
+
+  document.querySelectorAll('.about-me-secondlist-item').forEach(item => {
+    if (item.classList.contains('is-active')) {
+      item.firstElementChild.style.marginBottom = '0px';
+      item.firstElementChild.style.transition = 'margin 0.5s ease-in-out';
+    } else {
+      item.firstElementChild.style.marginBottom = '35px';
+      item.firstElementChild.style.transition = 'margin 0.5s ease-in-out';
+    }
+  });
+
+  btnAccord.forEach(btn =>
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.about-me-secondlist-item').forEach(item => {
+        if (item.classList.contains('is-active')) {
+          item.firstElementChild.style.marginBottom = '0px';
+          item.firstElementChild.style.transition = 'margin 0.5s ease-in-out';
+        } else {
+          item.firstElementChild.style.marginBottom = '35px';
+          item.firstElementChild.style.transition = 'margin 0.5s ease-in-out';
+        }
+      });
+    })
+  );
 }
