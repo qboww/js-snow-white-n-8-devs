@@ -10,7 +10,7 @@
   <script type="module" crossorigin src="/js-snow-white-n-8-devs/commonHelpers.js"></script>
   <link rel="modulepreload" crossorigin href="/js-snow-white-n-8-devs/assets/vendor-bc146a52.js">
   <link rel="stylesheet" href="/js-snow-white-n-8-devs/assets/vendor-3b6973c7.css">
-  <link rel="stylesheet" href="/js-snow-white-n-8-devs/assets/index-68ebeb8e.css">
+  <link rel="stylesheet" href="/js-snow-white-n-8-devs/assets/index-deb9b396.css">
 </head>
 
 <body>
@@ -724,11 +724,21 @@
   <section>
     <h2 class="visually-hidden">mobile modal</h2>
     <div class="menu-box image-mob-menu visually-hidden">
-        <button type="button" class="button-mob-menu" aria-label="open mobile menu">
-            <svg width="28" height="28">
-                <use href="/js-snow-white-n-8-devs/assets/icon-78274806.svg#icon-close"></use>
-            </svg>
-        </button>
+        <div class="modal-controls">
+            <select class="header-select-modal header-select" aria-label="color selector">
+                <option value="green">Cyan</option>
+                <option value="blue">Blue</option>
+                <option value="red">Red</option>
+                <option value="lime">Yellow</option>
+                <option value="ocher">Orange</option>
+            </select>
+
+            <button type="button" class="button-mob-menu" aria-label="open mobile menu">
+                <svg width="32" height="32">
+                    <use href="/js-snow-white-n-8-devs/assets/icon-78274806.svg#icon-close"></use>
+                </svg>
+            </button>
+        </div>
 
         <ul>
             <li class="menu-item">
