@@ -128,7 +128,6 @@
       display: flex;
       position: relative;
       height: 28px;
-      padding: 0px;
-
+      padding: 0px 6px;
     }
   }
