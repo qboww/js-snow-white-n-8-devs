@@ -72,6 +72,7 @@
     background-color: transparent;
     border: none;
     padding: 0px;
+    height: 32px;
     cursor: pointer;
     transition: 250ms linear;
   }
