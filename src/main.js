@@ -15,6 +15,8 @@ backToTop();
 import { aboutMeFunction } from './js/about-me.js';
 aboutMeFunction();
 
+import { initalizeReviews } from './js/reviews.js';
+initalizeReviews();
 
 import { projectsFunction } from './js/projects.js';
 projectsFunction();

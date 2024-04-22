@@ -1,7 +1,9 @@
 import { fetchDataAndInitializeSwiper } from './reviews-api';
 
-async function initializeSwiper() {
-  await fetchDataAndInitializeSwiper();
-}
+export function initalizeReviews() {
+  async function initializeSwiper() {
+    await fetchDataAndInitializeSwiper();
+  }
 
-initializeSwiper();
+  initializeSwiper();
+}
