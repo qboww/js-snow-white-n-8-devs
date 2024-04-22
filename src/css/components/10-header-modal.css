@@ -68,11 +68,10 @@
   }
 
   .button-mob-menu {
-    display: flex;
     justify-content: right;
     background-color: transparent;
     border: none;
-    padding: 0;
+    padding: 0px;
     cursor: pointer;
     transition: 250ms linear;
   }
@@ -118,5 +117,22 @@
   .modal-order {
     display: flex;
     justify-content: center;
+  }
+}
+
+.modal-controls {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .header-select-modal {
+    display: flex;
+    position: relative;
+    height: 28px;
+    padding: 0px;
+
   }
 }
