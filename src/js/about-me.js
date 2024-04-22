@@ -10,6 +10,7 @@ import 'swiper/css/navigation';
 export function aboutMeFunction() {
   new Accordion('.about-me-secondlist', {
     openOnInit: [0],
+    showMultiple: true,
   });
 
   new Swiper('.about-me-swiper-container', {
