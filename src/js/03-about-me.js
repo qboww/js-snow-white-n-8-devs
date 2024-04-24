@@ -7,7 +7,7 @@ import 'swiper/css/bundle';
 import 'swiper/css';
 import 'swiper/css/navigation';
 
-export function aboutMeFunction() {
+export function initAboutMeSection() {
   new Accordion('.about-me-secondlist', {
     openOnInit: [0],
     showMultiple: true,

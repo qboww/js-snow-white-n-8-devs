@@ -1,7 +1,7 @@
 import Swiper from 'swiper/bundle';
 import 'swiper/css/bundle';
 
-const projectsFunction = () => {
+const initProjectsSection = () => {
   new Swiper('.projects-swiper', {
     direction: 'horizontal',
     navigation: {
@@ -20,4 +20,4 @@ const projectsFunction = () => {
   });
 };
 
-export { projectsFunction };
+export { initProjectsSection };

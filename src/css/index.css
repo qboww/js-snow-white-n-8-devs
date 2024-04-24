@@ -11,5 +11,6 @@
 @import url('./components/09-work-together.css');
 @import url('./components/10-header-modal.css');
 @import url('./components/11-footer-modal.css');
-@import url('./components/back-to-top.css');
-@import url('./components/cursor.css');
+
+@import url('./components/features/back-to-top.css');
+@import url('./components/features/cursor.css');

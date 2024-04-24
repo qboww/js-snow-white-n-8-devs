@@ -1,4 +1,4 @@
-export function backToTop() {
+export function initBackToTopFeature() {
   const showOnPx = 100;
   const backToTopButton = document.querySelector('.back-to-top');
 

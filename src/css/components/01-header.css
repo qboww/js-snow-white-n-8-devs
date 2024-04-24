@@ -138,8 +138,6 @@
   }
 }
 
-/* theme switcher */
-
 select {
   -moz-appearance: none;
   -webkit-appearance: none;
@@ -161,7 +159,7 @@ select {
 
   padding: 8px;
   text-align: center;
-  background-color: var(--background-color);
+  background-color: var(--font-color);
   color: white;
   border: 2px solid var(--color-primary);
   border-radius: 50px;

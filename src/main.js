@@ -1,27 +1,24 @@
-import { initializeMobile } from './js/mobile-logic';
-initializeMobile();
+import { initMobileMenuModal } from './js/01-header.js';
+import { initAboutMeSection } from './js/03-about-me.js';
+import { initProjectsSection } from './js/05-projects.js';
+import { initFaqSection } from './js/06-faq.js';
+import { initCoversSection } from './js/07-covers.js';
+import { initReviewsSection } from './js/08-reviews.js';
+import { initWorkTogetherSection } from './js/09-work-together.js';
+import { initMobileModal } from './js/10-header-modal.js';
 
-import { initalizeCover } from './js/covers';
-initalizeCover();
+import { initBackToTopFeature } from './js/features/back-to-top.js';
+import { initCursorFeature } from './js/features/cursor.js';
 
-import { initializeMenuBehavior } from './js/header-logic';
-initializeMenuBehavior();
+initMobileModal();
+initMobileMenuModal();
 
-import * as workTogether from './js/work-together';
+initBackToTopFeature();
+initCursorFeature();
 
-import { backToTop } from './js/back-to-top.js';
-backToTop();
-
-import { aboutMeFunction } from './js/about-me.js';
-aboutMeFunction();
-
-import { initalizeReviews } from './js/reviews.js';
-initalizeReviews();
-
-import { projectsFunction } from './js/projects.js';
-projectsFunction();
-
-import { buttonFaq } from './js/faq.js';
-buttonFaq();
-
-import './js/cursor.js';
+initAboutMeSection();
+initProjectsSection();
+initFaqSection();
+initCoversSection();
+initReviewsSection();
+initWorkTogetherSection();

@@ -1,4 +1,4 @@
-export function initializeMobile() {
+export function initMobileModal() {
   const menuBox = document.querySelector('.menu-box');
   const buttonMenu = document.querySelector('.button-menu');
   const buttonClose = document.querySelector('.button-mob-menu');

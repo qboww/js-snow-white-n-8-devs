@@ -14,11 +14,13 @@
     pointer-events: none;
     will-change: transform;
   }
+
   @media (pointer: fine) {
     .cursor {
       display: block;
     }
   }
+
   .cursor::after {
     content: '';
     position: absolute;
@@ -35,6 +37,7 @@
       0.3s cubic-bezier(0.25, 0.25, 0.42, 1) transform,
       0.1s cubic-bezier(0.25, 0.25, 0.42, 1) border-radius;
   }
+
   body:not(body:hover) .cursor::after {
     opacity: 0;
     transform: scale(0);

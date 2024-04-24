@@ -1,4 +1,4 @@
-export function initalizeCover() {
+export function initCoversSection() {
   const covers = document.querySelector('.covers');
   const animatesEl = document.querySelectorAll('.covers-picture');
 
