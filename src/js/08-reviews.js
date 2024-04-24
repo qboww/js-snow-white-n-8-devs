@@ -1,6 +1,6 @@
-import { fetchDataAndInitializeSwiper } from './reviews-api';
+import { fetchDataAndInitializeSwiper } from './helpers/reviews-api';
 
-export function initalizeReviews() {
+export function initReviewsSection() {
   async function initializeSwiper() {
     await fetchDataAndInitializeSwiper();
   }

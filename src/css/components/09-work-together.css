@@ -1,67 +1,76 @@
 @import 'izitoast/dist/css/iziToast.min.css';
 
-footer{
-  background: linear-gradient(90deg, var(--font-color) 90%,
-   rgb(0 0 0 / 10%) 92%, 
-   rgb(0 0 0 / 4%) 92.5%,
-    rgb(0 0 0 / 6%) 100%);
+footer {
+  background: linear-gradient(
+    90deg,
+    var(--font-color) 90%,
+    rgb(0 0 0 / 10%) 92%,
+    rgb(0 0 0 / 4%) 92.5%,
+    rgb(0 0 0 / 6%) 100%
+  );
 }
 
- @media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
   footer {
-    background: linear-gradient(90deg, var(--font-color) 75%,
-    rgb(0 0 0 / 10%)76.4%, 
-    rgb(0 0 0 / 4%)76.4%,
-     rgb(0 0 0 / 6%)85%,
+    background: linear-gradient(
+      90deg,
+      var(--font-color) 75%,
+      rgb(0 0 0 / 10%) 76.4%,
+      rgb(0 0 0 / 4%) 76.4%,
+      rgb(0 0 0 / 6%) 85%,
 
-    rgb(0 0 0 / 10%)87%, 
-    rgb(0 0 0 / 4%)85%,
-     rgb(0 0 0 / 6%)90%,
+      rgb(0 0 0 / 10%) 87%,
+      rgb(0 0 0 / 4%) 85%,
+      rgb(0 0 0 / 6%) 90%,
 
-    rgb(0 0 0 / 10%)96%, 
-    rgb(0 0 0 / 4%)90%,
-     rgb(0 0 0 / 6%)90%,
+      rgb(0 0 0 / 10%) 96%,
+      rgb(0 0 0 / 4%) 90%,
+      rgb(0 0 0 / 6%) 90%,
 
-    rgb(0 0 0 / 10%)96%, 
-    rgb(0 0 0 / 4%)90%,
-     rgb(0 0 0 / 6%)90%,
+      rgb(0 0 0 / 10%) 96%,
+      rgb(0 0 0 / 4%) 90%,
+      rgb(0 0 0 / 6%) 90%,
 
-    rgb(0 0 0 / 10%)96%, 
-    rgb(0 0 0 / 4%)90%,
-     rgb(0 0 0 / 6%)90%,
+      rgb(0 0 0 / 10%) 96%,
+      rgb(0 0 0 / 4%) 90%,
+      rgb(0 0 0 / 6%) 90%,
 
-    rgb(0 0 0 / 10%)96%, 
-    rgb(0 0 0 / 4%)90%,
-     rgb(0 0 0 / 6%) 100%);
+      rgb(0 0 0 / 10%) 96%,
+      rgb(0 0 0 / 4%) 90%,
+      rgb(0 0 0 / 6%) 100%
+    );
   }
-} 
+}
 
 @media only screen and (min-width: 1440px) {
   footer {
-    background: linear-gradient(90deg, var(--font-color) 72%,
-    rgb(0 0 0 / 10%)72.4%, 
-    rgb(0 0 0 / 4%)72.8%,
-     rgb(0 0 0 / 6%)78%,
+    background: linear-gradient(
+      90deg,
+      var(--font-color) 72%,
+      rgb(0 0 0 / 10%) 72.4%,
+      rgb(0 0 0 / 4%) 72.8%,
+      rgb(0 0 0 / 6%) 78%,
 
-    rgb(0 0 0 / 10%)78%, 
-    rgb(0 0 0 / 4%)78.4%,
-     rgb(0 0 0 / 6%)83%,
+      rgb(0 0 0 / 10%) 78%,
+      rgb(0 0 0 / 4%) 78.4%,
+      rgb(0 0 0 / 6%) 83%,
 
-    rgb(0 0 0 / 10%)83%, 
-    rgb(0 0 0 / 4%)83.4%,
-     rgb(0 0 0 / 6%)87%,
+      rgb(0 0 0 / 10%) 83%,
+      rgb(0 0 0 / 4%) 83.4%,
+      rgb(0 0 0 / 6%) 87%,
 
-    rgb(0 0 0 / 10%)87%, 
-    rgb(0 0 0 / 4%)87.4%,
-     rgb(0 0 0 / 6%)91%,
+      rgb(0 0 0 / 10%) 87%,
+      rgb(0 0 0 / 4%) 87.4%,
+      rgb(0 0 0 / 6%) 91%,
 
-    rgb(0 0 0 / 10%)91%, 
-    rgb(0 0 0 / 4%)91.4%,
-     rgb(0 0 0 / 6%)95%,
+      rgb(0 0 0 / 10%) 91%,
+      rgb(0 0 0 / 4%) 91.4%,
+      rgb(0 0 0 / 6%) 95%,
 
-    rgb(0 0 0 / 10%)95%, 
-    rgb(0 0 0 / 4%)95.4%,
-     rgb(0 0 0 / 6%) 100%);
+      rgb(0 0 0 / 10%) 95%,
+      rgb(0 0 0 / 4%) 95.4%,
+      rgb(0 0 0 / 6%) 100%
+    );
   }
 }
 
@@ -89,8 +98,6 @@ footer .container {
     padding: 0;
   }
 }
-
-
 
 .footer-title {
   font-weight: 500;
@@ -255,7 +262,9 @@ footer .container {
   letter-spacing: -0.02em;
 
   opacity: 0;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition:
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   margin-top: 4px;
 }
 
@@ -348,7 +357,6 @@ footer .container {
 }
 
 @media only screen and (min-width: 1440px) {
-
   .footer-link:hover,
   .footer-link:focus {
     outline-color: var(--white-text-color);

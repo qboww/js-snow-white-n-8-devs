@@ -18,15 +18,17 @@
   border-top: 1px solid var(--button-border-color) !important;
   padding: 20px 0 !important;
 }
+
 .faq-item:last-child {
   border-bottom: 1px solid var(--button-border-color) !important;
   padding: 20px 0 !important;
 }
+
 .faq-container {
   display: flex;
   justify-content: space-between;
-  /* align-items: flex-start; */
 }
+
 .faq-title {
   font-family: 'Inter Tight', sans-serif !important;
   font-weight: 600 !important;
@@ -36,6 +38,7 @@
   padding-bottom: 16px !important;
   color: var(--white-text-color) !important;
 }
+
 .faq-text {
   font-family: 'Inter Tight', sans-serif !important;
   font-weight: 500 !important;
@@ -48,6 +51,7 @@
   transition-property: height, visibility !important;
   transition-timing-function: ease !important;
 }
+
 .faq-btn {
   display: flex !important;
   text-align: center !important;
@@ -64,52 +68,61 @@
   transform: rotate(180deg);
   background-color: var(--background-color);
 }
+
 section .ac {
   border: none;
 }
+
 .faq-icon {
   width: 20px;
   height: 20px;
   stroke: var(--white-text-color);
 }
+
 @media only screen and (min-width: 1440px) {
   .faq-list {
     display: flex !important;
     flex-direction: row !important;
     flex-wrap: wrap !important;
   }
+
   .faq-item {
     background-color: inherit !important;
     flex-basis: 50% !important;
   }
+
   .faq-item:nth-child(1) {
     order: 1 !important;
     padding-right: 32px !important;
     border-right: 1px solid var(--button-border-color) !important;
   }
+
   .faq-item:nth-child(2) {
     order: 3 !important;
     padding-right: 32px !important;
     border-right: 1px solid var(--button-border-color) !important;
   }
+
   .faq-item:nth-child(3) {
     order: 5 !important;
     padding-right: 32px !important;
     border-right: 1px solid var(--button-border-color) !important;
     border-bottom: 1px solid var(--button-border-color) !important;
   }
+
   .faq-item:nth-child(4) {
     order: 2 !important;
     padding-left: 32px !important;
   }
+
   .faq-item:nth-child(5) {
     order: 4 !important;
     padding-left: 32px !important;
   }
+
   .faq-item:nth-child(6) {
     order: 6 !important;
     padding-left: 32px !important;
-    /* border: 1px solid var(--button-border-color); */
   }
 }
 

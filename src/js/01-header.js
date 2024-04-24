@@ -1,4 +1,4 @@
-export function initializeMenuBehavior() {
+export function initMobileMenuModal() {
   const dropDownButton = document.querySelector('.btn-drop-down');
   const menuAnchors = document.querySelector('.list-menu-anchors');
 
