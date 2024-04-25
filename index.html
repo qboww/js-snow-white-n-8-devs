@@ -1,28 +1,49 @@
 <!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/x-icon" href="/js-snow-white-n-8-devs/assets/favicon-ec522104.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    
+    <script type="module" crossorigin src="/js-snow-white-n-8-devs/commonHelpers2.js"></script>
+    <link rel="modulepreload" crossorigin href="/js-snow-white-n-8-devs/assets/theme-changer-9ac1d12e.js">
+    <link rel="modulepreload" crossorigin href="/js-snow-white-n-8-devs/assets/vendor-43152ff4.js">
+    <link rel="stylesheet" href="/js-snow-white-n-8-devs/assets/vendor-c63a0e4b.css">
+    <link rel="stylesheet" href="/js-snow-white-n-8-devs/assets/index-ad34f3d7.css">
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/x-icon" href="/js-snow-white-n-8-devs/assets/favicon-ec522104.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio</title>
-  
-  <script type="module" crossorigin src="/js-snow-white-n-8-devs/commonHelpers.js"></script>
-  <link rel="modulepreload" crossorigin href="/js-snow-white-n-8-devs/assets/vendor-7c6b7944.js">
-  <link rel="stylesheet" href="/js-snow-white-n-8-devs/assets/vendor-c63a0e4b.css">
-  <link rel="stylesheet" href="/js-snow-white-n-8-devs/assets/index-8f41b56a.css">
-</head>
+  <body>
+    
 
-<body>
-  <header>
-    <section class="header-section">
+<button class="back-to-top hidden" aria-label="scroll to top">
+  <svg class="back-to-top-icon">
+    <use href="/js-snow-white-n-8-devs/assets/icon-78274806.svg#icon-up"></use>
+  </svg>
+</button>
+<div class="progress-bar"></div>
+
+<span class="cursor"></span>
+
+
+    <header>
+      <section class="header-section">
   <h2 class="visually-hidden">header</h2>
   <div class="header-container container">
     <div class="logo-container">
       <picture>
-        <source media="(min-width:375px)" srcset="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/4QBWRXhpZgAATU0AKgAAAAgABAEaAAUAAAABAAAAPgEbAAUAAAABAAAARgEoAAMAAAABAAIAAAITAAMAAAABAAEAAAAAAAAAAABIAAAAAQAAAEgAAAAB/9sAQwAFAwQEBAMFBAQEBQUFBgcMCAcHBwcPCwsJDBEPEhIRDxERExYcFxMUGhURERghGBodHR8fHxMXIiQiHiQcHh8e/9sAQwEFBQUHBgcOCAgOHhQRFB4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4e/8AAEQgAUABQAwERAAIRAQMRAf/EABwAAAEFAQEBAAAAAAAAAAAAAAcCAwUGCAQBAP/EADYQAAEDAwIDBwMCBAcAAAAAAAECAwQABREGIQcSMQgTQVFhcYEUIjJSwRVCobEWIzNiY5Hx/8QAGgEAAgMBAQAAAAAAAAAAAAAAAAECAwQFBv/EACgRAAICAgMAAAUEAwAAAAAAAAABAhEDIQQSMQUTFDKBIjNBwVFhcf/aAAwDAQACEQMRAD8A19dbg3BaG3O4r8U/uaBpFYmT5UkkuvKwf5UnAHxUSSRxK6UgGiOuaAIi9agtNp+2ZJAXjJSncj38qhLLGHpbDDOfhWp/EmyxJTbKostaXPxUhTZ/pzZqn6mN+F30kq9LDZL5ab00V26Y28RupGcLT7p6irYzjLwoljlD1HdUiB2wbpOhqBYkLx+hRyk/Bpp0KrLpYbs1c2CQO7eR+aM/1HpU07ItFfucgyZzrhOQVYT7DpTGjlIqLGNqoAD3aA4myNINt2q0tocnSEZUo792D+/jWfLN31Rqw4lXZgS0fPvV8vSJtzS7KhJlAv5b7wrUroCM7entWaTjE2Y4SloJqfqzKkvNtJahuDkbSoEKbPhyjcfGKq7JlnVopOtpF0sc1ibHnONyGV7PNnunEjxCuU4P9qIS3oU462F/gdrx3WFokxLjj+JwFcriwAA6jJAVjz2wfjzrdin2VM52bH1drwItWlB22SWqFc2XwcJ5glfqk9aa0I66sEeUMaEHrUQAJx70s7P1bHlsoytQTgkZyCMH+1c/kfpmzq8NqUP+E5w907Fti2G3IqWw6tK3lY/MpGE+3QGqY02rLptq2i06ptCAh1cOOgLKT9wG4z5Us0ev2j48u/3MAOsbTNcS4H+ZawVABQztjFUQmap49aLb2XdPXCDMulzeBTFcaS3hQIKl5ByPTAro8a22zkcpKK6h0IrUYjwUCJnFWCE0MBJpAUXXcyH/ABflDbkmRFZTzMoABysq5QCSBk8p2zXP5WSPfqzr8LjZHi+YvH/RGHWDNoZbN30fqRpJV/rNw0yEJx4nulqI+RUoQj1uyqU5KVUyC1Rxv00zEdkW2PNlpYWEOlbRZCVEZx9+DnHhilki5OkW4aq2DbWPEthkImTbeuMqYz3rDbiD/mIOwKSAQRWaHHlJ6NU+THGtsI3CzWZteh48y66eurUOXJIbkxmQ+hOSEALCTzJ+7bdNdDjwcYtHI5U+07C4oVcZhBGKQEvmrBCFGkAnNAFS1zplV1dbmRX1R1pUhUgoBy4EcxSDjfH3EVzuZx3N94/k7PwznLFF4p/j8+k0w+0+1hSE4WndPUe1SjJNbKnFxemCviRp2HHM2fMtff2155LxQwEBZVyJRy4URseUdMnc1nyWmn4buO7telX4kRLLP0w5Lun08e5tFlMKKOYobaSSsIBKQFFRJ5ikEDYeFRWSmuvhN4dPt6/6CPwvjS5uhrU09HbZiIe75RKgSvlXzIAA6fcAcny9a6WB3A4nL/daL0qrTMIVSBEpkYqwQgnypDEEmgCC4hXpOntC3q8qfQwqLCdW0pZGO85TyD1JVgY9aEr0K62QPD/XmndcWVq6WSW2pzlH1EYqAdjr8lJ9+h6GsWSLg6Z0cM1kVoc12tYs5dT3a3WyC0lw4TzeBPpWPNv038e1dAG1+m7Lvgal3S3rcCAtxLSFYSknoFE56j/yq4JV4asjj109mltMW1Nn01AtoIJYZAUR05juf6muxjj0ikebyz+ZNyO41MqEGgCQedaYYcfkOtsstpKluOKCUpA6kk7AVIAd3HjnwrgznIb2rGFuN55iyy44jbyUlJB+DT6sj2QPtU9q7ScJxbNhsNwuigcJdeWlhtXqPyVj3ApqAnMCPFjjNqbiEtuLM7qBaOqILJ+0LGRzKUd1HB28BnapxSRXKTkDm13S6WG6JuNmuEmBKbP2usrKT7HHUeh2olFSVMMc5Qdphd0vx0lzGGIeq185bUCXkjAVv1I6ftXI5HBl7A7nE+IQarJp/wCS0aLkr4p8Q1tWws/TNpbMl5a0BSEA5PKnOT0wMDqahi4k9WWZudjpqOzVboCQEjoBgV0zjDGaAPKQGau2DxBmSLv/AIHtkhbcKIkLn92rHfOEZCFY6hIxt5n0FXwjqynJLdIzNIbWkZ6K658RUiCOB3c56HOD71Emj1pZUktlWB1T6GhCqhznK04VnmHWnYjlWMkmokkOwpcuDIRKhSXo0hs5Q6ysoWk+YI3FA0FHSnaH4n2FhEdd3ZvDKOibkz3qvlYIWflRqPVE+zC9wx7UcK6XRq262tTFqDqglE6KpRZST+tKiSkf7gT7eNRcRqRo5pbTzKH2HEOtOJCkLQoFKknoQR1BpDMVdpHTdy01xa1DEuHeKS9LXJYeXv3jThKkH12OPdJHhWpeGVrYKJz22R4dFfsaixoi3FAkkbZqBNCM4VmgY7zHIX8GmR/0euAcmRQCEPAJ5QPLegaPkJz80ILPFowT70qGmam7C+vbvO1Q3w2uAfmwVIXIhu7qMUIwVoJ8GyOnkogfzVFxJKWjT/aB4QWvinp9DRfTAvUQH6OYUcycHq24BuUH/tJ3HiDOMqIONmCOJ/CLX+gZjjV705NVCIITMYaLzBz/AMiQQD4jOD6VK0RSYL1gpUQeoOKgWI+8figQ4jcFJ8RTELTvHWD1GP70C/kaWeZyga8FN5KkgAkk0IC+8PeD3EbX1xQzp7TM5UZxQzOktlmKgfqLihg4G+E5PkDSsEtG/OzdwSs3CHT7yUPi436eE/Xz+XlBA3DbYP4oB+VHc+ACJH//2Q== 1x, /js-snow-white-n-8-devs/assets/image2x-69bea2f6.jpg 2x"
-         />
-        <img src="data:image/jpeg;base64,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" alt="logo" width="80" height="80" class="logo-img" loading="lazy" />
+        <source
+          media="(min-width:375px)"
+          srcset="data:image/jpeg;base64,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 1x, /js-snow-white-n-8-devs/assets/image2x-69bea2f6.jpg 2x"
+        />
+        <img
+          src="data:image/jpeg;base64,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"
+          alt="logo"
+          width="80"
+          height="80"
+          class="logo-img"
+          loading="lazy"
+        />
       </picture>
 
       <img src="/js-snow-white-n-8-devs/assets/logo-87e96bf5.svg" alt="owner-name" class="logo-text" loading="lazy" />
@@ -65,12 +86,11 @@
     <a class="order-btn" href="#order" aria-label="order">Order the project</a>
   </div>
 </section>
-    
-    <span class="cursor"></span>
-  </header>
 
-  <main>
-    <section id="hero" class="section-hero">
+    </header>
+
+    <main>
+      <section id="hero" class="section-hero">
   <div class="hero">
     <h1 class="hero-title">Hello.<br />I’m&nbsp;Fullstack developer Lloyd Jefferson.</h1>
     <div class="hero-links container">
@@ -131,165 +151,159 @@
   </div>
 </section>
 
-    <section class="about-me-section" id="about-me">
-    <div class="container">
-        <h2 class="visually-hidden">About me</h2>
-        <div class="about-me-firstpart">
-            <div class="about-me-divtext">
-                <p class="about-me-text">I work with people all over the world to create impressive and <span
-                        class="about-me-functional">functional</span>
-                    <span class="about-me-websites">websites</span> that reflect each
-                    client's unique
-                    personality.
-                </p>
-            </div>
-            <div class="about-me-thumb">
-                <picture>
-                    <source media="(min-width:1440px)"
-                        srcset="/js-snow-white-n-8-devs/assets/about-me-desktop-fa00ae0d.webp 1x, /js-snow-white-n-8-devs/assets/about-me-desktop@2x-f9562f1f.webp 2x" />
-                    <source media="(min-width:768px)"
-                        srcset="/js-snow-white-n-8-devs/assets/about-me-tablet-593acc91.webp 1x, /js-snow-white-n-8-devs/assets/about-me-tablet@2x-746ada0c.webp 2x" />
-                    <source media="(min-width:375px)" srcset="/js-snow-white-n-8-devs/assets/about-me-mobile-8eb20398.webp 1x, /js-snow-white-n-8-devs/assets/about-me-mobile@2x-bbb45dea.webp 2x" />
+      <section class="about-me-section" id="about-me">
+  <div class="container">
+    <h2 class="visually-hidden">About me</h2>
+    <div class="about-me-firstpart">
+      <div class="about-me-divtext">
+        <p class="about-me-text">
+          I work with people all over the world to create impressive and
+          <span class="about-me-functional">functional</span>
+          <span class="about-me-websites">websites</span> that reflect each client's unique
+          personality.
+        </p>
+      </div>
+      <div class="about-me-thumb">
+        <picture>
+          <source
+            media="(min-width:1440px)"
+            srcset="/js-snow-white-n-8-devs/assets/about-me-desktop-fa00ae0d.webp 1x, /js-snow-white-n-8-devs/assets/about-me-desktop@2x-f9562f1f.webp 2x"
+          />
+          <source
+            media="(min-width:768px)"
+            srcset="/js-snow-white-n-8-devs/assets/about-me-tablet-593acc91.webp 1x, /js-snow-white-n-8-devs/assets/about-me-tablet@2x-746ada0c.webp 2x"
+          />
+          <source
+            media="(min-width:375px)"
+            srcset="/js-snow-white-n-8-devs/assets/about-me-mobile-8eb20398.webp 1x, /js-snow-white-n-8-devs/assets/about-me-mobile@2x-bbb45dea.webp 2x"
+          />
 
-
-                    <img src="/js-snow-white-n-8-devs/assets/about-me-desktop-fa00ae0d.webp" alt="client" width="680" height="700"
-                        class="about-me-img" />
-                </picture>
-
-
-            </div>
-        </div>
-
-        <div class="about-me-secondpart">
-            <ul class="about-me-secondlist">
-                <li class="about-me-secondlist-item ac">
-                    <div class="about-me-header-n-btn">
-                        <h3 class="about-me-header-third ac-header">ABOUT ME</h3>
-                        <button aria-label="open and close text" class="about-me-btn-aboutme ac-trigger "
-                            type="button"><svg class="about-me-arrow-up" width="20" height="20">
-                                <use href="/js-snow-white-n-8-devs/assets/icon-78274806.svg#icon-up"></use>
-                            </svg>
-                        </button>
-                    </div>
-                    <div class="about-panel ac-panel">
-                        <div class="about-me-secondpart-text ">
-                            <div class="about-text-about-me">I am Lloyd Jefferson, a
-                                talented programmer with
-                                extensive
-                                expertise in software development. I
-                                have an understanding of
-                                different programming languages and technologies, always ready to improve my skills. I
-                                always
-                                follow the latest trends
-                                and look for unconventional, creative solutions to problems. I have a high level of
-                                analytical
-                                skills and am able to
-                                effectively solve even the most difficult tasks encountered on the way.</div>
-
-                            <div>Able to work both independently and in a team. I can
-                                effectively cooperate with
-                                colleagues,
-                                exchanging ideas and finding
-                                optimal solutions. Professional maturity allows you to calmly cope with challenges and
-                                stressful
-                                situations, while
-                                maintaining a high quality of work.I am always looking for opportunities for
-                                self-improvement.
-                                I actively study new
-                                technologies and practices to stay abreast of the latest innovations. I have a strong
-                                understanding of various
-                                programming languages, frameworks and architectural concepts that allow me to create
-                                efficient
-                                and scalable software.</div>
-                        </div>
-                    </div>
-
-
-                </li>
-                <li class="about-me-secondlist-item ac">
-                    <div class="about-me-header-n-btn">
-                        <h3 class="about-me-header-third ac-header">ROLE</h3>
-                        <button aria-label="open and close text" class="about-me-btn-aboutme ac-trigger"
-                            type="button"><svg class="about-me-arrow-down" width="20" height="20">
-                                <use href="/js-snow-white-n-8-devs/assets/icon-78274806.svg#icon-down"></use>
-                            </svg>
-
-                        </button>
-                    </div>
-                    <div class="about-panel ac-panel">
-                        <div class="about-me-secondpart-text">
-                            <div class="about-text-role">Frontend development</div>
-                            <div class="about-text-role">HeadlessCMS,Wordpress</div>
-                            <div>Blender(enjoy)</div>
-                        </div>
-                    </div>
-
-                </li>
-                <li class="about-me-secondlist-item ac">
-                    <div class="about-me-header-n-btn">
-                        <h3 class="about-me-header-third ac-header">EDUCATION</h3>
-
-                        <button aria-label="open and close text" class="about-me-btn-aboutme ac-trigger"
-                            type="button"><svg class="about-me-arrow-down" width="20" height="20">
-                                <use href="/js-snow-white-n-8-devs/assets/icon-78274806.svg#icon-down"></use>
-                            </svg>
-
-                        </button>
-                    </div>
-                    <div class="about-panel ac-panel">
-                        <div class="about-me-secondpart-text ">
-                            <div class="about-text-education">2018 - 2019 / Frontend Development Diploma, GoIT
-                                IT School, New
-                                York</div>
-                            <div class="about-text-education">2019 - 2020 / Advanced Web Development Certificate, GoIT
-                                IT School, New York</div>
-
-                            <div>2020 - 2022 / Advanced Blender Animation Techniques, Udemy</div>
-                        </div>
-                    </div>
-
-                </li>
-            </ul>
-        </div>
-        <div class="about-me-thirdpart">
-            <div class="about-me-swiper-container  swiper">
-                <ul class="about-me-skillslist swiper-wrapper">
-                    <li class="about-me-skillslist-item  swiper-slide about-me-skillslist-text ">
-                        HTML/CSS
-                    </li>
-                    <li class="about-me-skillslist-item swiper-slide about-me-skillslist-text">
-                        JavaScript
-                    </li>
-                    <li class="about-me-skillslist-item swiper-slide about-me-skillslist-text">
-                        React
-                    </li>
-                    <li class="about-me-skillslist-item swiper-slide about-me-skillslist-text">
-                        Node. js
-                    </li>
-                    <li class="about-me-skillslist-item swiper-slide about-me-skillslist-text">
-                        React Native
-                    </li>
-                    <li class="about-me-skillslist-item swiper-slide about-me-skillslist-text">
-                        Soft skills
-                    </li>
-                    <li class="about-me-skillslist-item swiper-slide about-me-skillslist-text">
-                        Redux
-                    </li>
-
-                </ul>
-            </div>
-            <button aria-label="move slider" class="about-me-btn-right swiper-button-next" type="button"><svg
-                    class="about-me-arrow-right">
-                    <use href="/js-snow-white-n-8-devs/assets/icon-78274806.svg#icon-arrow-right-dark"></use>
-                </svg> </button>
-
-
-        </div>
-
+          <img
+            src="/js-snow-white-n-8-devs/assets/about-me-desktop-fa00ae0d.webp"
+            alt="client"
+            width="680"
+            height="700"
+            class="about-me-img"
+          />
+        </picture>
+      </div>
     </div>
 
+    <div class="about-me-secondpart">
+      <ul class="about-me-secondlist">
+        <li class="about-me-secondlist-item ac">
+          <div class="about-me-header-n-btn">
+            <h3 class="about-me-header-third ac-header">ABOUT ME</h3>
+            <button
+              aria-label="open and close text"
+              class="about-me-btn-aboutme ac-trigger"
+              type="button"
+            >
+              <svg class="about-me-arrow-up" width="20" height="20">
+                <use href="/js-snow-white-n-8-devs/assets/icon-78274806.svg#icon-up"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="about-panel ac-panel">
+            <div class="about-me-secondpart-text">
+              <div class="about-text-about-me">
+                I am Lloyd Jefferson, a talented programmer with extensive expertise in software
+                development. I have an understanding of different programming languages and
+                technologies, always ready to improve my skills. I always follow the latest trends
+                and look for unconventional, creative solutions to problems. I have a high level of
+                analytical skills and am able to effectively solve even the most difficult tasks
+                encountered on the way.
+              </div>
+
+              <div>
+                Able to work both independently and in a team. I can effectively cooperate with
+                colleagues, exchanging ideas and finding optimal solutions. Professional maturity
+                allows you to calmly cope with challenges and stressful situations, while
+                maintaining a high quality of work.I am always looking for opportunities for
+                self-improvement. I actively study new technologies and practices to stay abreast of
+                the latest innovations. I have a strong understanding of various programming
+                languages, frameworks and architectural concepts that allow me to create efficient
+                and scalable software.
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="about-me-secondlist-item ac">
+          <div class="about-me-header-n-btn">
+            <h3 class="about-me-header-third ac-header">ROLE</h3>
+            <button
+              aria-label="open and close text"
+              class="about-me-btn-aboutme ac-trigger"
+              type="button"
+            >
+              <svg class="about-me-arrow-down" width="20" height="20">
+                <use href="/js-snow-white-n-8-devs/assets/icon-78274806.svg#icon-down"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="about-panel ac-panel">
+            <div class="about-me-secondpart-text">
+              <div class="about-text-role">Frontend development</div>
+              <div class="about-text-role">HeadlessCMS,Wordpress</div>
+              <div>Blender(enjoy)</div>
+            </div>
+          </div>
+        </li>
+        <li class="about-me-secondlist-item ac">
+          <div class="about-me-header-n-btn">
+            <h3 class="about-me-header-third ac-header">EDUCATION</h3>
+
+            <button
+              aria-label="open and close text"
+              class="about-me-btn-aboutme ac-trigger"
+              type="button"
+            >
+              <svg class="about-me-arrow-down" width="20" height="20">
+                <use href="/js-snow-white-n-8-devs/assets/icon-78274806.svg#icon-down"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="about-panel ac-panel">
+            <div class="about-me-secondpart-text">
+              <div class="about-text-education">
+                2018 - 2019 / Frontend Development Diploma, GoIT IT School, New York
+              </div>
+              <div class="about-text-education">
+                2019 - 2020 / Advanced Web Development Certificate, GoIT IT School, New York
+              </div>
+
+              <div>2020 - 2022 / Advanced Blender Animation Techniques, Udemy</div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="about-me-thirdpart">
+      <div class="about-me-swiper-container swiper">
+        <ul class="about-me-skillslist swiper-wrapper">
+          <li class="about-me-skillslist-item swiper-slide about-me-skillslist-text">HTML/CSS</li>
+          <li class="about-me-skillslist-item swiper-slide about-me-skillslist-text">JavaScript</li>
+          <li class="about-me-skillslist-item swiper-slide about-me-skillslist-text">React</li>
+          <li class="about-me-skillslist-item swiper-slide about-me-skillslist-text">Node. js</li>
+          <li class="about-me-skillslist-item swiper-slide about-me-skillslist-text">
+            React Native
+          </li>
+          <li class="about-me-skillslist-item swiper-slide about-me-skillslist-text">
+            Soft skills
+          </li>
+          <li class="about-me-skillslist-item swiper-slide about-me-skillslist-text">Redux</li>
+        </ul>
+      </div>
+      <button aria-label="move slider" class="about-me-btn-right swiper-button-next" type="button">
+        <svg class="about-me-arrow-right">
+          <use href="/js-snow-white-n-8-devs/assets/icon-78274806.svg#icon-arrow-right-dark"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
 </section>
-    <section class="benefits-container" id="benefits">
+
+      <section class="benefits-container" id="benefits">
   <div class="container">
     <h2 class="benefits-title">Benefits of working with me</h2>
     <ul class="benefits-list">
@@ -347,7 +361,8 @@
     <a class="link-order" href="#order">Order the project</a>
   </div>
 </section>
-    <section class="projects" id="projects">
+
+      <section class="projects" id="projects">
   <div class="container">
     <h2 class="projects-heading">Projects</h2>
 
@@ -364,17 +379,30 @@
 
             <p class="card-text">Programming across borders: ideas, technologies, innovations</p>
 
-            <a class="card-button" href="https://github.com/qboww/js-snow-white-n-8-devs" target="_blank"
-              aria-label="card-button">See
-              project</a>
+            <a
+              class="card-button"
+              href="https://github.com/qboww/js-snow-white-n-8-devs"
+              target="_blank"
+              aria-label="card-button"
+              >See project</a
+            >
           </div>
 
           <div class="card-image-block image-block">
             <picture>
-              <source media="(min-width: 768px)"
-                srcset="/js-snow-white-n-8-devs/assets/projects-picture1-desc-tab@1x-5933e21c.webp 1x, /js-snow-white-n-8-devs/assets/projects-picture1-desc-tab@2x-c0a53f0c.webp 2x" />
-              <source media="(min-width: 375px)" srcset="/js-snow-white-n-8-devs/assets/projects-picture1-mob@1x-79b91b37.webp 1x, /js-snow-white-n-8-devs/assets/projects-picture1-mob@2x-278d2406.webp 2x" />
-              <img src="/js-snow-white-n-8-devs/assets/projects-picture1-desc-tab@1x-099fc026.png" alt="First project image" loading="lazy" />
+              <source
+                media="(min-width: 768px)"
+                srcset="/js-snow-white-n-8-devs/assets/projects-picture1-desc-tab@1x-5933e21c.webp 1x, /js-snow-white-n-8-devs/assets/projects-picture1-desc-tab@2x-c0a53f0c.webp 2x"
+              />
+              <source
+                media="(min-width: 375px)"
+                srcset="/js-snow-white-n-8-devs/assets/projects-picture1-mob@1x-79b91b37.webp 1x, /js-snow-white-n-8-devs/assets/projects-picture1-mob@2x-278d2406.webp 2x"
+              />
+              <img
+                src="/js-snow-white-n-8-devs/assets/projects-picture1-desc-tab@1x-099fc026.png"
+                alt="First project image"
+                loading="lazy"
+              />
             </picture>
           </div>
         </li>
@@ -390,17 +418,30 @@
 
             <p class="card-text">Programming across borders: ideas, technologies, innovations</p>
 
-            <a class="card-button" href="https://github.com/qboww/js-snow-white-n-8-devs" target="_blank"
-              aria-label="card-button">See
-              project</a>
+            <a
+              class="card-button"
+              href="https://github.com/qboww/js-snow-white-n-8-devs"
+              target="_blank"
+              aria-label="card-button"
+              >See project</a
+            >
           </div>
 
           <div class="card-image-block image-block">
             <picture>
-              <source media="(min-width: 768px)"
-                srcset="/js-snow-white-n-8-devs/assets/projects-picture2-desc-tab@1x-457261a4.webp 1x, /js-snow-white-n-8-devs/assets/projects-picture2-desc-tab@2x-9a824cc0.webp 2x" />
-              <source media="(min-width: 375px)" srcset="/js-snow-white-n-8-devs/assets/projects-picture2-mob@1x-33bc1187.webp 1x, /js-snow-white-n-8-devs/assets/projects-picture2-mob@2x-7e71dbfe.webp 2x" />
-              <img src="/js-snow-white-n-8-devs/assets/projects-picture2-desc-tab@1x-759d2f1e.png" alt="Second project image" loading="lazy" />
+              <source
+                media="(min-width: 768px)"
+                srcset="/js-snow-white-n-8-devs/assets/projects-picture2-desc-tab@1x-457261a4.webp 1x, /js-snow-white-n-8-devs/assets/projects-picture2-desc-tab@2x-9a824cc0.webp 2x"
+              />
+              <source
+                media="(min-width: 375px)"
+                srcset="/js-snow-white-n-8-devs/assets/projects-picture2-mob@1x-33bc1187.webp 1x, /js-snow-white-n-8-devs/assets/projects-picture2-mob@2x-7e71dbfe.webp 2x"
+              />
+              <img
+                src="/js-snow-white-n-8-devs/assets/projects-picture2-desc-tab@1x-759d2f1e.png"
+                alt="Second project image"
+                loading="lazy"
+              />
             </picture>
           </div>
         </li>
@@ -416,28 +457,49 @@
 
             <p class="card-text">Programming across borders: ideas, technologies, innovations</p>
 
-            <a class="card-button" href="https://github.com/qboww/js-snow-white-n-8-devs" target="_blank"
-              aria-label="card-button">See
-              project</a>
+            <a
+              class="card-button"
+              href="https://github.com/qboww/js-snow-white-n-8-devs"
+              target="_blank"
+              aria-label="card-button"
+              >See project</a
+            >
           </div>
 
           <div class="card-image-block image-block">
             <picture>
-              <source media="(min-width: 768px)"
-                srcset="/js-snow-white-n-8-devs/assets/projects-picture3-desc-tab@1x-6c666cf8.webp 1x, /js-snow-white-n-8-devs/assets/projects-picture3-desc-tab@2x-807639cb.webp 2x" />
-              <source media="(min-width: 375px)" srcset="/js-snow-white-n-8-devs/assets/projects-picture3-mob@1x-ebb22c2f.webp 1x, /js-snow-white-n-8-devs/assets/projects-picture3-mob@2x-19414c0c.webp 2x" />
-              <img src="/js-snow-white-n-8-devs/assets/projects-picture3-desc-tab@1x-b9887c7e.png" alt="Third project image" loading="lazy" />
+              <source
+                media="(min-width: 768px)"
+                srcset="/js-snow-white-n-8-devs/assets/projects-picture3-desc-tab@1x-6c666cf8.webp 1x, /js-snow-white-n-8-devs/assets/projects-picture3-desc-tab@2x-807639cb.webp 2x"
+              />
+              <source
+                media="(min-width: 375px)"
+                srcset="/js-snow-white-n-8-devs/assets/projects-picture3-mob@1x-ebb22c2f.webp 1x, /js-snow-white-n-8-devs/assets/projects-picture3-mob@2x-19414c0c.webp 2x"
+              />
+              <img
+                src="/js-snow-white-n-8-devs/assets/projects-picture3-desc-tab@1x-b9887c7e.png"
+                alt="Third project image"
+                loading="lazy"
+              />
             </picture>
           </div>
         </li>
       </ul>
       <div class="projects-buttons">
-        <button class="projects-previous-button projects-button" type="button" aria-label="projects-previous-button">
+        <button
+          class="projects-previous-button projects-button"
+          type="button"
+          aria-label="projects-previous-button"
+        >
           <svg class="projects-button-image projects-previous-image">
             <use href="/js-snow-white-n-8-devs/assets/icon-78274806.svg#icon-arrow-left-dark"></use>
           </svg>
         </button>
-        <button class="projects-next-button projects-button" type="button" aria-label="projects-next-button">
+        <button
+          class="projects-next-button projects-button"
+          type="button"
+          aria-label="projects-next-button"
+        >
           <svg class="projects-button-image projects-next-image">
             <use href="/js-snow-white-n-8-devs/assets/icon-78274806.svg#icon-arrow-right-white"></use>
           </svg>
@@ -446,218 +508,335 @@
     </div>
   </div>
 </section>
-    <section class="section-faq" id="faq">
-    <div class="container">
-        <h2 class="faq-title-section">FAQ</h2>
-        <ul class="faq-list">
-            <li class="faq-item ac">
-                <div class="faq-container">
-                    <h3 class="faq-title ac-header">What programming languages ​​are most often used in your
-                        project?
-                    </h3>
-                    <button class="faq-btn ac-trigger" aria-label="open description">
-                        <svg class="faq-icon">
-                            <use href="/js-snow-white-n-8-devs/assets/icon-78274806.svg#icon-down"></use>
-                        </svg>
-                    </button>
-                </div>
-                <p class="faq-text ac-panel">
-                    In the field of web development, there are various technologies and
-                    programming languages. Typically, this includes a
-                    combination of frontend (client side) and backend (server side)
-                    languages.
-                </p>
-            </li>
-            <li class="faq-item ac">
-                <div class="faq-container">
-                    <h3 class="faq-title ac-header">What are the deadlines for the project?
-                    </h3>
-                    <button class="faq-btn ac-trigger" aria-label="open description">
-                        <svg class="faq-icon">
-                            <use href="/js-snow-white-n-8-devs/assets/icon-78274806.svg#icon-down"></use>
-                        </svg>
-                    </button>
-                </div>
-                <p class="faq-text ac-panel">
-                    The terms of project implementation depend to a large extent on a number of
-                    factors, such as the scope of the project,
-                    its complexity, and the availability of resources. Determining exact deadlines
-                    is a difficult task, and it usually occurs during the planning phase of the
-                    project.
-                </p>
-            </li>
-            <li class="faq-item ac">
-                <div class="faq-container">
-                    <h3 class="faq-title ac-header">What payment methods do you accept?
-                    </h3>
-                    <button class="faq-btn ac-trigger" aria-label="open description">
-                        <svg class="faq-icon">
-                            <use href="/js-snow-white-n-8-devs/assets/icon-78274806.svg#icon-down"></use>
-                        </svg>
-                    </button>
-                </div>
-                <p class="faq-text ac-panel">
-                    Payment through credit and debit cards such as Visa, MasterCard, specialized
-                    electronic payment systems such as PayPal,
-                    as well as payments in cryptocurrencies such as Bitcoin, Ethereum and others.
-                </p>
-            </li>
-            <li class="faq-item ac">
-                <div class="faq-container">
-                    <h3 class="faq-title ac-header">How can I contact you?
-                    </h3>
-                    <button class="faq-btn ac-trigger" aria-label="open description">
-                        <svg class="faq-icon">
-                            <use href="/js-snow-white-n-8-devs/assets/icon-78274806.svg#icon-down"></use>
-                        </svg>
-                    </button>
-                </div>
-                <p class="faq-text ac-panel">
-                    In the field of web development, there are various technologies and programming
-                    languages. Typically, this includes a
-                    combination of frontend (client side) and backend (server side) languages.
-                </p>
-            </li>
-            <li class="faq-item ac">
-                <div class="faq-container">
-                    <h3 class="faq-title ac-header">Do you provide advice or support?
-                    </h3>
-                    <button class="faq-btn ac-trigger" aria-label="open description">
-                        <svg class="faq-icon">
-                            <use href="/js-snow-white-n-8-devs/assets/icon-78274806.svg#icon-down"></use>
-                        </svg>
-                    </button>
-                </div>
-                <p class="faq-text ac-panel">
-                    The terms of project implementation depend to a large extent on a number of
-                    factors, such as the scope of the project,
-                    its complexity, and the availability of resources. Determining exact deadlines
-                    is a difficult task, and it usually occurs during the planning phase of the
-                    project.
-                </p>
-            </li>
-            <li class="faq-item ac">
-                <div class="faq-container">
-                    <h3 class="faq-title ac-header">What does the process of developing a software product
-                        look like from idea to implementation?
-                    </h3>
-                    <button class="faq-btn ac-trigger" aria-label="open description">
-                        <svg class="faq-icon">
-                            <use href="/js-snow-white-n-8-devs/assets/icon-78274806.svg#icon-down"></use>
-                        </svg>
-                    </button>
-                </div>
-                <p class="faq-text ac-panel">
-                    Payment through credit and debit cards such as Visa, MasterCard, specialized
-                    electronic payment systems such as PayPal,
-                    as well as payments in cryptocurrencies such as Bitcoin, Ethereum and others.
-                </p>
-            </li>
-        </ul>
-    </div>
+
+      <section class="section-faq" id="faq">
+  <div class="container">
+    <h2 class="faq-title-section">FAQ</h2>
+    <ul class="faq-list">
+      <li class="faq-item ac">
+        <div class="faq-container">
+          <h3 class="faq-title ac-header">
+            What programming languages ​​are most often used in your project?
+          </h3>
+          <button class="faq-btn ac-trigger" aria-label="open description">
+            <svg class="faq-icon">
+              <use href="/js-snow-white-n-8-devs/assets/icon-78274806.svg#icon-down"></use>
+            </svg>
+          </button>
+        </div>
+        <p class="faq-text ac-panel">
+          In the field of web development, there are various technologies and programming languages.
+          Typically, this includes a combination of frontend (client side) and backend (server side)
+          languages.
+        </p>
+      </li>
+      <li class="faq-item ac">
+        <div class="faq-container">
+          <h3 class="faq-title ac-header">What are the deadlines for the project?</h3>
+          <button class="faq-btn ac-trigger" aria-label="open description">
+            <svg class="faq-icon">
+              <use href="/js-snow-white-n-8-devs/assets/icon-78274806.svg#icon-down"></use>
+            </svg>
+          </button>
+        </div>
+        <p class="faq-text ac-panel">
+          The terms of project implementation depend to a large extent on a number of factors, such
+          as the scope of the project, its complexity, and the availability of resources.
+          Determining exact deadlines is a difficult task, and it usually occurs during the planning
+          phase of the project.
+        </p>
+      </li>
+      <li class="faq-item ac">
+        <div class="faq-container">
+          <h3 class="faq-title ac-header">What payment methods do you accept?</h3>
+          <button class="faq-btn ac-trigger" aria-label="open description">
+            <svg class="faq-icon">
+              <use href="/js-snow-white-n-8-devs/assets/icon-78274806.svg#icon-down"></use>
+            </svg>
+          </button>
+        </div>
+        <p class="faq-text ac-panel">
+          Payment through credit and debit cards such as Visa, MasterCard, specialized electronic
+          payment systems such as PayPal, as well as payments in cryptocurrencies such as Bitcoin,
+          Ethereum and others.
+        </p>
+      </li>
+      <li class="faq-item ac">
+        <div class="faq-container">
+          <h3 class="faq-title ac-header">How can I contact you?</h3>
+          <button class="faq-btn ac-trigger" aria-label="open description">
+            <svg class="faq-icon">
+              <use href="/js-snow-white-n-8-devs/assets/icon-78274806.svg#icon-down"></use>
+            </svg>
+          </button>
+        </div>
+        <p class="faq-text ac-panel">
+          In the field of web development, there are various technologies and programming languages.
+          Typically, this includes a combination of frontend (client side) and backend (server side)
+          languages.
+        </p>
+      </li>
+      <li class="faq-item ac">
+        <div class="faq-container">
+          <h3 class="faq-title ac-header">Do you provide advice or support?</h3>
+          <button class="faq-btn ac-trigger" aria-label="open description">
+            <svg class="faq-icon">
+              <use href="/js-snow-white-n-8-devs/assets/icon-78274806.svg#icon-down"></use>
+            </svg>
+          </button>
+        </div>
+        <p class="faq-text ac-panel">
+          The terms of project implementation depend to a large extent on a number of factors, such
+          as the scope of the project, its complexity, and the availability of resources.
+          Determining exact deadlines is a difficult task, and it usually occurs during the planning
+          phase of the project.
+        </p>
+      </li>
+      <li class="faq-item ac">
+        <div class="faq-container">
+          <h3 class="faq-title ac-header">
+            What does the process of developing a software product look like from idea to
+            implementation?
+          </h3>
+          <button class="faq-btn ac-trigger" aria-label="open description">
+            <svg class="faq-icon">
+              <use href="/js-snow-white-n-8-devs/assets/icon-78274806.svg#icon-down"></use>
+            </svg>
+          </button>
+        </div>
+        <p class="faq-text ac-panel">
+          Payment through credit and debit cards such as Visa, MasterCard, specialized electronic
+          payment systems such as PayPal, as well as payments in cryptocurrencies such as Bitcoin,
+          Ethereum and others.
+        </p>
+      </li>
+    </ul>
+  </div>
 </section>
-    <section class="covers">
+
+      <section class="covers">
   <h2 class="visually-hidden">Cover</h2>
   <div class="container covers-container">
     <ul class="covers-list">
       <li class="covers-item">
         <picture class="covers-picture">
-          <source media="(min-width:769px)" srcset="/js-snow-white-n-8-devs/assets/1transforming-your-body1x-8bfc005a.webp 1x, /js-snow-white-n-8-devs/assets/1transforming-your-body2x-ce59b3c7.webp 2x" />
-          <source media="(max-width:768px)" srcset="/js-snow-white-n-8-devs/assets/1transforming-your-body1x-8bfc005a.webp 1x, /js-snow-white-n-8-devs/assets/1transforming-your-body2x-ce59b3c7.webp 2x" />
+          <source
+            media="(min-width:769px)"
+            srcset="/js-snow-white-n-8-devs/assets/1transforming-your-body1x-8bfc005a.webp 1x, /js-snow-white-n-8-devs/assets/1transforming-your-body2x-ce59b3c7.webp 2x"
+          />
+          <source
+            media="(max-width:768px)"
+            srcset="/js-snow-white-n-8-devs/assets/1transforming-your-body1x-8bfc005a.webp 1x, /js-snow-white-n-8-devs/assets/1transforming-your-body2x-ce59b3c7.webp 2x"
+          />
 
-          <img class="covers-img" src="/js-snow-white-n-8-devs/assets/1transforming-your-body1x-8bfc005a.webp" alt="site to change your body
-            a girl in a black sports suit on a black background is doing a warm-up" width="282" height="162"
-            loading="lazy" />
+          <img
+            class="covers-img"
+            src="/js-snow-white-n-8-devs/assets/1transforming-your-body1x-8bfc005a.webp"
+            alt="site to change your body
+            a girl in a black sports suit on a black background is doing a warm-up"
+            width="282"
+            height="162"
+            loading="lazy"
+          />
         </picture>
         <picture class="covers-picture">
-          <source media="(min-width:769px)" srcset="/js-snow-white-n-8-devs/assets/2mimino1x-1793d706.webp 1x, /js-snow-white-n-8-devs/assets/2mimino2x-85d41b29.webp 2x" />
-          <source media="(max-width:768px)" srcset="/js-snow-white-n-8-devs/assets/2mimino1x-1793d706.webp 1x, /js-snow-white-n-8-devs/assets/2mimino2x-85d41b29.webp 2x" />
+          <source
+            media="(min-width:769px)"
+            srcset="/js-snow-white-n-8-devs/assets/2mimino1x-1793d706.webp 1x, /js-snow-white-n-8-devs/assets/2mimino2x-85d41b29.webp 2x"
+          />
+          <source
+            media="(max-width:768px)"
+            srcset="/js-snow-white-n-8-devs/assets/2mimino1x-1793d706.webp 1x, /js-snow-white-n-8-devs/assets/2mimino2x-85d41b29.webp 2x"
+          />
 
-          <img class="covers-img" src="/js-snow-white-n-8-devs/assets/2mimino1x-1793d706.webp"
-            alt="The site Mimino Hotel is a multi-story building with large glass windows" width="282" height="162"
-            loading="lazy" />
+          <img
+            class="covers-img"
+            src="/js-snow-white-n-8-devs/assets/2mimino1x-1793d706.webp"
+            alt="The site Mimino Hotel is a multi-story building with large glass windows"
+            width="282"
+            height="162"
+            loading="lazy"
+          />
         </picture>
       </li>
       <li class="covers-item">
         <picture class="covers-picture">
-          <source media="(min-width:769px)" srcset="/js-snow-white-n-8-devs/assets/3traditions-of-ukrainian-art1x-f8e0bedc.webp 1x, /js-snow-white-n-8-devs/assets/3traditions-of-ukrainian-art2x-6c427209.webp 2x" />
-          <source media="(max-width:768px)" srcset="/js-snow-white-n-8-devs/assets/3traditions-of-ukrainian-art1x-f8e0bedc.webp 1x, /js-snow-white-n-8-devs/assets/3traditions-of-ukrainian-art2x-6c427209.webp 2x" />
+          <source
+            media="(min-width:769px)"
+            srcset="/js-snow-white-n-8-devs/assets/3traditions-of-ukrainian-art1x-f8e0bedc.webp 1x, /js-snow-white-n-8-devs/assets/3traditions-of-ukrainian-art2x-6c427209.webp 2x"
+          />
+          <source
+            media="(max-width:768px)"
+            srcset="/js-snow-white-n-8-devs/assets/3traditions-of-ukrainian-art1x-f8e0bedc.webp 1x, /js-snow-white-n-8-devs/assets/3traditions-of-ukrainian-art2x-6c427209.webp 2x"
+          />
 
-          <img class="covers-img" src="../img/covers-img/cover-img-desktop-tablet/3traditions-of-ukrainian-art1x.webp"
+          <img
+            class="covers-img"
+            src="../img/covers-img/cover-img-desktop-tablet/3traditions-of-ukrainian-art1x.webp"
             alt="site of Ukrainian art tradition. A Ukrainian woman in an embroidered dress is sitting in a wheat field"
-            width="282" height="162" loading="lazy" />
+            width="282"
+            height="162"
+            loading="lazy"
+          />
         </picture>
         <picture class="covers-picture">
-          <source media="(min-width:769px)" srcset="/js-snow-white-n-8-devs/assets/4your-diet-to-day1x-720efb67.webp 1x, /js-snow-white-n-8-devs/assets/4your-diet-to-day2x-5c15c75e.webp 2x" />
-          <source media="(max-width:768px)" srcset="/js-snow-white-n-8-devs/assets/4your-diet-to-day1x-720efb67.webp 1x, /js-snow-white-n-8-devs/assets/4your-diet-to-day2x-5c15c75e.webp 2x" />
+          <source
+            media="(min-width:769px)"
+            srcset="/js-snow-white-n-8-devs/assets/4your-diet-to-day1x-720efb67.webp 1x, /js-snow-white-n-8-devs/assets/4your-diet-to-day2x-5c15c75e.webp 2x"
+          />
+          <source
+            media="(max-width:768px)"
+            srcset="/js-snow-white-n-8-devs/assets/4your-diet-to-day1x-720efb67.webp 1x, /js-snow-white-n-8-devs/assets/4your-diet-to-day2x-5c15c75e.webp 2x"
+          />
 
-          <img class="covers-img" src="/js-snow-white-n-8-devs/assets/4your-diet-to-day1x-720efb67.webp" alt="site of organic vegetables for your diet today. Wooden basket with vegetables, mushrooms and eggs
-            " width="282" height="162" loading="lazy" />
+          <img
+            class="covers-img"
+            src="/js-snow-white-n-8-devs/assets/4your-diet-to-day1x-720efb67.webp"
+            alt="site of organic vegetables for your diet today. Wooden basket with vegetables, mushrooms and eggs
+            "
+            width="282"
+            height="162"
+            loading="lazy"
+          />
         </picture>
         <picture class="covers-picture">
-          <source media="(min-width:769px)" srcset="/js-snow-white-n-8-devs/assets/5manage-your-finances1x-c1f9cb55.webp 1x, /js-snow-white-n-8-devs/assets/5manage-your-finances2x-51d02157.webp 2x" />
-          <source media="(max-width:768px)" srcset="/js-snow-white-n-8-devs/assets/5manage-your-finances1x-c1f9cb55.webp 1x, /js-snow-white-n-8-devs/assets/5manage-your-finances2x-51d02157.webp 2x" />
+          <source
+            media="(min-width:769px)"
+            srcset="/js-snow-white-n-8-devs/assets/5manage-your-finances1x-c1f9cb55.webp 1x, /js-snow-white-n-8-devs/assets/5manage-your-finances2x-51d02157.webp 2x"
+          />
+          <source
+            media="(max-width:768px)"
+            srcset="/js-snow-white-n-8-devs/assets/5manage-your-finances1x-c1f9cb55.webp 1x, /js-snow-white-n-8-devs/assets/5manage-your-finances2x-51d02157.webp 2x"
+          />
 
-          <img class="covers-img" src="/js-snow-white-n-8-devs/assets/5manage-your-finances1x-c1f9cb55.webp" alt="
+          <img
+            class="covers-img"
+            src="/js-snow-white-n-8-devs/assets/5manage-your-finances1x-c1f9cb55.webp"
+            alt="
             site Manage your finances wisely.
             a man and a woman look at a laptop and see that the balance is plus six hundred and thirty-two dollars"
-            width="282" height="162" loading="lazy" />
+            width="282"
+            height="162"
+            loading="lazy"
+          />
         </picture>
       </li>
       <li class="covers-item">
         <picture class="covers-picture">
-          <source media="(min-width:769px)" srcset="/js-snow-white-n-8-devs/assets/6chego1x-59f73106.webp 1x, /js-snow-white-n-8-devs/assets/6chego2x-a52eb40b.webp 2x" />
-          <source media="(max-width:768px)" srcset="/js-snow-white-n-8-devs/assets/6chego1x-59f73106.webp 1x, /js-snow-white-n-8-devs/assets/6chego2x-a52eb40b.webp 2x" />
+          <source
+            media="(min-width:769px)"
+            srcset="/js-snow-white-n-8-devs/assets/6chego1x-59f73106.webp 1x, /js-snow-white-n-8-devs/assets/6chego2x-a52eb40b.webp 2x"
+          />
+          <source
+            media="(max-width:768px)"
+            srcset="/js-snow-white-n-8-devs/assets/6chego1x-59f73106.webp 1x, /js-snow-white-n-8-devs/assets/6chego2x-a52eb40b.webp 2x"
+          />
 
-          <img class="covers-img" src="./img/covers-img/cover-img-desktop-tablet/6chego.jpg" alt="the site  a brand inspired by forms created by nature.
-            face of a woman with beautiful makeup blue eyes black hair" width="282" height="162" loading="lazy" />
+          <img
+            class="covers-img"
+            src="./img/covers-img/cover-img-desktop-tablet/6chego.jpg"
+            alt="the site  a brand inspired by forms created by nature.
+            face of a woman with beautiful makeup blue eyes black hair"
+            width="282"
+            height="162"
+            loading="lazy"
+          />
         </picture>
         <picture class="covers-picture">
-          <source media="(min-width:769px)" srcset="/js-snow-white-n-8-devs/assets/7stay-healthy1x-9d85b85e.webp 1x, /js-snow-white-n-8-devs/assets/7stay-healthy2x-9d5a7132.webp 2x" />
-          <source media="(max-width:768px)" srcset="/js-snow-white-n-8-devs/assets/7stay-healthy1x-9d85b85e.webp 1x, /js-snow-white-n-8-devs/assets/7stay-healthy2x-9d5a7132.webp 2x" />
+          <source
+            media="(min-width:769px)"
+            srcset="/js-snow-white-n-8-devs/assets/7stay-healthy1x-9d85b85e.webp 1x, /js-snow-white-n-8-devs/assets/7stay-healthy2x-9d5a7132.webp 2x"
+          />
+          <source
+            media="(max-width:768px)"
+            srcset="/js-snow-white-n-8-devs/assets/7stay-healthy1x-9d85b85e.webp 1x, /js-snow-white-n-8-devs/assets/7stay-healthy2x-9d5a7132.webp 2x"
+          />
 
-          <img class="covers-img" src="/js-snow-white-n-8-devs/assets/7stay-healthy1x-9d85b85e.webp" alt="
+          <img
+            class="covers-img"
+            src="/js-snow-white-n-8-devs/assets/7stay-healthy1x-9d85b85e.webp"
+            alt="
             site to get the body in shape, be healthy.
-            a woman in a black sports suit with two-kilogram weights performs exercises" width="282" height="162"
-            loading="lazy" />
+            a woman in a black sports suit with two-kilogram weights performs exercises"
+            width="282"
+            height="162"
+            loading="lazy"
+          />
         </picture>
         <picture class="covers-picture">
-          <source media="(min-width:769px)" srcset="/js-snow-white-n-8-devs/assets/8fresh-harvest-box1x-ef7818f6.webp 1x, /js-snow-white-n-8-devs/assets/8fresh-harvest-box2x-c594ca31.webp 2x" />
-          <source media="(max-width:768px)" srcset="/js-snow-white-n-8-devs/assets/8fresh-harvest-box1x-ef7818f6.webp 1x, /js-snow-white-n-8-devs/assets/8fresh-harvest-box2x-c594ca31.webp 2x" />
+          <source
+            media="(min-width:769px)"
+            srcset="/js-snow-white-n-8-devs/assets/8fresh-harvest-box1x-ef7818f6.webp 1x, /js-snow-white-n-8-devs/assets/8fresh-harvest-box2x-c594ca31.webp 2x"
+          />
+          <source
+            media="(max-width:768px)"
+            srcset="/js-snow-white-n-8-devs/assets/8fresh-harvest-box1x-ef7818f6.webp 1x, /js-snow-white-n-8-devs/assets/8fresh-harvest-box2x-c594ca31.webp 2x"
+          />
 
-          <img class="covers-img" src="/js-snow-white-n-8-devs/assets/8fresh-harvest-box1x-ef7818f6.webp" alt="The Fresh Harvest Box site is a one-stop shop for a basket of delicious fruits.
-            many citrus fruits in the basket" width="282" height="162" loading="lazy" />
+          <img
+            class="covers-img"
+            src="/js-snow-white-n-8-devs/assets/8fresh-harvest-box1x-ef7818f6.webp"
+            alt="The Fresh Harvest Box site is a one-stop shop for a basket of delicious fruits.
+            many citrus fruits in the basket"
+            width="282"
+            height="162"
+            loading="lazy"
+          />
         </picture>
       </li>
       <li class="covers-item">
         <picture class="covers-picture">
-          <source media="(min-width:769px)" srcset="/js-snow-white-n-8-devs/assets/9learning-english1x-65f31295.webp 1x, /js-snow-white-n-8-devs/assets/9learning-english2x-514bad40.webp 2x" />
-          <source media="(max-width:768px)" srcset="/js-snow-white-n-8-devs/assets/9learning-english1x-65f31295.webp 1x, /js-snow-white-n-8-devs/assets/9learning-english2x-514bad40.webp 2x" />
+          <source
+            media="(min-width:769px)"
+            srcset="/js-snow-white-n-8-devs/assets/9learning-english1x-65f31295.webp 1x, /js-snow-white-n-8-devs/assets/9learning-english2x-514bad40.webp 2x"
+          />
+          <source
+            media="(max-width:768px)"
+            srcset="/js-snow-white-n-8-devs/assets/9learning-english1x-65f31295.webp 1x, /js-snow-white-n-8-devs/assets/9learning-english2x-514bad40.webp 2x"
+          />
 
-          <img class="covers-img" src="/js-snow-white-n-8-devs/assets/9learning-english1x-65f31295.webp" alt="site open the joy of learning English with us.
-            a girl in headphones listens to an English lesson and smiles" width="282" height="162" loading="lazy" />
+          <img
+            class="covers-img"
+            src="/js-snow-white-n-8-devs/assets/9learning-english1x-65f31295.webp"
+            alt="site open the joy of learning English with us.
+            a girl in headphones listens to an English lesson and smiles"
+            width="282"
+            height="162"
+            loading="lazy"
+          />
         </picture>
         <picture class="covers-picture">
-          <source media="(min-width:769px)" srcset="/js-snow-white-n-8-devs/assets/10premium-watches1x-5c2eb82d.webp 1x, /js-snow-white-n-8-devs/assets/10premium-watches2x-a3c3d3a1.webp 2x" />
-          <source media="(max-width:768px)" srcset="/js-snow-white-n-8-devs/assets/10premium-watches1x-5c2eb82d.webp 1x, /js-snow-white-n-8-devs/assets/10premium-watches2x-a3c3d3a1.webp 2x" />
+          <source
+            media="(min-width:769px)"
+            srcset="/js-snow-white-n-8-devs/assets/10premium-watches1x-5c2eb82d.webp 1x, /js-snow-white-n-8-devs/assets/10premium-watches2x-a3c3d3a1.webp 2x"
+          />
+          <source
+            media="(max-width:768px)"
+            srcset="/js-snow-white-n-8-devs/assets/10premium-watches1x-5c2eb82d.webp 1x, /js-snow-white-n-8-devs/assets/10premium-watches2x-a3c3d3a1.webp 2x"
+          />
 
-          <img class="covers-img" src="/js-snow-white-n-8-devs/assets/10premium-watches1x-5c2eb82d.webp" alt="site turn your business into an online leader
-            " width="282" height="162" loading="lazy" />
+          <img
+            class="covers-img"
+            src="/js-snow-white-n-8-devs/assets/10premium-watches1x-5c2eb82d.webp"
+            alt="site turn your business into an online leader
+            "
+            width="282"
+            height="162"
+            loading="lazy"
+          />
         </picture>
       </li>
     </ul>
   </div>
 </section>
-    <section class="reviews-section" id="reviews">
+
+      <section class="reviews-section" id="reviews">
   <div class="reviews-container">
     <h2 class="reviews-title">Reviews</h2>
 
     <div class="swiper" id="swiper3">
-      <!-- Additional required wrapper -->
       <p class="show-news"></p>
-      <ul class="swiper-wrapper" id="review-swiper-list">
-        <!-- Slides -->
-      </ul>
+      <ul class="swiper-wrapper" id="review-swiper-list"></ul>
 
       <div class="slider-buttons">
         <div class="btn-prev-review-wrapper">
@@ -679,107 +858,132 @@
     </div>
   </div>
 </section>
-  </main>
 
-  <footer>
-    <section class="work-together" id="order">
-    <div class="container">
-        <h2 class="footer-title">
-            <span class="footer-title-upper-part">Let&rsquo;s <span class="footer-title-accent">work</span></span>
-            <span class="footer-title-lower-part">together</span>
-        </h2>
-        <picture>
-            <source media="(max-width: 767px)"
-                srcset="data:image/webp;base64,UklGRlICAABXRUJQVlA4WAoAAAAQAAAAKwAAKwAAQUxQSIwAAAABX0AgQBlkgR7wSESE4I67AZzW2rY2b7myHn/fBWgDrmQYoZ4ZR4iNi2L6x0vSvrYuov8TAKBw9+WXWj2JsPDkj5tkSJU/twGsJDELWIwORMDQkmtJzRucosmZepxPwFHkX9znaB7nY3NaOqd25OREwNCSsBgtYMjIAFB/awKAcH/5JEMQl+AbZZQAAFZQOCCgAQAA8AgAnQEqLAAsAD6RQp1LJaOioac4CACwEgljAMArMEubneifwwS337cVGzezGRrgC+Zd91Vr6jUNZ+hvRYcY+MeDHRPMGRhvt+I7V1WVPcAA/vwSzrrgOGUUKMX2gt5gKctThqmYyKUJViCmAN/S0P1+52tEybJ5qPuSNeHdUqjOUyh1/Yd0dRbAmDdFy7JMhET96bLa3ToCMDQ3vBPkN8NQouRc+OE28Xd+6hW3BhTEWmlu5dtFC8vkZJTL5OIPUL+e4Z0MNQdJmS9IMICu02MC5CNnd0+nRZffD9kgbizxuo1DHOVwGCGFx3LLJdlHzRa/cGD/RyM2zYrhY7wvmPwCWDFeHi5eSrUAcZBKjIjKtsYXa6n8DuUbpa4Qpr2zxh0wcBUeDdok+H0swPQZ1nIm9kHT3JZ6nWmHipajnpL50/PcqeXz3s3tI9v5nzCM9MnkTNWnDhSwO069F7OAkLffZJc5s6EDnyQgpz4B94IzksRtWBVOI8Nkyi0t8Yov+fDuRzJutjH5fgMf2sfh307RfbMgPsy+/m2hjdlpIAA= 1x, data:image/webp;base64,UklGRvwEAABXRUJQVlA4WAoAAAAQAAAAVwAAVwAAQUxQSAUBAAABf0AgQMECPXDB/31GREQKFtfhAbXatuXNE2ZQkVzmCaqjShP8G+TPBFXRhQU6AS1AG/y+jDrM8DN8j+85Ef2fANhmG88L1dv7qh9u61NVoLLkor5Qxa47kheq6IiD4kwV/uG3+1MJ921klTJiNeQ4tdhTSYOmb5Yd05xFASCrtGGgw5MHxjw1FFXepu+ISA0/MSU6TIU+0+GI6WzKdDtn+lCZm1T/DC+o5kwfE6bHEdNZn+mwzbR7x5SUmILZBZEfA54r4ItnF5B4wgBmLB8A8M2yYzpiCZgw4KjBUuIIW+GH4QC2xbk4xW8HSVgzDKeXgpo5OD+ZiXjMwW2x8eJR87rqgy0AVlA4INADAACQFACdASpYAFgAPpFAm0qlo6IhpHM8YLASCWcA0HXC5Q0i0PVbwtyfhY0uk1Lyf/V/sEFkoZsTKj+h8e9AOwI/AhRKPwTZ9miDOWkmG7z7yNB2CPAPv5Ig9UFKiyRCJJZQdDWbjsY6Pxs1m13Vx3NOc2rC5O3O5NwWCyBM2txA29uOdKzKsAr1jG01nuh6kGv4uzEdbZzbzA8Eb3vDWnV+wfJNsFeWzcq9WxqSIAD+9x1ne643oGl3vodW1oWjIpamYONXN4m1vKHNi0g5n4NOg//19C5V15SBUAKqKrI3xMn4FSamxeQiGb0yOIgunKeqzfcCslzYS9/2DFXKXVC4FL0woKJxW6NSLgP9AzBCKTWoh7U/0NSBZQr3MQg6w6F/GFBPn+UyXroKYknXxQJLhuJf29ZpIClvTYci3dncONiQ3V7zYRuXr6bdbWgVFoUkQYVFkEXbkwf+hHcfbVaiNGRwfUULOnha7DyWk1sDSRcR2DeJXoxHNAZjY4ufpLdS2gO7nFyn/bvcBmi75jAIqbsLqiMvRlc3wh/lgU1oB/Jte+g6HPOkc4D7YA6IMou51Ddya9tlP4P41064M+sKdHnhoyJBx9w1LDdYH+qghCSpei/H7HP8WH4bqmhB6gK3Kwzl1CfMPILpVGXUlDxfv6kahS3Ub2h24NUNxBEDnW2pFjoNA9rMWkuHe7zt46q+vfMUUo3xup2qQGGUI/4pD2nSHQqBCz4xCr+1ubJd2eLEJhjhO67V3350NGLQprpFxZc4YokRuGy1q4qiosTR2xkinPUB3ia7ZOdjCiDhCBKv/xlnmd/f8FP+hwK1moE5l+zF0H4OBposw3dwVvzfOKjDe631OQ/kz1krH5JfS/aU+dZmoQ122C2nSa6fhwLPRpdnEY3I9gafP4/YK6nWPs/+YfEwgx8Oqy3JBN1M4lpy3B7WDp/B59I/q2lECi1Kdl/+c9N4fWvXlZPMJ3SfEf0nPcHlJGsLTKu8P/To5PWMXNDzqZ7W03zzMCB6yKrcotCCaLNcnySbrUmW4f8KFj/YHH36Y2h+Z/XlJ5vWenWHNbTYIi2DKzziUN4Max9pb2Rva6nDdKdKhEVXQRcU9RdxPTu99q7EQ5aRF9kWgFEuu8ZtpToSouRKVAUH6O9lHLCKkmEuGiqf0mdLCoou8gfaiBGon5Oe11HB4hKuAGSrzUGQtHXfydn4jX7r53O3g4lKbV3rcB8w2ygTQr50xpwIX8cj3VFyVOpVWBZ5ib0qIpn0624IMv6BqIYPrrzCJvgEYxVwQj3NsGGoAAAA 2x"
-               >
-            <source media="(min-width: 768px)"
-                srcset="data:image/webp;base64,UklGRtADAABXRUJQVlA4WAoAAAAQAAAARQAARQAAQUxQSAYBAAABf0AgQMECPXDB/31GREQKFtfhAbfWtrXNa4Zg5TLMPEFqV6EJtIHlCVK5DiyQCWgB2kB9GGszg1j6369NE9H/CYDvdOl5ZAa+z0cRttg3wxtLIYojU+l6IH1kKk4FmBuYqj+ifn+m+n0f3WSmvNqUU489kxt3fZN2XEOSAUA32UmgRpsBurQC5kx6OXLEM5NPAsZqAmabAg47As76Am6HAj5MgWUJ/yVHEoYCPnoCHjsCzpoCDqsCdu8EjGsC4tMjXhQt2hXwRdsFNFoSwID0AQDfpB3XESnmQotSgKdGSXrhh3AA37mhMiPqB01VOYmgl2rKOQQ/GSh4zCHsXOklWPk6H4EvVlA4IKQCAACQDwCdASpGAEYAPpE8mEiloyIhL1K7sLASCWUA0cNwDo/UhVuKB73N/TR9FgifNVlwLAFk83hVJATdlb/UFYlWkUj62VBJwHW+Wz2Edvqg507WhsQKFJGonnrN52GV9roRgsU9/mPI33xcWClubdD4ldtExmE6a3ZjVg3iRZ+CP3D72eKAAP74OZWObaQ3qHDX5YuVIj2A4upIxdoBPQtx4jx6x75qcgp9dHH/RPF7lHkJo6QPgkkcSvCojHon2gjl/z33t0U4n3eUoT5idYGSIHzTRIVpOwzSU46kWLFO6Lh4kA4y0T32qGYIN2L3xvDA6Eucv4fn//6JhhoFBGhvmDewMdg0iuiyjUaLYoz29ELevKC1/3eZ0uAymhqoaBN+BvD9bQLRUwUdtpc3G2AiTzAZ8Rm4ys5C5O110/FmdOvLCnyqoO2HJbmBYTocJyVbzBv/yW1y6H5w3AxgV6XKJ+jaoqrfb8JQw45dknDN6XWSB2hvtLtdwGSB9Lqwqaxa2ZB6JEmmIC+K3PMBr78gQY/SpzxtwbobWw50fjvX6sNkZDf9YSDqCKlYSo4s5F2ndKYn2WRaCgMCrKcaeOGG13tglwSubOIDbhxk4p+jXX1yqs9QaGtEtkTe1SJfUvn5W1x+gwJw3JwR2/vn6b4MKJ+537mjX6nudvmxqveKjml50RD7CKow6/jQgOeWaqqGDwSMymxcnYdEN70nN2fJeW2HuwLIYI6KSjbSDTO7MgEitlvvQpr7XD0j6NGnX4cdGAtdwxnMHY060QiAt+o6OGRmGPeYkc4xQ0nzUX/y1a2K/Bka0RwwDj5ECIBYqEdN54WWO3iAuyhZxwbHz5oitLT/RZzl3m2ekeAgO+8/uoAHn94X5TZxQN3tDmG6zXvAAAAA 1x, data:image/webp;base64,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 2x"
-               >
-            <img src="data:image/webp;base64,UklGRlICAABXRUJQVlA4WAoAAAAQAAAAKwAAKwAAQUxQSIwAAAABX0AgQBlkgR7wSESE4I67AZzW2rY2b7myHn/fBWgDrmQYoZ4ZR4iNi2L6x0vSvrYuov8TAKBw9+WXWj2JsPDkj5tkSJU/twGsJDELWIwORMDQkmtJzRucosmZepxPwFHkX9znaB7nY3NaOqd25OREwNCSsBgtYMjIAFB/awKAcH/5JEMQl+AbZZQAAFZQOCCgAQAA8AgAnQEqLAAsAD6RQp1LJaOioac4CACwEgljAMArMEubneifwwS337cVGzezGRrgC+Zd91Vr6jUNZ+hvRYcY+MeDHRPMGRhvt+I7V1WVPcAA/vwSzrrgOGUUKMX2gt5gKctThqmYyKUJViCmAN/S0P1+52tEybJ5qPuSNeHdUqjOUyh1/Yd0dRbAmDdFy7JMhET96bLa3ToCMDQ3vBPkN8NQouRc+OE28Xd+6hW3BhTEWmlu5dtFC8vkZJTL5OIPUL+e4Z0MNQdJmS9IMICu02MC5CNnd0+nRZffD9kgbizxuo1DHOVwGCGFx3LLJdlHzRa/cGD/RyM2zYrhY7wvmPwCWDFeHi5eSrUAcZBKjIjKtsYXa6n8DuUbpa4Qpr2zxh0wcBUeDdok+H0swPQZ1nIm9kHT3JZ6nWmHipajnpL50/PcqeXz3s3tI9v5nzCM9MnkTNWnDhSwO069F7OAkLffZJc5s6EDnyQgpz4B94IzksRtWBVOI8Nkyi0t8Yov+fDuRzJutjH5fgMf2sfh307RfbMgPsy+/m2hjdlpIAA=" alt="Lloyd Jefferson"
-                class="footer-title-image" width="44" height="44" loading="lazy">
-        </picture>
-        <form class="footer-form">
-            <div class="footer-input-container">
-                <input type="text" class="footer-input footer-email-input" name="email" placeholder="clients@gmail.com"
-                    spellcheck="false" autocomplete="off">
-                <div class="footer-label success-label visually-hidden">Success!</div>
-                <div class="footer-label error-label visually-hidden">Invalid email, try again!</div>
-            </div>
-            <div class="footer-input-container">
-                <input type="text" class="footer-input footer-comments-input" name="comments" placeholder="comments"
-                    spellcheck="false" autocomplete="off">
-            </div>
-            <button class="footer-send-button" type="submit" aria-label="send form">Send</button>
-        </form>
-        <address class="footer-address">
-            <a href="mailto:lloydjefferson@gmail.com" class="footer-link"
-                aria-label="send email">lloydjefferson@gmail.com</a>
-            <a href="tel:+3801111111111" class="footer-link" aria-label="call phone number">+380 11 1111 11 11</a>
-        </address>
-    </div>
-    <div class="footer-bg-image"></div>
+    </main>
+
+    <footer>
+      <section class="work-together" id="order">
+  <div class="container">
+    <h2 class="footer-title">
+      <span class="footer-title-upper-part"
+        >Let&rsquo;s <span class="footer-title-accent">work</span></span
+      >
+      <span class="footer-title-lower-part">together</span>
+    </h2>
+    <picture>
+      <source
+        media="(max-width: 767px)"
+        srcset="data:image/webp;base64,UklGRlICAABXRUJQVlA4WAoAAAAQAAAAKwAAKwAAQUxQSIwAAAABX0AgQBlkgR7wSESE4I67AZzW2rY2b7myHn/fBWgDrmQYoZ4ZR4iNi2L6x0vSvrYuov8TAKBw9+WXWj2JsPDkj5tkSJU/twGsJDELWIwORMDQkmtJzRucosmZepxPwFHkX9znaB7nY3NaOqd25OREwNCSsBgtYMjIAFB/awKAcH/5JEMQl+AbZZQAAFZQOCCgAQAA8AgAnQEqLAAsAD6RQp1LJaOioac4CACwEgljAMArMEubneifwwS337cVGzezGRrgC+Zd91Vr6jUNZ+hvRYcY+MeDHRPMGRhvt+I7V1WVPcAA/vwSzrrgOGUUKMX2gt5gKctThqmYyKUJViCmAN/S0P1+52tEybJ5qPuSNeHdUqjOUyh1/Yd0dRbAmDdFy7JMhET96bLa3ToCMDQ3vBPkN8NQouRc+OE28Xd+6hW3BhTEWmlu5dtFC8vkZJTL5OIPUL+e4Z0MNQdJmS9IMICu02MC5CNnd0+nRZffD9kgbizxuo1DHOVwGCGFx3LLJdlHzRa/cGD/RyM2zYrhY7wvmPwCWDFeHi5eSrUAcZBKjIjKtsYXa6n8DuUbpa4Qpr2zxh0wcBUeDdok+H0swPQZ1nIm9kHT3JZ6nWmHipajnpL50/PcqeXz3s3tI9v5nzCM9MnkTNWnDhSwO069F7OAkLffZJc5s6EDnyQgpz4B94IzksRtWBVOI8Nkyi0t8Yov+fDuRzJutjH5fgMf2sfh307RfbMgPsy+/m2hjdlpIAA= 1x, data:image/webp;base64,UklGRvwEAABXRUJQVlA4WAoAAAAQAAAAVwAAVwAAQUxQSAUBAAABf0AgQMECPXDB/31GREQKFtfhAbXatuXNE2ZQkVzmCaqjShP8G+TPBFXRhQU6AS1AG/y+jDrM8DN8j+85Ef2fANhmG88L1dv7qh9u61NVoLLkor5Qxa47kheq6IiD4kwV/uG3+1MJ921klTJiNeQ4tdhTSYOmb5Yd05xFASCrtGGgw5MHxjw1FFXepu+ISA0/MSU6TIU+0+GI6WzKdDtn+lCZm1T/DC+o5kwfE6bHEdNZn+mwzbR7x5SUmILZBZEfA54r4ItnF5B4wgBmLB8A8M2yYzpiCZgw4KjBUuIIW+GH4QC2xbk4xW8HSVgzDKeXgpo5OD+ZiXjMwW2x8eJR87rqgy0AVlA4INADAACQFACdASpYAFgAPpFAm0qlo6IhpHM8YLASCWcA0HXC5Q0i0PVbwtyfhY0uk1Lyf/V/sEFkoZsTKj+h8e9AOwI/AhRKPwTZ9miDOWkmG7z7yNB2CPAPv5Ig9UFKiyRCJJZQdDWbjsY6Pxs1m13Vx3NOc2rC5O3O5NwWCyBM2txA29uOdKzKsAr1jG01nuh6kGv4uzEdbZzbzA8Eb3vDWnV+wfJNsFeWzcq9WxqSIAD+9x1ne643oGl3vodW1oWjIpamYONXN4m1vKHNi0g5n4NOg//19C5V15SBUAKqKrI3xMn4FSamxeQiGb0yOIgunKeqzfcCslzYS9/2DFXKXVC4FL0woKJxW6NSLgP9AzBCKTWoh7U/0NSBZQr3MQg6w6F/GFBPn+UyXroKYknXxQJLhuJf29ZpIClvTYci3dncONiQ3V7zYRuXr6bdbWgVFoUkQYVFkEXbkwf+hHcfbVaiNGRwfUULOnha7DyWk1sDSRcR2DeJXoxHNAZjY4ufpLdS2gO7nFyn/bvcBmi75jAIqbsLqiMvRlc3wh/lgU1oB/Jte+g6HPOkc4D7YA6IMou51Ddya9tlP4P41064M+sKdHnhoyJBx9w1LDdYH+qghCSpei/H7HP8WH4bqmhB6gK3Kwzl1CfMPILpVGXUlDxfv6kahS3Ub2h24NUNxBEDnW2pFjoNA9rMWkuHe7zt46q+vfMUUo3xup2qQGGUI/4pD2nSHQqBCz4xCr+1ubJd2eLEJhjhO67V3350NGLQprpFxZc4YokRuGy1q4qiosTR2xkinPUB3ia7ZOdjCiDhCBKv/xlnmd/f8FP+hwK1moE5l+zF0H4OBposw3dwVvzfOKjDe631OQ/kz1krH5JfS/aU+dZmoQ122C2nSa6fhwLPRpdnEY3I9gafP4/YK6nWPs/+YfEwgx8Oqy3JBN1M4lpy3B7WDp/B59I/q2lECi1Kdl/+c9N4fWvXlZPMJ3SfEf0nPcHlJGsLTKu8P/To5PWMXNDzqZ7W03zzMCB6yKrcotCCaLNcnySbrUmW4f8KFj/YHH36Y2h+Z/XlJ5vWenWHNbTYIi2DKzziUN4Max9pb2Rva6nDdKdKhEVXQRcU9RdxPTu99q7EQ5aRF9kWgFEuu8ZtpToSouRKVAUH6O9lHLCKkmEuGiqf0mdLCoou8gfaiBGon5Oe11HB4hKuAGSrzUGQtHXfydn4jX7r53O3g4lKbV3rcB8w2ygTQr50xpwIX8cj3VFyVOpVWBZ5ib0qIpn0624IMv6BqIYPrrzCJvgEYxVwQj3NsGGoAAAA 2x"
+      />
+      <source
+        media="(min-width: 768px)"
+        srcset="data:image/webp;base64,UklGRtADAABXRUJQVlA4WAoAAAAQAAAARQAARQAAQUxQSAYBAAABf0AgQMECPXDB/31GREQKFtfhAbfWtrXNa4Zg5TLMPEFqV6EJtIHlCVK5DiyQCWgB2kB9GGszg1j6369NE9H/CYDvdOl5ZAa+z0cRttg3wxtLIYojU+l6IH1kKk4FmBuYqj+ifn+m+n0f3WSmvNqUU489kxt3fZN2XEOSAUA32UmgRpsBurQC5kx6OXLEM5NPAsZqAmabAg47As76Am6HAj5MgWUJ/yVHEoYCPnoCHjsCzpoCDqsCdu8EjGsC4tMjXhQt2hXwRdsFNFoSwID0AQDfpB3XESnmQotSgKdGSXrhh3AA37mhMiPqB01VOYmgl2rKOQQ/GSh4zCHsXOklWPk6H4EvVlA4IKQCAACQDwCdASpGAEYAPpE8mEiloyIhL1K7sLASCWUA0cNwDo/UhVuKB73N/TR9FgifNVlwLAFk83hVJATdlb/UFYlWkUj62VBJwHW+Wz2Edvqg507WhsQKFJGonnrN52GV9roRgsU9/mPI33xcWClubdD4ldtExmE6a3ZjVg3iRZ+CP3D72eKAAP74OZWObaQ3qHDX5YuVIj2A4upIxdoBPQtx4jx6x75qcgp9dHH/RPF7lHkJo6QPgkkcSvCojHon2gjl/z33t0U4n3eUoT5idYGSIHzTRIVpOwzSU46kWLFO6Lh4kA4y0T32qGYIN2L3xvDA6Eucv4fn//6JhhoFBGhvmDewMdg0iuiyjUaLYoz29ELevKC1/3eZ0uAymhqoaBN+BvD9bQLRUwUdtpc3G2AiTzAZ8Rm4ys5C5O110/FmdOvLCnyqoO2HJbmBYTocJyVbzBv/yW1y6H5w3AxgV6XKJ+jaoqrfb8JQw45dknDN6XWSB2hvtLtdwGSB9Lqwqaxa2ZB6JEmmIC+K3PMBr78gQY/SpzxtwbobWw50fjvX6sNkZDf9YSDqCKlYSo4s5F2ndKYn2WRaCgMCrKcaeOGG13tglwSubOIDbhxk4p+jXX1yqs9QaGtEtkTe1SJfUvn5W1x+gwJw3JwR2/vn6b4MKJ+537mjX6nudvmxqveKjml50RD7CKow6/jQgOeWaqqGDwSMymxcnYdEN70nN2fJeW2HuwLIYI6KSjbSDTO7MgEitlvvQpr7XD0j6NGnX4cdGAtdwxnMHY060QiAt+o6OGRmGPeYkc4xQ0nzUX/y1a2K/Bka0RwwDj5ECIBYqEdN54WWO3iAuyhZxwbHz5oitLT/RZzl3m2ekeAgO+8/uoAHn94X5TZxQN3tDmG6zXvAAAAA 1x, data:image/webp;base64,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 2x"
+      />
+      <img
+        src="data:image/webp;base64,UklGRlICAABXRUJQVlA4WAoAAAAQAAAAKwAAKwAAQUxQSIwAAAABX0AgQBlkgR7wSESE4I67AZzW2rY2b7myHn/fBWgDrmQYoZ4ZR4iNi2L6x0vSvrYuov8TAKBw9+WXWj2JsPDkj5tkSJU/twGsJDELWIwORMDQkmtJzRucosmZepxPwFHkX9znaB7nY3NaOqd25OREwNCSsBgtYMjIAFB/awKAcH/5JEMQl+AbZZQAAFZQOCCgAQAA8AgAnQEqLAAsAD6RQp1LJaOioac4CACwEgljAMArMEubneifwwS337cVGzezGRrgC+Zd91Vr6jUNZ+hvRYcY+MeDHRPMGRhvt+I7V1WVPcAA/vwSzrrgOGUUKMX2gt5gKctThqmYyKUJViCmAN/S0P1+52tEybJ5qPuSNeHdUqjOUyh1/Yd0dRbAmDdFy7JMhET96bLa3ToCMDQ3vBPkN8NQouRc+OE28Xd+6hW3BhTEWmlu5dtFC8vkZJTL5OIPUL+e4Z0MNQdJmS9IMICu02MC5CNnd0+nRZffD9kgbizxuo1DHOVwGCGFx3LLJdlHzRa/cGD/RyM2zYrhY7wvmPwCWDFeHi5eSrUAcZBKjIjKtsYXa6n8DuUbpa4Qpr2zxh0wcBUeDdok+H0swPQZ1nIm9kHT3JZ6nWmHipajnpL50/PcqeXz3s3tI9v5nzCM9MnkTNWnDhSwO069F7OAkLffZJc5s6EDnyQgpz4B94IzksRtWBVOI8Nkyi0t8Yov+fDuRzJutjH5fgMf2sfh307RfbMgPsy+/m2hjdlpIAA="
+        alt="Lloyd Jefferson"
+        class="footer-title-image"
+        width="44"
+        height="44"
+        loading="lazy"
+      />
+    </picture>
+    <form class="footer-form">
+      <div class="footer-input-container">
+        <input
+          type="text"
+          class="footer-input footer-email-input"
+          name="email"
+          placeholder="clients@gmail.com"
+          spellcheck="false"
+          autocomplete="off"
+        />
+        <div class="footer-label success-label visually-hidden">Success!</div>
+        <div class="footer-label error-label visually-hidden">Invalid email, try again!</div>
+      </div>
+      <div class="footer-input-container">
+        <input
+          type="text"
+          class="footer-input footer-comments-input"
+          name="comments"
+          placeholder="comments"
+          spellcheck="false"
+          autocomplete="off"
+        />
+      </div>
+      <button class="footer-send-button" type="submit" aria-label="send form">Send</button>
+    </form>
+    <address class="footer-address">
+      <a href="mailto:lloydjefferson@gmail.com" class="footer-link" aria-label="send email"
+        >lloydjefferson@gmail.com</a
+      >
+      <a href="tel:+3801111111111" class="footer-link" aria-label="call phone number"
+        >+380 11 1111 11 11</a
+      >
+    </address>
+  </div>
+  <div class="footer-bg-image"></div>
 </section>
-  </footer>
 
-  <section>
-    <h2 class="visually-hidden">mobile modal</h2>
-    <div class="menu-box image-mob-menu visually-hidden">
-        <div class="modal-controls">
-            <select class="header-select-modal header-select" aria-label="color selector">
-                <option value="green">Cyan</option>
-                <option value="blue">Blue</option>
-                <option value="red">Red</option>
-                <option value="lime">Yellow</option>
-                <option value="ocher">Orange</option>
-            </select>
+    </footer>
 
-            <button type="button" class="button-mob-menu" aria-label="open mobile menu">
-                <svg width="32" height="32">
-                    <use href="/js-snow-white-n-8-devs/assets/icon-78274806.svg#icon-close"></use>
-                </svg>
-            </button>
-        </div>
+    <section>
+  <h2 class="visually-hidden">mobile modal</h2>
+  <div class="menu-box image-mob-menu visually-hidden">
+    <div class="modal-controls">
+      <select class="header-select-modal header-select" aria-label="color selector">
+        <option value="green">Cyan</option>
+        <option value="blue">Blue</option>
+        <option value="red">Red</option>
+        <option value="lime">Yellow</option>
+        <option value="ocher">Orange</option>
+      </select>
 
-        <ul>
-            <li class="menu-item">
-                <a class="menu-link" href="#about-me" aria-label="About me">About me</a>
-            </li>
-            <li class="menu-item">
-                <a class="menu-link" href="#benefits" aria-label="Benefits">Benefits</a>
-            </li>
-            <li class="menu-item">
-                <a class="menu-link" href="#projects" aria-label="Projects">Projects</a>
-            </li>
-            <li class="menu-item">
-                <a class="menu-link" href="#faq" aria-label="FAQ">FAQ</a>
-            </li>
-        </ul>
-        <div class="modal-order">
-            <a class="modal-order-btn" href="#order" aria-label="Order">Order the project</a>
-        </div>
+      <button type="button" class="button-mob-menu" aria-label="open mobile menu">
+        <svg width="32" height="32">
+          <use href="/js-snow-white-n-8-devs/assets/icon-78274806.svg#icon-close"></use>
+        </svg>
+      </button>
     </div>
+
+    <ul>
+      <li class="menu-item">
+        <a class="menu-link" href="#about-me" aria-label="About me">About me</a>
+      </li>
+      <li class="menu-item">
+        <a class="menu-link" href="#benefits" aria-label="Benefits">Benefits</a>
+      </li>
+      <li class="menu-item">
+        <a class="menu-link" href="#projects" aria-label="Projects">Projects</a>
+      </li>
+      <li class="menu-item">
+        <a class="menu-link" href="#faq" aria-label="FAQ">FAQ</a>
+      </li>
+    </ul>
+    <div class="modal-order">
+      <a class="modal-order-btn" href="#order" aria-label="Order">Order the project</a>
+    </div>
+  </div>
 </section>
-  <div class="footer-modal-backdrop visually-hidden">
-    <div class="footer-modal-overlay visually-hidden">
-        <button class="footer-modal-close-button" type="button" name="close_button" aria-label="close modal window">
-            <svg class="footer-modal-close-button-icon" height="22" width="22">
-                <use href="/js-snow-white-n-8-devs/assets/icon-78274806.svg#icon-close"></use>
-            </svg>
-        </button>
-        <h3 class="footer-modal-title" id="title">footer modal</h3>
-        <p class="footer-modal-description" id="message"></p>
-    </div>
+
+    <div class="footer-modal-backdrop visually-hidden">
+  <div class="footer-modal-overlay visually-hidden">
+    <button
+      class="footer-modal-close-button"
+      type="button"
+      name="close_button"
+      aria-label="close modal window"
+    >
+      <svg class="footer-modal-close-button-icon" height="22" width="22">
+        <use href="/js-snow-white-n-8-devs/assets/icon-78274806.svg#icon-close"></use>
+      </svg>
+    </button>
+    <h3 class="footer-modal-title" id="title">footer modal</h3>
+    <p class="footer-modal-description" id="message"></p>
+  </div>
 </div>
-  <button class="back-to-top hidden" aria-label="scroll to top">
-  <svg class="back-to-top-icon">
-    <use href="/js-snow-white-n-8-devs/assets/icon-78274806.svg#icon-up"></use>
-  </svg>
-</button>
-<div class="progress-bar"></div>
 
-  
 
-  
-</body>
-
+    
+  </body>
 </html>
