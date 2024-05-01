@@ -1,0 +1,9 @@
+@keyframes marqueeLine {
+  from {
+    transform: translateX(-60%);
+  }
+
+  to {
+    transform: translateX(-150%);
+  }
+}

@@ -1,0 +1,17 @@
+.footer-modal-title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: var(--white-text-color);
+  width: 279px;
+
+  margin-bottom: 16px;
+}
+
+@media only screen and (min-width: 768px) {
+  .footer-modal-title {
+    width: 364px;
+  }
+}

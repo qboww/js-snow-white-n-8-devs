@@ -1,0 +1,12 @@
+.projects-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 2px;
+}
+
+@media screen and (min-width: 768px) {
+  .projects-buttons {
+    gap: 20px;
+  }
+}

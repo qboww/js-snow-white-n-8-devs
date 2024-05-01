@@ -1,0 +1,12 @@
+.faq-text {
+  font-family: 'Inter Tight', sans-serif !important;
+  font-weight: 500 !important;
+  font-size: 16px !important;
+  line-height: 1.5 !important;
+  letter-spacing: -0.02em !important;
+  color: var(--grey-text-color) !important;
+
+  overflow: hidden !important;
+  transition-property: height, visibility !important;
+  transition-timing-function: ease !important;
+}

@@ -1,0 +1,104 @@
+@import 'izitoast/dist/css/iziToast.min.css';
+
+footer {
+  background: linear-gradient(
+    90deg,
+    var(--font-color) 90%,
+    rgb(0 0 0 / 10%) 92%,
+    rgb(0 0 0 / 4%) 92.5%,
+    rgb(0 0 0 / 6%) 100%
+  );
+}
+
+.footer-title-accent {
+  color: var(--color-primary);
+}
+
+@media screen and (min-width: 768px) {
+  footer {
+    background: linear-gradient(
+      90deg,
+      var(--font-color) 75%,
+      rgb(0 0 0 / 10%) 76.4%,
+      rgb(0 0 0 / 4%) 76.4%,
+      rgb(0 0 0 / 6%) 85%,
+
+      rgb(0 0 0 / 10%) 87%,
+      rgb(0 0 0 / 4%) 85%,
+      rgb(0 0 0 / 6%) 90%,
+
+      rgb(0 0 0 / 10%) 96%,
+      rgb(0 0 0 / 4%) 90%,
+      rgb(0 0 0 / 6%) 90%,
+
+      rgb(0 0 0 / 10%) 96%,
+      rgb(0 0 0 / 4%) 90%,
+      rgb(0 0 0 / 6%) 90%,
+
+      rgb(0 0 0 / 10%) 96%,
+      rgb(0 0 0 / 4%) 90%,
+      rgb(0 0 0 / 6%) 90%,
+
+      rgb(0 0 0 / 10%) 96%,
+      rgb(0 0 0 / 4%) 90%,
+      rgb(0 0 0 / 6%) 100%
+    );
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  footer {
+    background: linear-gradient(
+      90deg,
+      var(--font-color) 72%,
+      rgb(0 0 0 / 10%) 72.4%,
+      rgb(0 0 0 / 4%) 72.8%,
+      rgb(0 0 0 / 6%) 78%,
+
+      rgb(0 0 0 / 10%) 78%,
+      rgb(0 0 0 / 4%) 78.4%,
+      rgb(0 0 0 / 6%) 83%,
+
+      rgb(0 0 0 / 10%) 83%,
+      rgb(0 0 0 / 4%) 83.4%,
+      rgb(0 0 0 / 6%) 87%,
+
+      rgb(0 0 0 / 10%) 87%,
+      rgb(0 0 0 / 4%) 87.4%,
+      rgb(0 0 0 / 6%) 91%,
+
+      rgb(0 0 0 / 10%) 91%,
+      rgb(0 0 0 / 4%) 91.4%,
+      rgb(0 0 0 / 6%) 95%,
+
+      rgb(0 0 0 / 10%) 95%,
+      rgb(0 0 0 / 4%) 95.4%,
+      rgb(0 0 0 / 6%) 100%
+    );
+  }
+}
+
+footer {
+  background-color: var(--background-color);
+  padding: 32px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+@media only screen and (min-width: 768px) {
+  footer {
+    padding: 80px 0;
+  }
+}
+
+footer .container {
+  position: relative;
+  z-index: 2;
+}
+
+@media only screen and (min-width: 1440px) {
+  footer .container {
+    width: 1048px;
+    padding: 0;
+  }
+}

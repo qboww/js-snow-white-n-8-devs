@@ -1,0 +1,11 @@
+.footer-address {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+@media only screen and (min-width: 768px) {
+  .footer-address {
+    gap: 8px;
+  }
+}

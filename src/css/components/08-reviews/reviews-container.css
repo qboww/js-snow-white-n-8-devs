@@ -1,0 +1,20 @@
+.reviews-container {
+  width: 100%;
+  max-width: 375px;
+  margin: 0 auto;
+  background-color: var(--background);
+
+  padding: 0 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .reviews-container {
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .reviews-container {
+    max-width: 1440px;
+  }
+}

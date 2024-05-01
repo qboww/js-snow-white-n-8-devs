@@ -1,0 +1,12 @@
+.covers-list {
+  position: absolute;
+  right: -800px;
+  left: 100px;
+}
+
+@media screen and (min-width: 1440px) {
+  .covers-list {
+    left: 400px;
+    right: -1800px;
+  }
+}

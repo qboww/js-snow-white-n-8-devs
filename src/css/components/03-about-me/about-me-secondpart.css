@@ -1,0 +1,43 @@
+.about-me-secondpart {
+  max-width: 100%;
+  padding-top: 16px;
+  padding-bottom: 32px;
+}
+
+@media (min-width: 768px) {
+  .about-me-secondpart {
+    padding-top: 32px;
+    padding-bottom: 64px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .about-me-secondpart {
+    padding-top: 48px;
+    padding-bottom: 96px;
+  }
+}
+
+.about-me-secondpart-text {
+  padding-top: 12px;
+  padding-bottom: 20px;
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  color: var(--white-text-color);
+}
+
+@media (min-width: 768px) {
+  .about-me-secondpart-text {
+    padding-top: 12px;
+    padding-bottom: 20px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .about-me-secondpart-text {
+    padding: 8px 68px 32px 696px;
+  }
+}

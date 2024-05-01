@@ -1,0 +1,12 @@
+.covers {
+  padding-top: 82px;
+  padding-bottom: 82px;
+}
+
+.js-animation {
+  animation-name: marqueeLine;
+  animation-duration: 7s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}

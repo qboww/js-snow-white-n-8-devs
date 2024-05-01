@@ -1,0 +1,17 @@
+.section-faq {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.ac-trigger[aria-expanded='true'] .faq-icon {
+  transform: rotate(180deg);
+  background-color: var(--background-color);
+}
+
+section .ac {
+  border: none;
+}
+
+.ac {
+  margin-top: 0px !important;
+}

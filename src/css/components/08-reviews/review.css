@@ -1,0 +1,42 @@
+.review {
+  max-width: 295px;
+  height: 120px;
+  text-align: left;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  color: var(--white-text-color);
+  opacity: 0.6;
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding-right: 20px;
+}
+
+.review::-webkit-scrollbar {
+  width: 15px;
+}
+
+.review::-webkit-scrollbar {
+  width: 15px;
+}
+
+.review::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.review::-webkit-scrollbar-thumb {
+  background: linear-gradient(45deg, var(--cards-background-color), var(--color-primary));
+  border-radius: 20px;
+  border: 3px solid var(--background-color);
+}
+
+.review::-webkit-scrollbar-thumb:hover {
+  background: var(--white-text-color);
+}
+
+@media screen and (min-width: 1440px) {
+  .review {
+    width: 284px;
+  }
+}

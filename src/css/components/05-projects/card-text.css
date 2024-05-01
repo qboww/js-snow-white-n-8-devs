@@ -1,0 +1,23 @@
+.card-text {
+  margin-bottom: 32px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 117%;
+  letter-spacing: -0.03em;
+  text-transform: capitalize;
+  color: var(--background-color);
+}
+
+@media screen and (min-width: 768px) {
+  .card-button {
+    padding: 18px 50px;
+    width: 177px;
+    height: 55px;
+  }
+
+  .card-text {
+    font-size: 44px;
+    line-height: 100%;
+    width: 494px;
+  }
+}

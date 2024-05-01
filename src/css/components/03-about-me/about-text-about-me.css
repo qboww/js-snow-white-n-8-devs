@@ -1,0 +1,9 @@
+.about-text-about-me {
+  padding-bottom: 32px;
+}
+
+@media (min-width: 768px) and (max-width: 1439px) {
+  .about-text-about-me {
+    padding-bottom: 16px;
+  }
+}

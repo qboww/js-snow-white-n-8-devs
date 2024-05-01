@@ -1,0 +1,9 @@
+.item-title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  color: var(--white-text-color);
+  margin-bottom: 8px;
+  margin-top: 64px;
+}

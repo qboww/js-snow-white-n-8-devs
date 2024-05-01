@@ -1,0 +1,20 @@
+.card-image-block {
+  display: flex;
+  justify-content: center;
+  padding: 100px 16px;
+  background-color: var(--cards-background-color);
+  border-radius: 0 0 24px 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .card-image-block {
+    padding: 120px 45px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .card-image-block {
+    padding: 120px 37px;
+    border-radius: 0 24px 24px 0;
+  }
+}

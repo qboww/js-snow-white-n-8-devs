@@ -1,0 +1,14 @@
+.reviews-arrow-left,
+.reviews-arrow-right {
+  stroke: var(--white-text-color);
+  width: 24px;
+  height: 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .reviews-arrow-left,
+  .reviews-arrow-right {
+    width: 32px;
+    height: 32px;
+  }
+}

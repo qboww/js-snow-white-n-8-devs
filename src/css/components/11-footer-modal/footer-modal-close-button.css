@@ -1,0 +1,26 @@
+.footer-modal-close-button {
+  background-color: transparent;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  padding: 0;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+@media only screen and (min-width: 768px) {
+  .footer-modal-close-button {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.footer-modal-close-button-icon {
+  fill: var(--white-text-color);
+}

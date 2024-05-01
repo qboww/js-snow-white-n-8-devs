@@ -1,0 +1,15 @@
+.input-error {
+  border-color: var(--not-succes-message-color);
+}
+
+.input-success {
+  border-color: var(--succes-message-color);
+}
+
+.success-label {
+  color: var(--succes-message-color);
+}
+
+.error-label {
+  color: var(--not-succes-message-color);
+}

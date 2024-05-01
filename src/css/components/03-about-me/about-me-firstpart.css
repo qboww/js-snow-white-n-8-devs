@@ -1,0 +1,21 @@
+.about-me-firstpart {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-bottom: 16px;
+}
+
+@media (min-width: 768px) {
+  .about-me-firstpart {
+    padding-bottom: 32px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .about-me-firstpart {
+    flex-direction: row;
+    gap: 16px;
+    padding-bottom: 48px;
+  }
+}

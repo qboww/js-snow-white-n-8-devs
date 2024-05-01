@@ -1,0 +1,21 @@
+.footer-title-image {
+  width: 44px;
+  height: 44px;
+  position: absolute;
+  top: 0;
+  left: 16px;
+}
+
+@media only screen and (min-width: 768px) {
+  .footer-title-image {
+    width: 70px;
+    height: 70px;
+    left: 32px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .footer-title-image {
+    left: 0;
+  }
+}

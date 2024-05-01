@@ -1,0 +1,24 @@
+.footer-form {
+  width: 343px;
+  display: flex;
+  flex-direction: column;
+
+  margin-bottom: 64px;
+}
+
+@media only screen and (min-width: 768px) {
+  .footer-form {
+    width: 704px;
+    flex-direction: row;
+    align-items: center;
+    gap: 32px;
+
+    margin-bottom: 18px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .footer-form {
+    width: 1048px;
+  }
+}

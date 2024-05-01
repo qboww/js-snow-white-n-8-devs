@@ -1,0 +1,21 @@
+.benefits-list {
+  margin-bottom: 32px;
+}
+
+@media screen and (min-width: 768px) {
+  .benefits-list {
+    width: 704px;
+    display: flex;
+    flex-direction: row;
+    column-gap: 16px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .benefits-list {
+    width: 680px;
+    margin-left: 696px;
+  }
+}

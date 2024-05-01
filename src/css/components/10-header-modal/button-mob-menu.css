@@ -1,0 +1,11 @@
+@media only screen and (max-width: 768px) {
+  .button-mob-menu {
+    justify-content: right;
+    background-color: transparent;
+    border: none;
+    padding: 0px;
+    height: 32px;
+    cursor: pointer;
+    transition: 250ms linear;
+  }
+}

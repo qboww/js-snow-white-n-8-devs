@@ -1,0 +1,10 @@
+.covers-picture {
+  flex-shrink: 0;
+  margin-right: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .covers-picture {
+    margin-right: 70px;
+  }
+}

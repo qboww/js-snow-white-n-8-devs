@@ -1,0 +1,10 @@
+.benefits-title {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: var(--grey-title-color);
+  text-shadow: var(--text-shadow);
+  margin-bottom: 32px;
+}

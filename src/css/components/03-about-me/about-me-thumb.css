@@ -1,0 +1,35 @@
+.about-me-thumb img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.about-me-thumb {
+  border-radius: 24px;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+}
+
+@media (min-width: 375px) {
+  .about-me-thumb {
+    width: 343px;
+  }
+}
+
+@media (min-width: 768px) {
+  .about-me-thumb {
+    height: 700px;
+    width: 100%;
+  }
+}
+@media (min-width: 1440px) {
+  .about-me-thumb {
+    width: 680px;
+  }
+}
+
+.about-me-thumb .about-me-img {
+  object-fit: cover;
+}

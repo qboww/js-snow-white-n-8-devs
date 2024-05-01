@@ -1,0 +1,28 @@
+.menu-container {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .btn-drop-down {
+    background: none;
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    color: var(--white-text-color);
+    cursor: pointer;
+    padding: 0px;
+    transition: color 250ms linear;
+  }
+
+  .btn-drop-down:hover {
+    color: var(--color-primary);
+  }
+
+  .menu-container {
+    display: flex;
+    flex-direction: column;
+  }
+}

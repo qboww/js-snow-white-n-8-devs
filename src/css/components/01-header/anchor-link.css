@@ -1,0 +1,14 @@
+@media screen and (min-width: 768px) {
+  .anchor-link {
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: -0.02em;
+    transition: color 250ms linear;
+    color: var(--white-text-color);
+  }
+
+  .anchor-link:hover,
+  .anchor-link:focus {
+    color: var(--color-primary);
+  }
+}

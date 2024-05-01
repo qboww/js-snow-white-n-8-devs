@@ -1,0 +1,42 @@
+.footer-send-button {
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: -0.02em;
+  color: var(--white-text-color);
+  background-color: var(--color-primary);
+  cursor: pointer;
+
+  width: 100px;
+  height: 100px;
+  padding: 0;
+  border-radius: 100%;
+  border: none;
+  z-index: 1;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  margin-top: 16px;
+}
+
+.footer-send-button:active {
+  background-color: var(--hover-color);
+}
+
+@media only screen and (min-width: 768px) {
+  .footer-send-button {
+    width: 150px;
+    height: 150px;
+    margin-top: 0;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .footer-send-button {
+    margin-left: 54px;
+  }
+
+  .footer-send-button:hover,
+  .footer-send-button:focus {
+    background-color: var(--hover-color);
+    outline: none;
+  }
+}

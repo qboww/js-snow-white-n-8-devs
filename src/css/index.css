@@ -1,16 +1,16 @@
 @import url('./base/common.css');
 
-@import url('./components/01-header.css');
-@import url('./components/02-hero.css');
-@import url('./components/03-about-me.css');
-@import url('./components/04-benefits.css');
-@import url('./components/05-projects.css');
-@import url('./components/06-faq.css');
-@import url('./components/07-covers.css');
-@import url('./components/08-reviews.css');
-@import url('./components/09-work-together.css');
-@import url('./components/10-header-modal.css');
-@import url('./components/11-footer-modal.css');
+@import url('./sections/01-header.css');
+@import url('./sections/02-hero.css');
+@import url('./sections/03-about-me.css');
+@import url('./sections/04-benefits.css');
+@import url('./sections/05-projects.css');
+@import url('./sections/06-faq.css');
+@import url('./sections/07-covers.css');
+@import url('./sections/08-reviews.css');
+@import url('./sections/09-work-together.css');
+@import url('./sections/10-header-modal.css');
+@import url('./sections/11-footer-modal.css');
 
-@import url('./components/features/back-to-top.css');
-@import url('./components/features/cursor.css');
+@import url('./features/back-to-top.css');
+@import url('./features/cursor.css');

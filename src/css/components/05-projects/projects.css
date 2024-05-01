@@ -1,0 +1,16 @@
+.projects {
+  padding-top: 20px;
+  padding-bottom: 32px;
+}
+
+@media screen and (min-width: 768px) {
+  .projects {
+    padding: 48px 0;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .projects {
+    padding: 82px 0;
+  }
+}

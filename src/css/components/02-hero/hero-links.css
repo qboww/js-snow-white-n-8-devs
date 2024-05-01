@@ -1,0 +1,11 @@
+.hero-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+@media only screen and (min-width: 768px) {
+  .hero-links {
+    justify-content: flex-end;
+  }
+}

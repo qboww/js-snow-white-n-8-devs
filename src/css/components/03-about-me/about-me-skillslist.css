@@ -1,0 +1,4 @@
+.about-me-skillslist .swiper-slide-active {
+  background-color: var(--color-primary);
+  border: none;
+}

@@ -1,0 +1,22 @@
+.benefits-item {
+  border-radius: 20px;
+  max-width: 343px;
+  max-height: 270px;
+  background-color: var(--cards-background-color);
+  margin-bottom: 16px;
+  padding: 24px;
+}
+
+.benefits-item:hover .square-icon {
+  animation: shake 2s infinite linear;
+}
+
+.benefits-item:hover {
+  border: solid 1px var(--color-primary);
+}
+
+@media screen and (min-width: 1440px) {
+  .benefits-item {
+    width: 332px;
+  }
+}

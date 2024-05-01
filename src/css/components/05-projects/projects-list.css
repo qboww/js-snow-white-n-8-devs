@@ -1,0 +1,9 @@
+.projects-list {
+  margin-bottom: 32px;
+}
+
+@media screen and (min-width: 1440px) {
+  .projects-list .projects-card {
+    display: flex;
+  }
+}

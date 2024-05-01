@@ -1,0 +1,3 @@
+.about-me-btn-right.swiper-button-next::after {
+  content: '';
+}

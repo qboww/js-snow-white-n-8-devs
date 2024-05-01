@@ -1,0 +1,5 @@
+.thumbnail {
+  background: var(--white-text-color);
+  border-radius: 10px;
+  margin-bottom: 32px;
+}

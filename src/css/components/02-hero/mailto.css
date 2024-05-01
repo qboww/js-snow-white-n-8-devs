@@ -1,0 +1,9 @@
+.mailto {
+  width: 178px;
+}
+
+@media only screen and (min-width: 768px) {
+  .mailto {
+    width: 223px;
+  }
+}

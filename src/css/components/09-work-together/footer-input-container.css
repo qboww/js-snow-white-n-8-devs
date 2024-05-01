@@ -1,0 +1,19 @@
+.footer-input-container {
+  width: 343px;
+  height: 44px;
+  margin-bottom: 16px;
+  z-index: 1;
+}
+
+@media only screen and (min-width: 768px) {
+  .footer-input-container {
+    width: 245px;
+    margin-bottom: 0;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .footer-input-container {
+    width: 390px;
+  }
+}

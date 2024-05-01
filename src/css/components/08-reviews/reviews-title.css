@@ -1,0 +1,7 @@
+.reviews-title {
+  text-align: left;
+  font: 600 16px/1.5 -0.02em;
+  color: var(--grey-title-color);
+  text-transform: uppercase;
+  margin-bottom: 32px;
+}

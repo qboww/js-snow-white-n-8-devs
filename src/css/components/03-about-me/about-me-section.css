@@ -1,0 +1,180 @@
+.about-me-section {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+@media (min-width: 768px) {
+  .about-me-section {
+    padding-bottom: 48px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .about-me-section {
+    padding-top: 48px;
+    padding-bottom: 82px;
+  }
+}
+
+.about-me-section .about-me-thirdpart {
+  padding: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100%;
+  height: 130px;
+  overflow: visible;
+  display: flex;
+  gap: 0px;
+}
+
+@media (min-width: 375px) {
+  .about-me-section .about-me-thirdpart {
+    gap: 55px;
+  }
+}
+
+@media (min-width: 768px) {
+  .about-me-section .about-me-thirdpart {
+    width: 704px;
+    height: 200px;
+    gap: 64px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .about-me-section .about-me-thirdpart {
+    width: 1312px;
+    height: 200px;
+    gap: 72px;
+  }
+}
+
+.about-me-section .about-me-swiper-container {
+  width: 260px;
+  height: 130px;
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .about-me-section .about-me-swiper-container {
+    width: 600px;
+    height: 200px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .about-me-section .about-me-swiper-container {
+    width: 1200px;
+    height: 200px;
+  }
+}
+
+section .about-me-section .about-me-skillslist {
+  display: flex;
+  flex-direction: row;
+  width: 260px;
+  height: 130px;
+}
+
+@media (min-width: 768px) {
+  .about-me-section .about-me-skillslist {
+    width: 600px;
+    height: 200px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .about-me-section .about-me-skillslist {
+    width: 1200px;
+    height: 200px;
+  }
+}
+
+.about-me-section .about-me-skillslist-item {
+  border-radius: 50%;
+  background-color: var(--background-color);
+  width: 130px;
+  height: 130px;
+  margin-right: 0 !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(250, 250, 250, 0.2);
+}
+
+@media (min-width: 768px) {
+  .about-me-section .about-me-skillslist-item {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+.about-me-section .about-me-skillslist-text {
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  color: var(--white-text-color);
+}
+
+@media (min-width: 768px) {
+  .about-me-section .about-me-skillslist-text {
+    font-size: 20px;
+  }
+}
+
+.about-me-section .about-me-btn-right:active {
+  transform: translateY(2px);
+}
+
+@media (min-width: 768px) {
+  .about-me-section .about-me-btn-right {
+    background-color: inherit;
+    border: none;
+    padding: 0px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+}
+
+.about-me-section .about-me-arrow-right {
+  stroke: var(--arrow-color);
+  height: 28px;
+  width: 28px;
+}
+
+@media (min-width: 768px) {
+  .about-me-section .about-me-arrow-right {
+    height: 40px;
+    width: 40px;
+  }
+}
+
+.about-me-section .about-me-btn-right {
+  background-color: inherit;
+  border: none;
+  padding: 0px;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  margin: 0;
+  position: static;
+  justify-content: center;
+  align-items: center;
+}
+
+section .about-me-header-n-btn .about-me-btn-aboutme {
+  border: 1px solid var(--grey-text-color);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 9px;
+  width: 36px;
+  height: 36px;
+  background-color: inherit;
+}

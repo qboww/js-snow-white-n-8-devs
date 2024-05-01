@@ -1,0 +1,11 @@
+@media only screen and (max-width: 768px) {
+  .menu-link {
+    color: var(--white-text-color);
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: -0.02em;
+    transition: color 250ms linear;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+}

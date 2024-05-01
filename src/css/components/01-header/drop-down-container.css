@@ -1,0 +1,16 @@
+.drop-down-container {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .drop-down-container {
+    padding-top: 10px;
+    padding-bottom: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    width: 67px;
+    height: 39px;
+  }
+}

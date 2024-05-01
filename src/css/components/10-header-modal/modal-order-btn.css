@@ -1,0 +1,23 @@
+@media only screen and (max-width: 768px) {
+  .modal-order-btn {
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-primary);
+    border-radius: 60px;
+    padding: 14px 31px;
+    width: 164px;
+    height: 45px;
+    border: none;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: -0.02em;
+    color: var(--white-text-color);
+    align-items: center;
+    transition: background-color 250ms linear;
+  }
+
+  .modal-order-btn:hover,
+  .modal-order-btn:focus {
+    background-color: var(--button-hover-color);
+  }
+}

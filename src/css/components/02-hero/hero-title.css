@@ -1,0 +1,35 @@
+.hero-title {
+  max-width: 343px;
+  margin: 0 auto;
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 100%;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: var(--white-text-color);
+  margin-bottom: 212px;
+  padding: 0 16px;
+}
+
+@media only screen and (min-width: 375px) {
+  .hero-title {
+    font-size: 50px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .hero-title {
+    font-size: 90px;
+    max-width: 100%;
+    width: 664px;
+    margin-bottom: 187px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .hero-title {
+    width: 1116px;
+    margin: 0 auto;
+    margin-bottom: 228px;
+  }
+}

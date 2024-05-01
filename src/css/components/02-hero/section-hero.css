@@ -1,0 +1,9 @@
+.section-hero {
+  padding-bottom: 48px;
+}
+
+@media only screen and (min-width: 768px) {
+  .section-hero {
+    padding-bottom: 32px;
+  }
+}

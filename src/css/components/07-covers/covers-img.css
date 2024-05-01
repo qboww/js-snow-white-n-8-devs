@@ -1,0 +1,9 @@
+.covers-img {
+  width: 280px;
+}
+
+@media screen and (min-width: 768px) {
+  .covers-img {
+    width: 540px;
+  }
+}

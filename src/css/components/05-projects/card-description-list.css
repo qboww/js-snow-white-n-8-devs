@@ -1,0 +1,18 @@
+.card-description-list {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 96px;
+  flex-wrap: wrap;
+}
+
+@media screen and (min-width: 768px) {
+  .card-description-list {
+    margin-bottom: 164px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .card-description-list {
+    margin-bottom: 223px;
+  }
+}

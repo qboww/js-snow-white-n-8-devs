@@ -1,0 +1,6 @@
+.opinion {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  max-width: 295px;
+}

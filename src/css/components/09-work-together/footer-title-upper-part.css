@@ -1,0 +1,14 @@
+.footer-title-upper-part {
+  display: block;
+  margin-left: 52px;
+
+  margin-bottom: 8px;
+}
+
+@media only screen and (min-width: 768px) {
+  .footer-title-upper-part {
+    margin-left: 90px;
+
+    margin-bottom: 10px;
+  }
+}

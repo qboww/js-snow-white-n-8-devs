@@ -1,0 +1,18 @@
+.card-description {
+  padding: 32px;
+  background-color: var(--white-text-color);
+  border-radius: 24px 24px 0 0px;
+}
+
+@media screen and (min-width: 768px) {
+  .card-description {
+    padding: 64px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .card-description {
+    width: 688px;
+    border-radius: 24px 0 0 24px;
+  }
+}

@@ -1,0 +1,10 @@
+.description-list-item {
+  padding: 13px 18px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: -0.02em;
+  color: var(--font-color);
+  border: 1px solid rgba(28, 29, 32, 0.2);
+  border-radius: 60px;
+}

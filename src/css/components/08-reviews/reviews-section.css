@@ -1,0 +1,15 @@
+.reviews-section {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+@media screen and (min-width: 768px) {
+  .reviews-section {
+    margin: 48px 32px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .reviews-section {
+    margin: 82px 0;
+  }
+}
