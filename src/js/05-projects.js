@@ -5,8 +5,8 @@ const initProjectsSection = () => {
   new Swiper('.projects-swiper', {
     direction: 'horizontal',
     navigation: {
-      nextEl: '.projects-next-button',
-      prevEl: '.projects-previous-button',
+      nextEl: '.btn-next',
+      prevEl: '.btn-prev',
     },
     keyboard: {
       enabled: true,

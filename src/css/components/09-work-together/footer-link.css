@@ -1,4 +1,4 @@
-.footer-link {
+.link-mail-phone {
   font-weight: 500;
   font-size: 14px;
   letter-spacing: -0.02em;
@@ -12,20 +12,20 @@
   transition: outline-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-link:active {
+.link-mail-phone:active {
   outline-color: var(--white-text-color);
 }
 
 @media only screen and (min-width: 768px) {
-  .footer-link {
+  .link-mail-phone {
     font-size: 16px;
     padding: 18px 32px;
   }
 }
 
 @media only screen and (min-width: 1440px) {
-  .footer-link:hover,
-  .footer-link:focus {
+  .link-mail-phone:hover,
+  .link-mail-phone:focus {
     outline-color: var(--white-text-color);
   }
 }

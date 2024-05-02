@@ -38,8 +38,8 @@ const fetchDataAndInitializeSwiper = async () => {
         },
       },
       navigation: {
-        nextEl: '.btn-next-review',
-        prevEl: '.btn-prev-review',
+        nextEl: '.btn-next',
+        prevEl: '.btn-prev',
       },
     });
   } catch (error) {
